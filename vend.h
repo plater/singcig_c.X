@@ -8,6 +8,7 @@
 #ifndef VEND_H
 #define	VEND_H
 
+#undef 8CHANV
 #include "mcc_generated_files/mcc.h"
 //This location is the value of cash to be added or
 //subtracted from credit memory

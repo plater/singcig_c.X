@@ -61,8 +61,12 @@ void main(void)
         DATAEE_WriteByte(credmem, 0x00);
     }
     SYSTEM_Initialize();
+    LIGHT1_SetHigh();
     vend_init();
+    LIGHT2_SetHigh();
+    mdb_init();
     LIGHT1_SetLow();
+    LIGHT2_SetLow();
    
     // If using interrupts in PIC18 High/Low Priority Mode you need to enable the Global High and Low Interrupts
     // If using interrupts in PIC Mid-Range Compatibility Mode you need to enable the Global Interrupts
