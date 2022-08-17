@@ -64,24 +64,24 @@ void PIN_MANAGER_Initialize(void)
     /**
     TRISx registers
     */
-    TRISA = 0x01;
-    TRISB = 0xC7;
-    TRISC = 0xA0;
+    TRISA = 0xC9;
+    TRISB = 0xC4;
+    TRISC = 0x05;
 
     /**
     ANSELx registers
     */
-    ANSELC = 0x5F;
-    ANSELB = 0x88;
-    ANSELA = 0xFF;
+    ANSELC = 0xFA;
+    ANSELB = 0x8B;
+    ANSELA = 0x37;
 
     /**
     WPUx registers
     */
     WPUE = 0x00;
     WPUB = 0x00;
-    WPUA = 0x00;
-    WPUC = 0x00;
+    WPUA = 0xC8;
+    WPUC = 0x04;
 
     /**
     RxyI2C registers
@@ -95,7 +95,7 @@ void PIN_MANAGER_Initialize(void)
     ODx registers
     */
     ODCONA = 0x00;
-    ODCONB = 0x00;
+    ODCONB = 0x02;
     ODCONC = 0x00;
 
     /**
@@ -120,13 +120,13 @@ void PIN_MANAGER_Initialize(void)
    
     
 	
-    U2RXPPS = 0x15;   //RC5->UART2:RX2;    
+    U2RXPPS = 0x10;   //RC0->UART2:RX2;    
     SPI1SCKPPS = 0x0D;   //RB5->SPI1:SCK1;    
+    RB1PPS = 0x13;   //RB1->UART1:TX1;    
     RB5PPS = 0x1E;   //RB5->SPI1:SCK1;    
-    RC4PPS = 0x16;   //RC4->UART2:TX2;    
+    RC1PPS = 0x16;   //RC1->UART2:TX2;    
     RB4PPS = 0x1F;   //RB4->SPI1:SDO1;    
-    RC6PPS = 0x13;   //RC6->UART1:TX1;    
-    U1RXPPS = 0x17;   //RC7->UART1:RX1;    
+    U1RXPPS = 0x0A;   //RB2->UART1:RX1;    
     SPI1SDIPPS = 0x0E;   //RB6->SPI1:SDI1;    
 }
   

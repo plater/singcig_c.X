@@ -1,14 +1,20 @@
 Legacy single cigarette mem map
      old                  new
-                LA6    COUNTER 2
-                LA6    COUNTER 1
-                LC0    BUTTON light 2
-COIN enable c   LC1    BUTTON light 1
-BUTTON lightc   LC2    MOTOR 2
-MOTOR  c        LC3    MOTOR 1
+                RA1    BUZZER
+                RA3    SERVICE
+                RA6    BUTTON 1
+                RA7    BUTTON 2
+                LC0    RX2
+COIN enable c   LC1    TX2
+BUTTON lightc   LC2    SPARE
+MOTOR  c        LC3    COUNTER 2
+                LC4    COUNTER 1
+                LC5    BUTTON light 2
+                LC6    BUTTON light 1
+                LC7    MOTOR 2
+COIN c          LB0    MOTOR 1
+BUTTON   c      RB1    MDBTX
+                RB2    MDBRX
 
 
-SERVICE  c      RB2   SERVICE
-BUTTON   c      RB1   BUTTON 2
-COIN c          RB0   BUTTON 1
 
