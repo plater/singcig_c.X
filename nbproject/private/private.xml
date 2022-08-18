@@ -5,8 +5,12 @@
         <group>
             <file>file:/home/davepl/MPLABXProjects/singcig_c.X/main.c</file>
             <file>file:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/pin_manager.h</file>
-            <file>file:/home/davepl/MPLABXProjects/singcig_c.X/mem_old_new.txt</file>
             <file>file:/home/davepl/MPLABXProjects/singcig_c.X/vend.c</file>
+            <file>file:/home/davepl/MPLABXProjects/singcig_c.X/mdb.h</file>
+            <file>file:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart1.c</file>
+            <file>file:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c</file>
+            <file>file:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart1.h</file>
+            <file>file:/home/davepl/MPLABXProjects/singcig_c.X/vend.h</file>
         </group>
     </open-files>
 </project-private>

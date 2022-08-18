@@ -1,3 +1,24 @@
+# Build files
+*.p1.d
+*.p1
+*.i
+
+# dist files
+*.xml
+*.cmf
+*.elf
+*.hxl
+*.lst
+*.mum
+*.rlf
+*.sdb
+*.sym
+
+# nbproject files
+*.mk
+*.properties
+*.bash
+
 # Prerequisites
 *.d
 

@@ -4,7 +4,7 @@
 # 288 "<built-in>" 3
 # 1 "<command line>" 1
 # 1 "<built-in>" 2
-# 1 "/opt/microchip/mplabx/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8/pic/include/language_support.h" 1 3
+# 1 "/home/davepl/.mchp_packs/Microchip/PIC18F-K_DFP/1.6.125/xc8/pic/include/language_support.h" 1 3
 # 2 "<built-in>" 2
 # 1 "mcc_generated_files/device_config.c" 2
 # 50 "mcc_generated_files/device_config.c"
@@ -23,7 +23,7 @@
 #pragma config MVECEN = OFF
 #pragma config IVT1WAY = OFF
 #pragma config LPBOREN = OFF
-#pragma config BOREN = SBORDIS
+#pragma config BOREN = NOSLP
 
 
 #pragma config BORV = VBOR_2P85

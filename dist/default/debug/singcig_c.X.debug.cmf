@@ -11,43 +11,71 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$dist/default/debug/singcig_c.X.debug.o
-cinit CODE 0 F3A F3A 1A 1 2
-idloc IDLOC 5 200000 200000 10 1 1
-text0 CODE 0 810 810 18C 1 2
-text1 CODE 0 B06 B06 86 1 2
-text2 CODE 0 99C 99C DC 1 2
-text3 CODE 0 C80 C80 50 1 2
-text4 CODE 0 A78 A78 8E 1 2
-text5 CODE 0 ED0 ED0 24 1 2
-text6 CODE 0 C0E C0E 72 1 2
-text7 CODE 0 E48 E48 2E 1 2
-text8 CODE 0 EA4 EA4 2C 1 2
-text9 CODE 0 FB2 FB2 4 1 2
-text10 CODE 0 FB6 FB6 4 1 2
-text11 CODE 0 CD0 CD0 50 1 2
-text12 CODE 0 B8C B8C 82 1 2
-text13 CODE 0 F9A F9A C 1 2
-text14 CODE 0 E76 E76 2E 1 2
-text15 CODE 0 D20 D20 46 1 2
-text16 CODE 0 F54 F54 1A 1 2
-text17 CODE 0 F18 F18 22 1 2
-text18 CODE 0 DA6 DA6 36 1 2
-text19 CODE 0 DDC DDC 36 1 2
-text20 CODE 0 E12 E12 36 1 2
-text21 CODE 0 EF4 EF4 24 1 2
-text22 CODE 0 D66 D66 40 1 2
-text23 CODE 0 F6E F6E 18 1 2
-text24 CODE 0 FA6 FA6 C 1 2
-text25 CODE 0 F86 F86 14 1 2
-cstackCOMRAM COMRAM 1 1 1 11 1 1
-smallconst SMALLCONST 0 800 800 10 1 2
-bssCOMRAM COMRAM 1 12 12 E 1 1
-config CONFIG 4 300000 300000 A 1 1
-$/tmp/xcXapPFGP.o
+$/tmp/xcXCNJhac.o
 idloc IDLOC 5 200000 200000 10 1 1
 init CODE 0 7FFC 7FFC 4 1 2
 reset_vec CODE 0 0 0 4 1 2
+config CONFIG 4 300000 300000 A 1 1
+$dist/default/debug/singcig_c.X.debug.o
+cinit CODE 0 12D6 12D6 2A 1 2
+idloc IDLOC 5 200000 200000 10 1 1
+text0 CODE 0 834 834 19C 1 2
+text1 CODE 0 D18 D18 86 1 2
+text2 CODE 0 1118 1118 3A 1 2
+text3 CODE 0 1402 1402 12 1 2
+text4 CODE 0 FDA FDA 58 1 2
+text5 CODE 0 1300 1300 2A 1 2
+text6 CODE 0 9D0 9D0 142 1 2
+text7 CODE 0 1414 1414 12 1 2
+text8 CODE 0 1438 1438 E 1 2
+text9 CODE 0 1426 1426 12 1 2
+text10 CODE 0 1372 1372 1A 1 2
+text11 CODE 0 14AC 14AC 2 1 2
+text12 CODE 0 127E 127E 2C 1 2
+text13 CODE 0 145E 145E A 1 2
+text14 CODE 0 BEE BEE 9C 1 2
+text15 CODE 0 14AE 14AE 2 1 2
+text16 CODE 0 14B0 14B0 2 1 2
+text17 CODE 0 14B2 14B2 2 1 2
+text18 CODE 0 B12 B12 DC 1 2
+text19 CODE 0 1032 1032 50 1 2
+text20 CODE 0 C8A C8A 8E 1 2
+text21 CODE 0 132A 132A 24 1 2
+text22 CODE 0 EA4 EA4 72 1 2
+text23 CODE 0 11F4 11F4 2E 1 2
+text24 CODE 0 12AA 12AA 2C 1 2
+text25 CODE 0 14A4 14A4 4 1 2
+text26 CODE 0 14A8 14A8 4 1 2
+text27 CODE 0 1082 1082 50 1 2
+text28 CODE 0 E22 E22 82 1 2
+text29 CODE 0 1446 1446 C 1 2
+text30 CODE 0 1222 1222 2E 1 2
+text31 CODE 0 10D2 10D2 46 1 2
+text32 CODE 0 138C 138C 1A 1 2
+text33 CODE 0 1250 1250 2E 1 2
+text34 CODE 0 F7E F7E 5C 1 2
+text35 CODE 0 1468 1468 A 1 2
+text36 CODE 0 1472 1472 A 1 2
+text37 CODE 0 147C 147C A 1 2
+text38 CODE 0 F16 F16 68 1 2
+text39 CODE 0 1486 1486 A 1 2
+text40 CODE 0 1490 1490 A 1 2
+text41 CODE 0 149A 149A A 1 2
+text42 CODE 0 1152 1152 36 1 2
+text43 CODE 0 1188 1188 36 1 2
+text44 CODE 0 11BE 11BE 36 1 2
+text45 CODE 0 13A6 13A6 1A 1 2
+text46 CODE 0 134E 134E 24 1 2
+text47 CODE 0 D9E D9E 84 1 2
+text48 CODE 0 13C0 13C0 18 1 2
+text49 CODE 0 1452 1452 C 1 2
+text50 CODE 0 13EE 13EE 14 1 2
+text51 CODE 0 13D8 13D8 16 1 2
+idataCOMRAM CODE 0 14B4 14B4 1 1 1
+cstackCOMRAM COMRAM 1 49 49 11 1 1
+smallconst SMALLCONST 0 800 800 34 1 2
+dataCOMRAM COMRAM 1 5A 5A 1 1 1
+bssCOMRAM COMRAM 1 1 1 48 1 1
 config CONFIG 4 300000 300000 A 1 1
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
@@ -66,15 +94,15 @@ BANK5 500-5FF 1
 BANK6 600-6FF 1
 BANK7 700-7FF 1
 CONST 4-7FF 1
-CONST FBA-7FFB 1
-SMALLCONST FBA-7FFB 1
+CONST 14B5-7FFB 1
+SMALLCONST 14B5-7FFB 1
 CODE 4-7FF 1
-CODE FBA-7FFB 1
-BIGRAM 20-7FF 1
+CODE 14B5-7FFB 1
+BIGRAM 5B-7FF 1
 BIGSFR 3800-3FFF 1
-COMRAM 20-5F 1
+COMRAM 5B-5F 1
 EEDATA 310000-3100FF 1
-MEDIUMCONST FBA-7FFB 1
+MEDIUMCONST 14B5-7FFB 1
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
 # The beginning of the section is indicated by %LINETAB.
@@ -89,328 +117,545 @@ MEDIUMCONST FBA-7FFB 1
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/debug/singcig_c.X.debug.o
-F86 text25 CODE >58:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/cmp1.c
-F86 text25 CODE >62:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/cmp1.c
-F8C text25 CODE >65:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/cmp1.c
-F90 text25 CODE >68:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/cmp1.c
-F94 text25 CODE >71:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/cmp1.c
-F98 text25 CODE >73:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/cmp1.c
-FA6 text24 CODE >58:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/dac1.c
-FA6 text24 CODE >61:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/dac1.c
-FAC text24 CODE >63:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/dac1.c
-FB0 text24 CODE >64:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/dac1.c
-F6E text23 CODE >62:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/mcc.c
-F6E text23 CODE >65:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/mcc.c
-F74 text23 CODE >67:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/mcc.c
-F78 text23 CODE >69:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/mcc.c
-F7C text23 CODE >71:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/mcc.c
-F80 text23 CODE >73:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/mcc.c
-F84 text23 CODE >74:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/mcc.c
-D66 text22 CODE >57:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/pin_manager.c
-D66 text22 CODE >62:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/pin_manager.c
-D6A text22 CODE >63:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/pin_manager.c
-D6E text22 CODE >64:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/pin_manager.c
-D72 text22 CODE >69:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/pin_manager.c
-D76 text22 CODE >70:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/pin_manager.c
-D78 text22 CODE >71:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/pin_manager.c
-D7C text22 CODE >76:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/pin_manager.c
-D82 text22 CODE >77:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/pin_manager.c
-D86 text22 CODE >78:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/pin_manager.c
-D88 text22 CODE >83:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/pin_manager.c
-D8C text22 CODE >84:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/pin_manager.c
-D90 text22 CODE >85:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/pin_manager.c
-D94 text22 CODE >86:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/pin_manager.c
-D98 text22 CODE >91:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/pin_manager.c
-D9C text22 CODE >92:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/pin_manager.c
-DA0 text22 CODE >93:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/pin_manager.c
-DA4 text22 CODE >101:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/pin_manager.c
-EF4 text21 CODE >76:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/mcc.c
-EF4 text21 CODE >79:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/mcc.c
-EFA text21 CODE >81:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/mcc.c
-EFE text21 CODE >83:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/mcc.c
-F02 text21 CODE >85:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/mcc.c
-F06 text21 CODE >87:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/mcc.c
-F0A text21 CODE >89:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/mcc.c
-F0E text21 CODE >91:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/mcc.c
-F12 text21 CODE >93:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/mcc.c
-F16 text21 CODE >94:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/mcc.c
-E12 text20 CODE >63:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr1.c
-E12 text20 CODE >68:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr1.c
-E16 text20 CODE >71:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr1.c
-E1A text20 CODE >74:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr1.c
-E1E text20 CODE >77:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr1.c
-E22 text20 CODE >80:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr1.c
-E26 text20 CODE >83:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr1.c
-E3E text20 CODE >86:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr1.c
-E42 text20 CODE >89:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr1.c
-E46 text20 CODE >90:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr1.c
-DDC text19 CODE >63:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr3.c
-DDC text19 CODE >68:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr3.c
-DE0 text19 CODE >71:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr3.c
-DE4 text19 CODE >74:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr3.c
-DE8 text19 CODE >77:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr3.c
-DEC text19 CODE >80:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr3.c
-DF0 text19 CODE >83:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr3.c
-E08 text19 CODE >86:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr3.c
-E0C text19 CODE >89:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr3.c
-E10 text19 CODE >90:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr3.c
-DA6 text18 CODE >63:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr5.c
-DA6 text18 CODE >68:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr5.c
-DAA text18 CODE >71:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr5.c
-DAE text18 CODE >74:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr5.c
-DB2 text18 CODE >77:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr5.c
-DB6 text18 CODE >80:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr5.c
-DBA text18 CODE >83:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr5.c
-DD2 text18 CODE >86:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr5.c
-DD6 text18 CODE >89:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr5.c
-DDA text18 CODE >90:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr5.c
-F18 text17 CODE >50:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/mcc.c
-F18 text17 CODE >52:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/mcc.c
-F1C text17 CODE >53:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/mcc.c
-F20 text17 CODE >54:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/mcc.c
-F24 text17 CODE >55:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/mcc.c
-F28 text17 CODE >56:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/mcc.c
-F2C text17 CODE >57:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/mcc.c
-F30 text17 CODE >58:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/mcc.c
-F34 text17 CODE >59:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/mcc.c
-F38 text17 CODE >60:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/mcc.c
-F54 text16 CODE >193:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/memory.c
-F56 text16 CODE >195:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/memory.c
-F5C text16 CODE >196:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/memory.c
-F62 text16 CODE >197:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/memory.c
-F64 text16 CODE >198:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/memory.c
-F66 text16 CODE >199:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/memory.c
-F68 text16 CODE >201:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/memory.c
-F6C text16 CODE >202:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/memory.c
-D20 text15 CODE >172:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/memory.c
-D22 text15 CODE >174:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/memory.c
-D2A text15 CODE >176:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/memory.c
-D30 text15 CODE >177:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/memory.c
-D36 text15 CODE >178:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/memory.c
-D3C text15 CODE >179:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/memory.c
-D3E text15 CODE >180:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/memory.c
-D40 text15 CODE >181:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/memory.c
-D44 text15 CODE >182:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/memory.c
-D48 text15 CODE >183:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/memory.c
-D4A text15 CODE >185:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/memory.c
-D4A text15 CODE >187:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/memory.c
-D58 text15 CODE >189:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/memory.c
-D5A text15 CODE >190:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/memory.c
-D64 text15 CODE >191:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/memory.c
-E76 text14 CODE >56:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-E78 text14 CODE >29:/home/davepl/MPLABXProjects/singcig_c.X/vend.h
-E80 text14 CODE >59:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-E86 text14 CODE >60:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-E90 text14 CODE >61:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-EA0 text14 CODE >63:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-EA2 text14 CODE >66:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-F9A text13 CODE >29:/home/davepl/MPLABXProjects/singcig_c.X/vend.h
-F9A text13 CODE >50:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-FA2 text13 CODE >53:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-FA4 text13 CODE >54:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-B8C text12 CODE >190:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-B8C text12 CODE >192:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-BC2 text12 CODE >194:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-BD0 text12 CODE >196:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-BE0 text12 CODE >197:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-BE4 text12 CODE >200:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-BF2 text12 CODE >203:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-C00 text12 CODE >205:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-C02 text12 CODE >206:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-C08 text12 CODE >208:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-C08 text12 CODE >210:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-C0A text12 CODE >211:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-C0C text12 CODE >213:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-CD0 text11 CODE >33:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-CD0 text11 CODE >35:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-CD4 text11 CODE >36:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-CD6 text11 CODE >37:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-CEA text11 CODE >39:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-CFE text11 CODE >40:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-D04 text11 CODE >41:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-D04 text11 CODE >42:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-D1C text11 CODE >46:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-D1E text11 CODE >48:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-FB6 text10 CODE >92:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr1.c
-FB6 text10 CODE >95:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr1.c
-FB8 text10 CODE >96:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr1.c
-FB2 text9 CODE >98:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr1.c
-FB2 text9 CODE >101:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr1.c
-FB4 text9 CODE >102:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr1.c
-EA4 text8 CODE >120:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr1.c
-EA4 text8 CODE >122:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr1.c
-EB2 text8 CODE >125:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr1.c
-EB4 text8 CODE >128:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr1.c
-EB8 text8 CODE >129:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr1.c
-EBE text8 CODE >132:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr1.c
-EC0 text8 CODE >133:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr1.c
-EC4 text8 CODE >137:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr1.c
-EC8 text8 CODE >138:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr1.c
-ECE text8 CODE >140:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr1.c
-E48 text7 CODE >68:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-E4A text7 CODE >29:/home/davepl/MPLABXProjects/singcig_c.X/vend.h
-E52 text7 CODE >71:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-E58 text7 CODE >72:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-E62 text7 CODE >73:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-E72 text7 CODE >75:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-E74 text7 CODE >77:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-C0E text6 CODE >81:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-C0E text6 CODE >83:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-C10 text6 CODE >84:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-C14 text6 CODE >85:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-C18 text6 CODE >86:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-C24 text6 CODE >87:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-C28 text6 CODE >88:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-C2E text6 CODE >89:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-C32 text6 CODE >91:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-C34 text6 CODE >89:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-C34 text6 CODE >92:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-C54 text6 CODE >93:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-C56 text6 CODE >94:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-C66 text6 CODE >96:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-C70 text6 CODE >97:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-C72 text6 CODE >98:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-C76 text6 CODE >101:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-C7C text6 CODE >102:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-C7E text6 CODE >105:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-ED0 text5 CODE >104:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr1.c
-ED0 text5 CODE >110:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr1.c
-ED2 text5 CODE >112:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr1.c
-ED8 text5 CODE >113:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr1.c
-EDE text5 CODE >115:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr1.c
-EEA text5 CODE >117:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr1.c
-EF2 text5 CODE >118:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr1.c
-A78 text4 CODE >168:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-A78 text4 CODE >170:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-A7C text4 CODE >171:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-A80 text4 CODE >173:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-A82 text4 CODE >174:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-A92 text4 CODE >176:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-A94 text4 CODE >177:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-A98 text4 CODE >178:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-AA4 text4 CODE >179:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-AB4 text4 CODE >180:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-ABC text4 CODE >181:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-ACC text4 CODE >182:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-ADC text4 CODE >183:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-AE6 text4 CODE >184:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-AF0 text4 CODE >185:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-AF4 text4 CODE >171:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-AF4 text4 CODE >187:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-B04 text4 CODE >188:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-C80 text3 CODE >116:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-C80 text3 CODE >118:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-C8E text3 CODE >120:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-C90 text3 CODE >121:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-C94 text3 CODE >122:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-C96 text3 CODE >124:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-CA6 text3 CODE >126:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-CCA text3 CODE >127:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-CCE text3 CODE >129:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-99C text2 CODE >131:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-99C text2 CODE >133:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-9A6 text2 CODE >134:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-9B0 text2 CODE >136:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-9B4 text2 CODE >137:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-9B6 text2 CODE >138:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-9B8 text2 CODE >139:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-9C6 text2 CODE >140:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-9DC text2 CODE >141:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-9E0 text2 CODE >143:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-9E4 text2 CODE >144:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-A00 text2 CODE >146:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-A02 text2 CODE >147:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-A06 text2 CODE >148:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-A08 text2 CODE >150:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-A1C text2 CODE >152:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-A1E text2 CODE >153:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-A32 text2 CODE >154:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-A34 text2 CODE >155:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-A36 text2 CODE >141:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-A44 text2 CODE >158:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-A52 text2 CODE >160:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-A5C text2 CODE >163:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-A5E text2 CODE >164:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-A74 text2 CODE >165:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-A76 text2 CODE >166:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-B06 text1 CODE >9:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-B06 text1 CODE >11:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-B08 text1 CODE >12:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-B0A text1 CODE >13:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-B0C text1 CODE >14:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-B14 text1 CODE >35:/home/davepl/MPLABXProjects/singcig_c.X/vend.h
-B3C text1 CODE >31:/home/davepl/MPLABXProjects/singcig_c.X/vend.h
-B44 text1 CODE >29:/home/davepl/MPLABXProjects/singcig_c.X/vend.h
-B4C text1 CODE >19:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-B52 text1 CODE >20:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-B68 text1 CODE >21:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-B7E text1 CODE >23:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-B80 text1 CODE >24:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-B82 text1 CODE >25:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-B86 text1 CODE >26:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-B86 text1 CODE >28:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-B88 text1 CODE >29:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-B8A text1 CODE >31:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
-810 text0 CODE >54:/home/davepl/MPLABXProjects/singcig_c.X/main.c
-810 text0 CODE >58:/home/davepl/MPLABXProjects/singcig_c.X/main.c
-860 text0 CODE >60:/home/davepl/MPLABXProjects/singcig_c.X/main.c
-86A text0 CODE >61:/home/davepl/MPLABXProjects/singcig_c.X/main.c
-874 text0 CODE >63:/home/davepl/MPLABXProjects/singcig_c.X/main.c
-878 text0 CODE >64:/home/davepl/MPLABXProjects/singcig_c.X/main.c
-87C text0 CODE >65:/home/davepl/MPLABXProjects/singcig_c.X/main.c
-87E text0 CODE >78:/home/davepl/MPLABXProjects/singcig_c.X/main.c
-87E text0 CODE >80:/home/davepl/MPLABXProjects/singcig_c.X/main.c
-88C text0 CODE >82:/home/davepl/MPLABXProjects/singcig_c.X/main.c
-894 text0 CODE >85:/home/davepl/MPLABXProjects/singcig_c.X/main.c
-894 text0 CODE >87:/home/davepl/MPLABXProjects/singcig_c.X/main.c
-896 text0 CODE >88:/home/davepl/MPLABXProjects/singcig_c.X/main.c
-898 text0 CODE >89:/home/davepl/MPLABXProjects/singcig_c.X/main.c
-8B0 text0 CODE >90:/home/davepl/MPLABXProjects/singcig_c.X/main.c
-8B2 text0 CODE >91:/home/davepl/MPLABXProjects/singcig_c.X/main.c
-8CA text0 CODE >85:/home/davepl/MPLABXProjects/singcig_c.X/main.c
-8DA text0 CODE >94:/home/davepl/MPLABXProjects/singcig_c.X/main.c
-8E8 text0 CODE >96:/home/davepl/MPLABXProjects/singcig_c.X/main.c
-8EA text0 CODE >97:/home/davepl/MPLABXProjects/singcig_c.X/main.c
-8EE text0 CODE >98:/home/davepl/MPLABXProjects/singcig_c.X/main.c
-8EE text0 CODE >100:/home/davepl/MPLABXProjects/singcig_c.X/main.c
-8F0 text0 CODE >101:/home/davepl/MPLABXProjects/singcig_c.X/main.c
-8F0 text0 CODE >103:/home/davepl/MPLABXProjects/singcig_c.X/main.c
-8FE text0 CODE >105:/home/davepl/MPLABXProjects/singcig_c.X/main.c
-902 text0 CODE >108:/home/davepl/MPLABXProjects/singcig_c.X/main.c
-910 text0 CODE >110:/home/davepl/MPLABXProjects/singcig_c.X/main.c
-914 text0 CODE >111:/home/davepl/MPLABXProjects/singcig_c.X/main.c
-914 text0 CODE >113:/home/davepl/MPLABXProjects/singcig_c.X/main.c
-92C text0 CODE >115:/home/davepl/MPLABXProjects/singcig_c.X/main.c
-92E text0 CODE >116:/home/davepl/MPLABXProjects/singcig_c.X/main.c
-932 text0 CODE >117:/home/davepl/MPLABXProjects/singcig_c.X/main.c
-932 text0 CODE >119:/home/davepl/MPLABXProjects/singcig_c.X/main.c
-934 text0 CODE >120:/home/davepl/MPLABXProjects/singcig_c.X/main.c
-934 text0 CODE >122:/home/davepl/MPLABXProjects/singcig_c.X/main.c
-944 text0 CODE >124:/home/davepl/MPLABXProjects/singcig_c.X/main.c
-946 text0 CODE >125:/home/davepl/MPLABXProjects/singcig_c.X/main.c
-946 text0 CODE >127:/home/davepl/MPLABXProjects/singcig_c.X/main.c
-962 text0 CODE >129:/home/davepl/MPLABXProjects/singcig_c.X/main.c
-970 text0 CODE >131:/home/davepl/MPLABXProjects/singcig_c.X/main.c
-972 text0 CODE >132:/home/davepl/MPLABXProjects/singcig_c.X/main.c
-974 text0 CODE >133:/home/davepl/MPLABXProjects/singcig_c.X/main.c
-974 text0 CODE >134:/home/davepl/MPLABXProjects/singcig_c.X/main.c
-990 text0 CODE >136:/home/davepl/MPLABXProjects/singcig_c.X/main.c
-F3A cinit CODE >14673:/tmp/xcXeBLhad.s
-F3A cinit CODE >14675:/tmp/xcXeBLhad.s
-F3A cinit CODE >14678:/tmp/xcXeBLhad.s
-F3A cinit CODE >14715:/tmp/xcXeBLhad.s
-F3E cinit CODE >14716:/tmp/xcXeBLhad.s
-F40 cinit CODE >14717:/tmp/xcXeBLhad.s
-F40 cinit CODE >14718:/tmp/xcXeBLhad.s
-F42 cinit CODE >14719:/tmp/xcXeBLhad.s
-F44 cinit CODE >14720:/tmp/xcXeBLhad.s
-F46 cinit CODE >14726:/tmp/xcXeBLhad.s
-F46 cinit CODE >14729:/tmp/xcXeBLhad.s
-F48 cinit CODE >14730:/tmp/xcXeBLhad.s
-F4A cinit CODE >14731:/tmp/xcXeBLhad.s
-F4C cinit CODE >14732:/tmp/xcXeBLhad.s
-F4E cinit CODE >14733:/tmp/xcXeBLhad.s
-F50 cinit CODE >14734:/tmp/xcXeBLhad.s
+13D8 text51 CODE >75:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/cmp1.c
+13D8 text51 CODE >77:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/cmp1.c
+13EC text51 CODE >78:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/cmp1.c
+13EE text50 CODE >58:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/cmp1.c
+13EE text50 CODE >62:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/cmp1.c
+13F4 text50 CODE >65:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/cmp1.c
+13F8 text50 CODE >68:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/cmp1.c
+13FC text50 CODE >71:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/cmp1.c
+1400 text50 CODE >73:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/cmp1.c
+1452 text49 CODE >58:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/dac1.c
+1452 text49 CODE >61:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/dac1.c
+1458 text49 CODE >63:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/dac1.c
+145C text49 CODE >64:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/dac1.c
+13C0 text48 CODE >65:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/mcc.c
+13C0 text48 CODE >68:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/mcc.c
+13C6 text48 CODE >70:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/mcc.c
+13CA text48 CODE >72:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/mcc.c
+13CE text48 CODE >74:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/mcc.c
+13D2 text48 CODE >76:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/mcc.c
+13D6 text48 CODE >77:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/mcc.c
+D9E text47 CODE >55:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/pin_manager.c
+D9E text47 CODE >60:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/pin_manager.c
+DA2 text47 CODE >61:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/pin_manager.c
+DA6 text47 CODE >62:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/pin_manager.c
+DAA text47 CODE >67:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/pin_manager.c
+DAE text47 CODE >68:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/pin_manager.c
+DB2 text47 CODE >69:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/pin_manager.c
+DB6 text47 CODE >74:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/pin_manager.c
+DBC text47 CODE >75:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/pin_manager.c
+DC0 text47 CODE >76:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/pin_manager.c
+DC4 text47 CODE >81:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/pin_manager.c
+DC8 text47 CODE >82:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/pin_manager.c
+DCC text47 CODE >83:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/pin_manager.c
+DD0 text47 CODE >84:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/pin_manager.c
+DD4 text47 CODE >89:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/pin_manager.c
+DD8 text47 CODE >90:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/pin_manager.c
+DDC text47 CODE >91:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/pin_manager.c
+DE0 text47 CODE >92:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/pin_manager.c
+DE4 text47 CODE >97:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/pin_manager.c
+DE8 text47 CODE >98:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/pin_manager.c
+DEC text47 CODE >99:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/pin_manager.c
+DF0 text47 CODE >104:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/pin_manager.c
+DF2 text47 CODE >105:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/pin_manager.c
+DF4 text47 CODE >106:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/pin_manager.c
+DF6 text47 CODE >111:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/pin_manager.c
+DF8 text47 CODE >112:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/pin_manager.c
+DFA text47 CODE >113:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/pin_manager.c
+DFC text47 CODE >114:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/pin_manager.c
+E00 text47 CODE >123:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/pin_manager.c
+E04 text47 CODE >124:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/pin_manager.c
+E08 text47 CODE >125:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/pin_manager.c
+E0C text47 CODE >126:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/pin_manager.c
+E10 text47 CODE >127:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/pin_manager.c
+E14 text47 CODE >128:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/pin_manager.c
+E18 text47 CODE >129:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/pin_manager.c
+E1C text47 CODE >130:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/pin_manager.c
+E20 text47 CODE >131:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/pin_manager.c
+134E text46 CODE >79:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/mcc.c
+134E text46 CODE >82:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/mcc.c
+1354 text46 CODE >84:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/mcc.c
+1358 text46 CODE >86:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/mcc.c
+135C text46 CODE >88:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/mcc.c
+1360 text46 CODE >90:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/mcc.c
+1364 text46 CODE >92:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/mcc.c
+1368 text46 CODE >94:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/mcc.c
+136C text46 CODE >96:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/mcc.c
+1370 text46 CODE >97:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/mcc.c
+13A6 text45 CODE >64:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/spi1.c
+13A6 text45 CODE >67:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/spi1.c
+13AC text45 CODE >69:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/spi1.c
+13B0 text45 CODE >71:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/spi1.c
+13B4 text45 CODE >73:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/spi1.c
+13B8 text45 CODE >75:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/spi1.c
+13BC text45 CODE >76:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/spi1.c
+13BE text45 CODE >77:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/spi1.c
+11BE text44 CODE >63:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr1.c
+11BE text44 CODE >68:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr1.c
+11C2 text44 CODE >71:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr1.c
+11C6 text44 CODE >74:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr1.c
+11CA text44 CODE >77:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr1.c
+11CE text44 CODE >80:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr1.c
+11D2 text44 CODE >83:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr1.c
+11D6 text44 CODE >86:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr1.c
+11EE text44 CODE >89:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr1.c
+11F2 text44 CODE >90:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr1.c
+1188 text43 CODE >63:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr3.c
+1188 text43 CODE >68:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr3.c
+118C text43 CODE >71:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr3.c
+1190 text43 CODE >74:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr3.c
+1194 text43 CODE >77:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr3.c
+1198 text43 CODE >80:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr3.c
+119C text43 CODE >83:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr3.c
+11A0 text43 CODE >86:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr3.c
+11B8 text43 CODE >89:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr3.c
+11BC text43 CODE >90:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr3.c
+1152 text42 CODE >63:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr5.c
+1152 text42 CODE >68:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr5.c
+1156 text42 CODE >71:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr5.c
+115A text42 CODE >74:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr5.c
+115E text42 CODE >77:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr5.c
+1162 text42 CODE >80:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr5.c
+1166 text42 CODE >83:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr5.c
+116A text42 CODE >86:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr5.c
+1182 text42 CODE >89:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr5.c
+1186 text42 CODE >90:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr5.c
+149A text41 CODE >203:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart1.c
+149A text41 CODE >204:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart1.c
+14A2 text41 CODE >205:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart1.c
+1490 text40 CODE >195:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart1.c
+1490 text40 CODE >196:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart1.c
+1498 text40 CODE >197:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart1.c
+1486 text39 CODE >199:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart1.c
+1486 text39 CODE >200:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart1.c
+148E text39 CODE >201:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart1.c
+F16 text38 CODE >66:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart1.c
+F16 text38 CODE >73:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart1.c
+F1C text38 CODE >76:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart1.c
+F20 text38 CODE >79:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart1.c
+F24 text38 CODE >82:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart1.c
+F28 text38 CODE >85:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart1.c
+F2C text38 CODE >88:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart1.c
+F30 text38 CODE >91:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart1.c
+F34 text38 CODE >94:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart1.c
+F38 text38 CODE >97:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart1.c
+F3C text38 CODE >100:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart1.c
+F40 text38 CODE >103:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart1.c
+F44 text38 CODE >106:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart1.c
+F48 text38 CODE >109:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart1.c
+F4C text38 CODE >112:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart1.c
+F50 text38 CODE >115:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart1.c
+F54 text38 CODE >118:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart1.c
+F60 text38 CODE >119:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart1.c
+F6C text38 CODE >120:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart1.c
+F78 text38 CODE >122:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart1.c
+F7C text38 CODE >124:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart1.c
+147C text37 CODE >189:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart2.c
+147C text37 CODE >190:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart2.c
+1484 text37 CODE >191:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart2.c
+1472 text36 CODE >181:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart2.c
+1472 text36 CODE >182:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart2.c
+147A text36 CODE >183:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart2.c
+1468 text35 CODE >185:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart2.c
+1468 text35 CODE >186:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart2.c
+1470 text35 CODE >187:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart2.c
+F7E text34 CODE >66:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart2.c
+F7E text34 CODE >73:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart2.c
+F84 text34 CODE >76:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart2.c
+F88 text34 CODE >79:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart2.c
+F8C text34 CODE >82:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart2.c
+F90 text34 CODE >85:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart2.c
+F94 text34 CODE >88:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart2.c
+F98 text34 CODE >91:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart2.c
+F9C text34 CODE >94:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart2.c
+FA0 text34 CODE >97:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart2.c
+FA4 text34 CODE >100:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart2.c
+FA8 text34 CODE >103:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart2.c
+FAC text34 CODE >106:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart2.c
+FB0 text34 CODE >109:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart2.c
+FBC text34 CODE >110:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart2.c
+FC8 text34 CODE >111:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart2.c
+FD4 text34 CODE >113:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart2.c
+FD8 text34 CODE >115:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart2.c
+1250 text33 CODE >50:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/mcc.c
+1250 text33 CODE >52:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/mcc.c
+1254 text33 CODE >53:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/mcc.c
+1258 text33 CODE >54:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/mcc.c
+125C text33 CODE >55:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/mcc.c
+1260 text33 CODE >56:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/mcc.c
+1264 text33 CODE >57:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/mcc.c
+1268 text33 CODE >58:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/mcc.c
+126C text33 CODE >59:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/mcc.c
+1270 text33 CODE >60:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/mcc.c
+1274 text33 CODE >61:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/mcc.c
+1278 text33 CODE >62:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/mcc.c
+127C text33 CODE >63:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/mcc.c
+138C text32 CODE >186:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/memory.c
+138E text32 CODE >188:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/memory.c
+1394 text32 CODE >189:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/memory.c
+139A text32 CODE >190:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/memory.c
+139C text32 CODE >191:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/memory.c
+139E text32 CODE >192:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/memory.c
+13A0 text32 CODE >194:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/memory.c
+13A4 text32 CODE >195:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/memory.c
+10D2 text31 CODE >165:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/memory.c
+10D4 text31 CODE >167:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/memory.c
+10DC text31 CODE >169:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/memory.c
+10E2 text31 CODE >170:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/memory.c
+10E8 text31 CODE >171:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/memory.c
+10EE text31 CODE >172:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/memory.c
+10F0 text31 CODE >173:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/memory.c
+10F2 text31 CODE >174:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/memory.c
+10F6 text31 CODE >175:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/memory.c
+10FA text31 CODE >176:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/memory.c
+10FC text31 CODE >178:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/memory.c
+10FC text31 CODE >180:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/memory.c
+110A text31 CODE >182:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/memory.c
+110C text31 CODE >183:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/memory.c
+1116 text31 CODE >184:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/memory.c
+1222 text30 CODE >56:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+1224 text30 CODE >54:/home/davepl/MPLABXProjects/singcig_c.X/buffers.h
+122C text30 CODE >59:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+1232 text30 CODE >60:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+123C text30 CODE >61:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+124C text30 CODE >63:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+124E text30 CODE >66:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+1446 text29 CODE >54:/home/davepl/MPLABXProjects/singcig_c.X/buffers.h
+1446 text29 CODE >50:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+144E text29 CODE >53:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+1450 text29 CODE >54:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+E22 text28 CODE >190:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+E22 text28 CODE >192:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+E58 text28 CODE >194:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+E66 text28 CODE >196:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+E76 text28 CODE >197:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+E7A text28 CODE >200:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+E88 text28 CODE >203:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+E96 text28 CODE >205:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+E98 text28 CODE >206:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+E9E text28 CODE >208:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+E9E text28 CODE >210:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+EA0 text28 CODE >211:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+EA2 text28 CODE >213:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+1082 text27 CODE >33:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+1082 text27 CODE >35:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+1086 text27 CODE >36:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+1088 text27 CODE >37:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+109C text27 CODE >39:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+10B0 text27 CODE >40:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+10B6 text27 CODE >41:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+10B6 text27 CODE >42:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+10CE text27 CODE >46:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+10D0 text27 CODE >48:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+14A8 text26 CODE >92:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr1.c
+14A8 text26 CODE >95:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr1.c
+14AA text26 CODE >96:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr1.c
+14A4 text25 CODE >98:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr1.c
+14A4 text25 CODE >101:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr1.c
+14A6 text25 CODE >102:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr1.c
+12AA text24 CODE >120:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr1.c
+12AA text24 CODE >122:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr1.c
+12B8 text24 CODE >125:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr1.c
+12BA text24 CODE >128:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr1.c
+12BE text24 CODE >129:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr1.c
+12C4 text24 CODE >132:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr1.c
+12C6 text24 CODE >133:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr1.c
+12CA text24 CODE >137:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr1.c
+12CE text24 CODE >138:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr1.c
+12D4 text24 CODE >140:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr1.c
+11F4 text23 CODE >68:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+11F6 text23 CODE >54:/home/davepl/MPLABXProjects/singcig_c.X/buffers.h
+11FE text23 CODE >71:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+1204 text23 CODE >72:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+120E text23 CODE >73:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+121E text23 CODE >75:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+1220 text23 CODE >77:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+EA4 text22 CODE >81:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+EA4 text22 CODE >83:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+EA6 text22 CODE >84:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+EAA text22 CODE >85:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+EAE text22 CODE >86:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+EBA text22 CODE >87:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+EBE text22 CODE >88:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+EC4 text22 CODE >89:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+EC8 text22 CODE >91:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+ECA text22 CODE >89:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+ECA text22 CODE >92:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+EEA text22 CODE >93:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+EEC text22 CODE >94:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+EFC text22 CODE >96:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+F06 text22 CODE >97:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+F08 text22 CODE >98:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+F0C text22 CODE >101:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+F12 text22 CODE >102:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+F14 text22 CODE >105:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+132A text21 CODE >104:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr1.c
+132A text21 CODE >110:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr1.c
+132C text21 CODE >112:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr1.c
+1332 text21 CODE >113:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr1.c
+1338 text21 CODE >115:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr1.c
+1344 text21 CODE >117:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr1.c
+134C text21 CODE >118:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr1.c
+C8A text20 CODE >168:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+C8A text20 CODE >170:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+C8E text20 CODE >171:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+C92 text20 CODE >173:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+C94 text20 CODE >174:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+CA4 text20 CODE >176:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+CA6 text20 CODE >177:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+CAA text20 CODE >178:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+CB6 text20 CODE >179:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+CC6 text20 CODE >180:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+CCE text20 CODE >181:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+CDE text20 CODE >182:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+CEE text20 CODE >183:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+CF8 text20 CODE >184:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+D02 text20 CODE >185:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+D06 text20 CODE >171:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+D06 text20 CODE >187:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+D16 text20 CODE >188:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+1032 text19 CODE >116:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+1032 text19 CODE >118:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+1040 text19 CODE >120:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+1042 text19 CODE >121:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+1046 text19 CODE >122:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+1048 text19 CODE >124:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+1058 text19 CODE >126:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+107C text19 CODE >127:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+1080 text19 CODE >129:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+B12 text18 CODE >131:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+B12 text18 CODE >133:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+B1C text18 CODE >134:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+B26 text18 CODE >136:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+B2A text18 CODE >137:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+B2C text18 CODE >138:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+B2E text18 CODE >139:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+B3C text18 CODE >140:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+B52 text18 CODE >141:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+B56 text18 CODE >143:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+B5A text18 CODE >144:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+B76 text18 CODE >146:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+B78 text18 CODE >147:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+B7C text18 CODE >148:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+B7E text18 CODE >150:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+B92 text18 CODE >152:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+B94 text18 CODE >153:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+BA8 text18 CODE >154:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+BAA text18 CODE >155:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+BAC text18 CODE >141:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+BBA text18 CODE >158:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+BC8 text18 CODE >160:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+BD2 text18 CODE >163:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+BD4 text18 CODE >164:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+BEA text18 CODE >165:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+BEC text18 CODE >166:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+14B2 text17 CODE >192:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart1.c
+14B2 text17 CODE >193:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart1.c
+14B0 text16 CODE >188:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart1.c
+14AE text15 CODE >190:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart1.c
+BEE text14 CODE >145:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart1.c
+BEE text14 CODE >147:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart1.c
+BEE text14 CODE >149:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart1.c
+BFE text14 CODE >151:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart1.c
+C02 text14 CODE >153:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart1.c
+C12 text14 CODE >154:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart1.c
+C14 text14 CODE >155:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart1.c
+C2E text14 CODE >158:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart1.c
+C3E text14 CODE >159:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart1.c
+C40 text14 CODE >160:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart1.c
+C5A text14 CODE >163:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart1.c
+C6A text14 CODE >164:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart1.c
+C84 text14 CODE >167:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart1.c
+C88 text14 CODE >168:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart1.c
+145E text13 CODE >179:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart1.c
+1460 text13 CODE >181:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart1.c
+1466 text13 CODE >182:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart1.c
+127E text12 CODE >13:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+1280 text12 CODE >15:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+1284 text12 CODE >17:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+1296 text12 CODE >18:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+12A8 text12 CODE >19:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+14AC text11 CODE >325:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+14AC text11 CODE >335:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+1372 text10 CODE >170:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart1.c
+1374 text10 CODE >172:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart1.c
+1374 text10 CODE >174:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart1.c
+1384 text10 CODE >176:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart1.c
+138A text10 CODE >177:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart1.c
+1426 text9 CODE >338:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+1426 text9 CODE >340:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+1426 text9 CODE >343:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+1436 text9 CODE >344:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+1438 text8 CODE >443:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+143A text8 CODE >445:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+1440 text8 CODE >446:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+1444 text8 CODE >447:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+1414 text7 CODE >346:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+1414 text7 CODE >348:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+1414 text7 CODE >351:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+1424 text7 CODE >352:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+9D0 text6 CODE >239:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+9D2 text6 CODE >242:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+9D2 text6 CODE >249:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+9D8 text6 CODE >254:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+9DE text6 CODE >255:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+9E2 text6 CODE >259:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+9E6 text6 CODE >260:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+9F6 text6 CODE >262:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+9FA text6 CODE >263:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+9FE text6 CODE >265:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+A10 text6 CODE >268:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+A22 text6 CODE >269:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+A24 text6 CODE >270:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+A26 text6 CODE >263:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+A36 text6 CODE >273:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+A3C text6 CODE >280:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+A42 text6 CODE >281:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+A46 text6 CODE >282:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+A4E text6 CODE >283:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+A50 text6 CODE >284:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+A54 text6 CODE >286:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+A58 text6 CODE >289:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+A5C text6 CODE >290:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+A5E text6 CODE >293:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+A62 text6 CODE >297:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+A74 text6 CODE >298:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+A78 text6 CODE >300:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+A84 text6 CODE >301:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+A88 text6 CODE >302:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+A8A text6 CODE >293:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+AA8 text6 CODE >286:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+AA8 text6 CODE >306:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+AC6 text6 CODE >308:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+AC8 text6 CODE >310:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+AD2 text6 CODE >312:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+AFC text6 CODE >314:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+B00 text6 CODE >315:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+B04 text6 CODE >316:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+B0A text6 CODE >320:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+B0E text6 CODE >322:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+B10 text6 CODE >323:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+1300 text5 CODE >137:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+1300 text5 CODE >140:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+1306 text5 CODE >142:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+130A text5 CODE >144:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+130E text5 CODE >145:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+1312 text5 CODE >147:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+1316 text5 CODE >149:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+131A text5 CODE >150:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+1326 text5 CODE >151:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+1328 text5 CODE >152:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+FDA text4 CODE >36:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+FDA text4 CODE >41:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+FDC text4 CODE >42:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+FE0 text4 CODE >44:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+FEA text4 CODE >42:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+FF8 text4 CODE >46:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+FFA text4 CODE >47:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+1006 text4 CODE >48:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+1026 text4 CODE >51:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+1030 text4 CODE >55:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+1402 text3 CODE >153:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+1402 text3 CODE >155:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+1408 text3 CODE >156:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+1412 text3 CODE >157:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+1118 text2 CODE >21:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+1118 text2 CODE >23:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+112E text2 CODE >25:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+1132 text2 CODE >26:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+1136 text2 CODE >27:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+1138 text2 CODE >28:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+113A text2 CODE >29:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+113E text2 CODE >30:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+1142 text2 CODE >31:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+1146 text2 CODE >32:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+1150 text2 CODE >34:/home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+D18 text1 CODE >9:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+D18 text1 CODE >11:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+D1A text1 CODE >12:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+D1C text1 CODE >13:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+D1E text1 CODE >14:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+D26 text1 CODE >60:/home/davepl/MPLABXProjects/singcig_c.X/buffers.h
+D4E text1 CODE >56:/home/davepl/MPLABXProjects/singcig_c.X/buffers.h
+D56 text1 CODE >54:/home/davepl/MPLABXProjects/singcig_c.X/buffers.h
+D5E text1 CODE >19:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+D64 text1 CODE >20:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+D7A text1 CODE >21:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+D90 text1 CODE >23:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+D92 text1 CODE >24:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+D94 text1 CODE >25:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+D98 text1 CODE >28:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+D9A text1 CODE >29:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+D9C text1 CODE >31:/home/davepl/MPLABXProjects/singcig_c.X/vend.c
+834 text0 CODE >55:/home/davepl/MPLABXProjects/singcig_c.X/main.c
+834 text0 CODE >59:/home/davepl/MPLABXProjects/singcig_c.X/main.c
+884 text0 CODE >61:/home/davepl/MPLABXProjects/singcig_c.X/main.c
+88E text0 CODE >62:/home/davepl/MPLABXProjects/singcig_c.X/main.c
+898 text0 CODE >64:/home/davepl/MPLABXProjects/singcig_c.X/main.c
+89C text0 CODE >65:/home/davepl/MPLABXProjects/singcig_c.X/main.c
+89E text0 CODE >66:/home/davepl/MPLABXProjects/singcig_c.X/main.c
+8A2 text0 CODE >67:/home/davepl/MPLABXProjects/singcig_c.X/main.c
+8A4 text0 CODE >68:/home/davepl/MPLABXProjects/singcig_c.X/main.c
+8A8 text0 CODE >69:/home/davepl/MPLABXProjects/singcig_c.X/main.c
+8AA text0 CODE >70:/home/davepl/MPLABXProjects/singcig_c.X/main.c
+8AC text0 CODE >84:/home/davepl/MPLABXProjects/singcig_c.X/main.c
+8BA text0 CODE >86:/home/davepl/MPLABXProjects/singcig_c.X/main.c
+8C2 text0 CODE >91:/home/davepl/MPLABXProjects/singcig_c.X/main.c
+8C4 text0 CODE >92:/home/davepl/MPLABXProjects/singcig_c.X/main.c
+8C6 text0 CODE >93:/home/davepl/MPLABXProjects/singcig_c.X/main.c
+8DE text0 CODE >94:/home/davepl/MPLABXProjects/singcig_c.X/main.c
+8E0 text0 CODE >95:/home/davepl/MPLABXProjects/singcig_c.X/main.c
+8E2 text0 CODE >96:/home/davepl/MPLABXProjects/singcig_c.X/main.c
+8FA text0 CODE >89:/home/davepl/MPLABXProjects/singcig_c.X/main.c
+90E text0 CODE >99:/home/davepl/MPLABXProjects/singcig_c.X/main.c
+91C text0 CODE >101:/home/davepl/MPLABXProjects/singcig_c.X/main.c
+922 text0 CODE >105:/home/davepl/MPLABXProjects/singcig_c.X/main.c
+924 text0 CODE >106:/home/davepl/MPLABXProjects/singcig_c.X/main.c
+924 text0 CODE >108:/home/davepl/MPLABXProjects/singcig_c.X/main.c
+932 text0 CODE >110:/home/davepl/MPLABXProjects/singcig_c.X/main.c
+936 text0 CODE >113:/home/davepl/MPLABXProjects/singcig_c.X/main.c
+944 text0 CODE >115:/home/davepl/MPLABXProjects/singcig_c.X/main.c
+948 text0 CODE >116:/home/davepl/MPLABXProjects/singcig_c.X/main.c
+948 text0 CODE >118:/home/davepl/MPLABXProjects/singcig_c.X/main.c
+960 text0 CODE >120:/home/davepl/MPLABXProjects/singcig_c.X/main.c
+962 text0 CODE >121:/home/davepl/MPLABXProjects/singcig_c.X/main.c
+966 text0 CODE >122:/home/davepl/MPLABXProjects/singcig_c.X/main.c
+966 text0 CODE >124:/home/davepl/MPLABXProjects/singcig_c.X/main.c
+968 text0 CODE >125:/home/davepl/MPLABXProjects/singcig_c.X/main.c
+968 text0 CODE >127:/home/davepl/MPLABXProjects/singcig_c.X/main.c
+978 text0 CODE >129:/home/davepl/MPLABXProjects/singcig_c.X/main.c
+97A text0 CODE >130:/home/davepl/MPLABXProjects/singcig_c.X/main.c
+97A text0 CODE >132:/home/davepl/MPLABXProjects/singcig_c.X/main.c
+996 text0 CODE >134:/home/davepl/MPLABXProjects/singcig_c.X/main.c
+9A4 text0 CODE >136:/home/davepl/MPLABXProjects/singcig_c.X/main.c
+9A6 text0 CODE >137:/home/davepl/MPLABXProjects/singcig_c.X/main.c
+9A8 text0 CODE >138:/home/davepl/MPLABXProjects/singcig_c.X/main.c
+9A8 text0 CODE >139:/home/davepl/MPLABXProjects/singcig_c.X/main.c
+9C4 text0 CODE >141:/home/davepl/MPLABXProjects/singcig_c.X/main.c
+12D6 cinit CODE >22212:/tmp/xcXKKeMJC.s
+12D6 cinit CODE >22214:/tmp/xcXKKeMJC.s
+12D6 cinit CODE >22217:/tmp/xcXKKeMJC.s
+12D6 cinit CODE >22322:/tmp/xcXKKeMJC.s
+12D8 cinit CODE >22323:/tmp/xcXKKeMJC.s
+12DA cinit CODE >22324:/tmp/xcXKKeMJC.s
+12DC cinit CODE >22325:/tmp/xcXKKeMJC.s
+12DE cinit CODE >22326:/tmp/xcXKKeMJC.s
+12E0 cinit CODE >22327:/tmp/xcXKKeMJC.s
+12E2 cinit CODE >22328:/tmp/xcXKKeMJC.s
+12E4 cinit CODE >22329:/tmp/xcXKKeMJC.s
+12EA cinit CODE >22333:/tmp/xcXKKeMJC.s
+12EE cinit CODE >22334:/tmp/xcXKKeMJC.s
+12F0 cinit CODE >22335:/tmp/xcXKKeMJC.s
+12F0 cinit CODE >22336:/tmp/xcXKKeMJC.s
+12F2 cinit CODE >22337:/tmp/xcXKKeMJC.s
+12F4 cinit CODE >22338:/tmp/xcXKKeMJC.s
+12F6 cinit CODE >22344:/tmp/xcXKKeMJC.s
+12F6 cinit CODE >22347:/tmp/xcXKKeMJC.s
+12F8 cinit CODE >22348:/tmp/xcXKKeMJC.s
+12FA cinit CODE >22349:/tmp/xcXKKeMJC.s
+12FC cinit CODE >22350:/tmp/xcXKKeMJC.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -423,24 +668,33 @@ F50 cinit CODE >14734:/tmp/xcXeBLhad.s
 # was defined in a psect then <psect> will be "-". File-name
 # is the name of the object file in which the symbol was defined.
 %SYMTAB
-__end_of_secondadd 809 0 SMALLCONST 0 smallconst dist/default/debug/singcig_c.X.debug.o
+_SPI1SCKPPS 3ADE 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+_SPI1SDIPPS 3ADF 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+__end_of_secondadd 818 0 SMALLCONST 0 smallconst dist/default/debug/singcig_c.X.debug.o
 __Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/debug/singcig_c.X.debug.o
 __Hspace_0 8000 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
-__Hspace_1 20 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+__Hspace_1 5B 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
 __Hspace_2 0 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
 __Hspace_4 60000A 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
 _CM1CON0 3EBC 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
 _CM1CON1 3EBD 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
-_timeout 1E 0 COMRAM 1 bssCOMRAM dist/default/debug/singcig_c.X.debug.o
+__end_of_note_stacker 82A 0 SMALLCONST 0 smallconst dist/default/debug/singcig_c.X.debug.o
+_timeout 47 0 COMRAM 1 bssCOMRAM dist/default/debug/singcig_c.X.debug.o
+UART1_SetAddresstoTransmit@txAddress 49 0 COMRAM 1 cstackCOMRAM dist/default/debug/singcig_c.X.debug.o
 __Hibigdata 0 0 CODE 0 ibigdata dist/default/debug/singcig_c.X.debug.o
-__mediumconst 0 0 MEDIUMCONST 0 mediumconst /tmp/xcXapPFGP.o
+_mdb_security 1402 0 CODE 0 text3 dist/default/debug/singcig_c.X.debug.o
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst /tmp/xcXCNJhac.o
 __Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/debug/singcig_c.X.debug.o
+__end_of_UART1_SetFramingErrorHandler 149A 0 CODE 0 text40 dist/default/debug/singcig_c.X.debug.o
+_note_features 828 0 SMALLCONST 0 smallconst dist/default/debug/singcig_c.X.debug.o
 _TBLPTRH 3FF7 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
 _TBLPTRL 3FF6 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
 _TBLPTRU 3FF8 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+__end_of_UART1_SetOverrunErrorHandler 1490 0 CODE 0 text39 dist/default/debug/singcig_c.X.debug.o
 _T1CONbits 3FB2 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
-_PMD_Initialize EF4 0 CODE 0 text21 dist/default/debug/singcig_c.X.debug.o
-_Set_Timeout A78 0 CODE 0 text4 dist/default/debug/singcig_c.X.debug.o
+_PMD_Initialize 134E 0 CODE 0 text46 dist/default/debug/singcig_c.X.debug.o
+UART1_SetOverrunErrorHandler@interruptHandler 49 0 COMRAM 1 cstackCOMRAM dist/default/debug/singcig_c.X.debug.o
+_Set_Timeout C8A 0 CODE 0 text20 dist/default/debug/singcig_c.X.debug.o
 __Lsmallconst 800 0 SMALLCONST 0 smallconst dist/default/debug/singcig_c.X.debug.o
 _LATA 3FBA 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
 _LATB 3FBB 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
@@ -457,80 +711,161 @@ _WPUA 3A41 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
 _WPUB 3A51 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
 _WPUC 3A61 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
 _WPUE 3A81 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
-___sp 0 0 STACK 2 stack /tmp/xcXapPFGP.o
-_cash 1C 0 COMRAM 1 bssCOMRAM dist/default/debug/singcig_c.X.debug.o
-_main 810 0 CODE 0 text0 dist/default/debug/singcig_c.X.debug.o
-_secondadd 807 0 SMALLCONST 0 smallconst dist/default/debug/singcig_c.X.debug.o
-start 7FFC 0 CODE 0 init /tmp/xcXapPFGP.o
-TMR1_ReadTimer@readValHigh 7 0 COMRAM 1 cstackCOMRAM dist/default/debug/singcig_c.X.debug.o
+___sp 0 0 STACK 2 stack /tmp/xcXCNJhac.o
+_cash 43 0 COMRAM 1 bssCOMRAM dist/default/debug/singcig_c.X.debug.o
+_main 834 0 CODE 0 text0 dist/default/debug/singcig_c.X.debug.o
+_secondadd 816 0 SMALLCONST 0 smallconst dist/default/debug/singcig_c.X.debug.o
+start 7FFC 0 CODE 0 init /tmp/xcXCNJhac.o
+TMR1_ReadTimer@readValHigh 4F 0 COMRAM 1 cstackCOMRAM dist/default/debug/singcig_c.X.debug.o
 __HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/debug/singcig_c.X.debug.o
+__end_of_SPI1_Initialize 13C0 0 CODE 0 text45 dist/default/debug/singcig_c.X.debug.o
+_UART2_FramingErrorHandler 2A 0 COMRAM 1 bssCOMRAM dist/default/debug/singcig_c.X.debug.o
+_UART2_OverrunErrorHandler 28 0 COMRAM 1 bssCOMRAM dist/default/debug/singcig_c.X.debug.o
+_note_escrow 82A 0 SMALLCONST 0 smallconst dist/default/debug/singcig_c.X.debug.o
+_init_mdbdata 127E 0 CODE 0 text12 dist/default/debug/singcig_c.X.debug.o
 _DAC1CON0 3E9E 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
 _DAC1CON1 3E9C 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+__end_of_invalid_escrow 81F 0 SMALLCONST 0 smallconst dist/default/debug/singcig_c.X.debug.o
+__end_of_theft_attempt 81D 0 SMALLCONST 0 smallconst dist/default/debug/singcig_c.X.debug.o
+__end_of_acept_disabled 820 0 SMALLCONST 0 smallconst dist/default/debug/singcig_c.X.debug.o
 __Hpowerup 0 0 CODE 0 powerup dist/default/debug/singcig_c.X.debug.o
-_dispense C0E 0 CODE 0 text6 dist/default/debug/singcig_c.X.debug.o
-_credit_add E76 0 CODE 0 text14 dist/default/debug/singcig_c.X.debug.o
-__end_of_credit_subtract E76 0 CODE 0 text7 dist/default/debug/singcig_c.X.debug.o
-Set_Timeout@readValHigh A 0 COMRAM 1 cstackCOMRAM dist/default/debug/singcig_c.X.debug.o
-__end_of_credit_check FA6 0 CODE 0 text13 dist/default/debug/singcig_c.X.debug.o
-__accesstop 60 0 ABS 0 - /tmp/xcXapPFGP.o
-intlevel0 0 0 CODE 0 text /tmp/xcXapPFGP.o
-intlevel1 0 0 CODE 0 text /tmp/xcXapPFGP.o
-intlevel2 0 0 CODE 0 text /tmp/xcXapPFGP.o
-intlevel3 0 0 CODE 0 text /tmp/xcXapPFGP.o
+__end_of_spi1_configuration 806 0 SMALLCONST 0 smallconst dist/default/debug/singcig_c.X.debug.o
+__end_of_note_reset 830 0 SMALLCONST 0 smallconst dist/default/debug/singcig_c.X.debug.o
+__end_of_note_setup 82F 0 SMALLCONST 0 smallconst dist/default/debug/singcig_c.X.debug.o
+_UART1_ErrorHandler 2C 0 COMRAM 1 bssCOMRAM dist/default/debug/singcig_c.X.debug.o
+_dispense EA4 0 CODE 0 text22 dist/default/debug/singcig_c.X.debug.o
+_credit_add 1222 0 CODE 0 text30 dist/default/debug/singcig_c.X.debug.o
+__end_of_credit_subtract 1222 0 CODE 0 text23 dist/default/debug/singcig_c.X.debug.o
+Set_Timeout@readValHigh 52 0 COMRAM 1 cstackCOMRAM dist/default/debug/singcig_c.X.debug.o
+UART2_SetOverrunErrorHandler@interruptHandler 49 0 COMRAM 1 cstackCOMRAM dist/default/debug/singcig_c.X.debug.o
+_UART2_DefaultErrorHandler 0 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+__HdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/debug/singcig_c.X.debug.o
+__end_of_credit_check 1452 0 CODE 0 text29 dist/default/debug/singcig_c.X.debug.o
+__accesstop 60 0 ABS 0 - /tmp/xcXCNJhac.o
+intlevel0 0 0 CODE 0 text /tmp/xcXCNJhac.o
+intlevel1 0 0 CODE 0 text /tmp/xcXCNJhac.o
+intlevel2 0 0 CODE 0 text /tmp/xcXCNJhac.o
+intlevel3 0 0 CODE 0 text /tmp/xcXCNJhac.o
 __LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/debug/singcig_c.X.debug.o
-__end_of_dispense C80 0 CODE 0 text6 dist/default/debug/singcig_c.X.debug.o
+__end_of_dispense F16 0 CODE 0 text22 dist/default/debug/singcig_c.X.debug.o
 __LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/debug/singcig_c.X.debug.o
+_dbcount 22 0 COMRAM 1 bssCOMRAM dist/default/debug/singcig_c.X.debug.o
+_notebyte 3E 0 COMRAM 1 bssCOMRAM dist/default/debug/singcig_c.X.debug.o
+_mdbtxbyte 38 0 COMRAM 1 bssCOMRAM dist/default/debug/singcig_c.X.debug.o
 __Hifardata 0 0 CODE 0 ifardata dist/default/debug/singcig_c.X.debug.o
-__end_of_PMD_Initialize F18 0 CODE 0 text21 dist/default/debug/singcig_c.X.debug.o
+__end_of_PMD_Initialize 1372 0 CODE 0 text46 dist/default/debug/singcig_c.X.debug.o
 __Hclrtext 0 0 ABS 0 clrtext dist/default/debug/singcig_c.X.debug.o
-__end_of_DAC1_Initialize FB2 0 CODE 0 text24 dist/default/debug/singcig_c.X.debug.o
-TMR1_ReadTimer@readValLow 8 0 COMRAM 1 cstackCOMRAM dist/default/debug/singcig_c.X.debug.o
-__end_of_TMR3_Initialize E12 0 CODE 0 text19 dist/default/debug/singcig_c.X.debug.o
+_sens_error 826 0 SMALLCONST 0 smallconst dist/default/debug/singcig_c.X.debug.o
+__end_of_DAC1_Initialize 145E 0 CODE 0 text49 dist/default/debug/singcig_c.X.debug.o
+__pidataCOMRAM 14B4 0 CODE 0 idataCOMRAM dist/default/debug/singcig_c.X.debug.o
+__end_of_notebits 80A 0 SMALLCONST 0 smallconst dist/default/debug/singcig_c.X.debug.o
+_U1ERRIE 3DFA 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+_U1ERRIR 3DF9 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+TMR1_ReadTimer@readValLow 50 0 COMRAM 1 cstackCOMRAM dist/default/debug/singcig_c.X.debug.o
+_U1RXPPS 3AE5 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+_SPI1CON0bits 3D14 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+__end_of_mdb_security 1414 0 CODE 0 text3 dist/default/debug/singcig_c.X.debug.o
+_note_rejected 81D 0 SMALLCONST 0 smallconst dist/default/debug/singcig_c.X.debug.o
+_SPI1_Initialize 13A6 0 CODE 0 text45 dist/default/debug/singcig_c.X.debug.o
+__end_of_TMR3_Initialize 11BE 0 CODE 0 text43 dist/default/debug/singcig_c.X.debug.o
+_U2ERRIE 3DE2 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+_U2ERRIR 3DE1 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+_spi1_configuration 801 0 SMALLCONST 0 smallconst dist/default/debug/singcig_c.X.debug.o
+_U2RXPPS 3AE8 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
 _ANSELA 3A40 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
 _ANSELB 3A50 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
 _ANSELC 3A60 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
-DATAEE_WriteByte@GIEBitValue 3 0 COMRAM 1 cstackCOMRAM dist/default/debug/singcig_c.X.debug.o
-___inthi_sp 0 0 STACK 2 stack /tmp/xcXapPFGP.o
-___intlo_sp 0 0 STACK 2 stack /tmp/xcXapPFGP.o
+DATAEE_WriteByte@GIEBitValue 4B 0 COMRAM 1 cstackCOMRAM dist/default/debug/singcig_c.X.debug.o
+___inthi_sp 0 0 STACK 2 stack /tmp/xcXCNJhac.o
+___intlo_sp 0 0 STACK 2 stack /tmp/xcXCNJhac.o
+__LdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/debug/singcig_c.X.debug.o
 _CM1NCH 3EBE 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
 _CM1PCH 3EBF 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
-Set_Timeout@readValLow 9 0 COMRAM 1 cstackCOMRAM dist/default/debug/singcig_c.X.debug.o
+Set_Timeout@readValLow 51 0 COMRAM 1 cstackCOMRAM dist/default/debug/singcig_c.X.debug.o
 __Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/debug/singcig_c.X.debug.o
-_credit_subtract E48 0 CODE 0 text7 dist/default/debug/singcig_c.X.debug.o
+_credit_subtract 11F4 0 CODE 0 text23 dist/default/debug/singcig_c.X.debug.o
+_CMP1_GetOutputStatus 13D8 0 CODE 0 text51 dist/default/debug/singcig_c.X.debug.o
 _CM1CON0bits 3EBC 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
 __Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/debug/singcig_c.X.debug.o
-__end_of_credit_add EA4 0 CODE 0 text14 dist/default/debug/singcig_c.X.debug.o
-__end_of_mototime 80F 0 SMALLCONST 0 smallconst dist/default/debug/singcig_c.X.debug.o
-__end_of_DATAEE_ReadByte F6E 0 CODE 0 text16 dist/default/debug/singcig_c.X.debug.o
+__end_of_credit_add 1250 0 CODE 0 text30 dist/default/debug/singcig_c.X.debug.o
+__end_of_init_mdbdata 12AA 0 CODE 0 text12 dist/default/debug/singcig_c.X.debug.o
+_UART1_SetAddresstoTransmit 145E 0 CODE 0 text13 dist/default/debug/singcig_c.X.debug.o
+__end_of_mototime 832 0 SMALLCONST 0 smallconst dist/default/debug/singcig_c.X.debug.o
+__end_of_DATAEE_ReadByte 13A6 0 CODE 0 text32 dist/default/debug/singcig_c.X.debug.o
 _T5GCONbits 3F9B 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
-__end_of_switch_read C0E 0 CODE 0 text12 dist/default/debug/singcig_c.X.debug.o
-_DAC1_Initialize FA6 0 CODE 0 text24 dist/default/debug/singcig_c.X.debug.o
-credit_subtract@credit 4 0 COMRAM 1 cstackCOMRAM dist/default/debug/singcig_c.X.debug.o
+_INLVLA 3A44 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+_INLVLB 3A54 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+_INLVLC 3A64 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+_INLVLE 3A84 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+__end_of_switch_read EA4 0 CODE 0 text28 dist/default/debug/singcig_c.X.debug.o
+_UART1_Write 1372 0 CODE 0 text10 dist/default/debug/singcig_c.X.debug.o
+_notenum 5A 0 COMRAM 1 dataCOMRAM dist/default/debug/singcig_c.X.debug.o
+_DAC1_Initialize 1452 0 CODE 0 text49 dist/default/debug/singcig_c.X.debug.o
+__LidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/debug/singcig_c.X.debug.o
+credit_subtract@credit 4C 0 COMRAM 1 cstackCOMRAM dist/default/debug/singcig_c.X.debug.o
 _INTCON0bits 3FD2 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
-_TMR3_Initialize DDC 0 CODE 0 text19 dist/default/debug/singcig_c.X.debug.o
-_PIN_MANAGER_Initialize D66 0 CODE 0 text22 dist/default/debug/singcig_c.X.debug.o
+__end_of_sens_error 827 0 SMALLCONST 0 smallconst dist/default/debug/singcig_c.X.debug.o
+_TMR3_Initialize 1188 0 CODE 0 text43 dist/default/debug/singcig_c.X.debug.o
+UART1_SetFramingErrorHandler@interruptHandler 49 0 COMRAM 1 cstackCOMRAM dist/default/debug/singcig_c.X.debug.o
+_PIN_MANAGER_Initialize D9E 0 CODE 0 text47 dist/default/debug/singcig_c.X.debug.o
+__end_of_UART1_DefaultFramingErrorHandler 14B2 0 CODE 0 text16 dist/default/debug/singcig_c.X.debug.o
+__end_of_note_features 829 0 SMALLCONST 0 smallconst dist/default/debug/singcig_c.X.debug.o
+__end_of_UART1_DefaultOverrunErrorHandler 14B0 0 CODE 0 text15 dist/default/debug/singcig_c.X.debug.o
 _NVMDAT 39E3 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
-start_initialization F3A 0 CODE 0 cinit dist/default/debug/singcig_c.X.debug.o
+start_initialization 12D6 0 CODE 0 cinit dist/default/debug/singcig_c.X.debug.o
 _ODCONA 3A42 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
 _ODCONB 3A52 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
 _ODCONC 3A62 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
-__end_of_second1 80D 0 SMALLCONST 0 smallconst dist/default/debug/singcig_c.X.debug.o
+__end_of_second1 81C 0 SMALLCONST 0 smallconst dist/default/debug/singcig_c.X.debug.o
 _OSCFRQ 39DF 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+mdb_reset@i_2155 4F 0 COMRAM 1 cstackCOMRAM dist/default/debug/singcig_c.X.debug.o
+__end_of_sensval 808 0 SMALLCONST 0 smallconst dist/default/debug/singcig_c.X.debug.o
 __HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/debug/singcig_c.X.debug.o
+_UART1_Initialize F16 0 CODE 0 text38 dist/default/debug/singcig_c.X.debug.o
+__end_of_note_security 82E 0 SMALLCONST 0 smallconst dist/default/debug/singcig_c.X.debug.o
+_TRISBbits 3FC3 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+_UART2_ErrorHandler 26 0 COMRAM 1 bssCOMRAM dist/default/debug/singcig_c.X.debug.o
 ___rparam_used 1 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
-__end_of_CMP1_Initialize F9A 0 CODE 0 text25 dist/default/debug/singcig_c.X.debug.o
-_DATAEE_WriteByte D20 0 CODE 0 text15 dist/default/debug/singcig_c.X.debug.o
-__end_of_SYSTEM_Initialize F3A 0 CODE 0 text17 dist/default/debug/singcig_c.X.debug.o
+__end_of_CMP1_Initialize 1402 0 CODE 0 text50 dist/default/debug/singcig_c.X.debug.o
+_RB1I2C 3A5A 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+_RB1PPS 3A09 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+_RB2I2C 3A5B 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+_RB4PPS 3A0C 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+_RB5PPS 3A0D 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+_RC1PPS 3A11 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+_RC3I2C 3A6A 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+_RC4I2C 3A6B 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+_DATAEE_WriteByte 10D2 0 CODE 0 text31 dist/default/debug/singcig_c.X.debug.o
+__end_of_mdb_on 14AE 0 CODE 0 text11 dist/default/debug/singcig_c.X.debug.o
+__end_of_SYSTEM_Initialize 127E 0 CODE 0 text33 dist/default/debug/singcig_c.X.debug.o
 _T3GCONbits 3FA7 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+_U1CON0bits 3DF2 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
 _T1GATE 3FB4 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
 _T1GCON 3FB3 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
 _T3GATE 3FA8 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
 _T3GCON 3FA7 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
 _T5GATE 3F9C 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
 _T5GCON 3F9B 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+_UART2_DefaultFramingErrorHandler 0 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+__end_of_just_reset 823 0 SMALLCONST 0 smallconst dist/default/debug/singcig_c.X.debug.o
+_UART2_DefaultOverrunErrorHandler 0 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
 _TABLAT 3FF5 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
-_DATAEE_ReadByte F54 0 CODE 0 text16 dist/default/debug/singcig_c.X.debug.o
-isa$xinst 0 0 ABS 0 - /tmp/xcXapPFGP.o
+_U1BRGH 3DF6 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+_U1BRGL 3DF5 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+_U1CON0 3DF2 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+_U1CON1 3DF3 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+_U1CON2 3DF4 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+_U1FIFO 3DF7 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+_U2BRGH 3DDE 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+_U2BRGL 3DDD 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+_U2CON0 3DDA 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+_U2CON1 3DDB 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+_U2CON2 3DDC 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+_U2FIFO 3DDF 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+mdb_comm@i 4D 0 COMRAM 1 cstackCOMRAM dist/default/debug/singcig_c.X.debug.o
+_DATAEE_ReadByte 138C 0 CODE 0 text32 dist/default/debug/singcig_c.X.debug.o
+isa$xinst 0 0 ABS 0 - /tmp/xcXCNJhac.o
+UART2_SetFramingErrorHandler@interruptHandler 49 0 COMRAM 1 cstackCOMRAM dist/default/debug/singcig_c.X.debug.o
 __Hbank0 0 0 ABS 0 bank0 dist/default/debug/singcig_c.X.debug.o
 __Hbank1 0 0 ABS 0 bank1 dist/default/debug/singcig_c.X.debug.o
 __Hbank2 0 0 ABS 0 bank2 dist/default/debug/singcig_c.X.debug.o
@@ -562,11 +897,14 @@ _NVMCON2 39E6 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
 __Hbigbss 0 0 BIGRAM 1 bigbss dist/default/debug/singcig_c.X.debug.o
 __Hbigram 0 0 ABS 0 bigram dist/default/debug/singcig_c.X.debug.o
 __Hbigsfr 0 0 ABS 0 bigsfr dist/default/debug/singcig_c.X.debug.o
-__smallconst 800 0 SMALLCONST 0 smallconst /tmp/xcXapPFGP.o
+__smallconst 800 0 SMALLCONST 0 smallconst /tmp/xcXCNJhac.o
 _PCON1bits 3FF1 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
 __Hcomram 0 0 ABS 0 comram dist/default/debug/singcig_c.X.debug.o
 __Hconfig 30000A 0 CONFIG 4 config dist/default/debug/singcig_c.X.debug.o
-TMR1_ReadTimer@readVal 5 0 COMRAM 1 cstackCOMRAM dist/default/debug/singcig_c.X.debug.o
+__end_of_UART1_DefaultErrorHandler 14B4 0 CODE 0 text17 dist/default/debug/singcig_c.X.debug.o
+_note_removed 821 0 SMALLCONST 0 smallconst dist/default/debug/singcig_c.X.debug.o
+_cashbox_err 820 0 SMALLCONST 0 smallconst dist/default/debug/singcig_c.X.debug.o
+TMR1_ReadTimer@readVal 4D 0 COMRAM 1 cstackCOMRAM dist/default/debug/singcig_c.X.debug.o
 __Lbank0 0 0 ABS 0 bank0 dist/default/debug/singcig_c.X.debug.o
 __Lbank1 0 0 ABS 0 bank1 dist/default/debug/singcig_c.X.debug.o
 __Lbank2 0 0 ABS 0 bank2 dist/default/debug/singcig_c.X.debug.o
@@ -580,7 +918,7 @@ __Lconst 0 0 CONST 0 const dist/default/debug/singcig_c.X.debug.o
 _T1GCONbits 3FB3 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
 __Lidata 0 0 CODE 0 idata dist/default/debug/singcig_c.X.debug.o
 __Lidloc 0 0 IDLOC 5 idloc dist/default/debug/singcig_c.X.debug.o
-__end_of_Set_Timeout B06 0 CODE 0 text4 dist/default/debug/singcig_c.X.debug.o
+__end_of_Set_Timeout D18 0 CODE 0 text20 dist/default/debug/singcig_c.X.debug.o
 __Lnvbit 0 0 COMRAM 1 nvbit dist/default/debug/singcig_c.X.debug.o
 __Lparam 0 0 COMRAM 1 rparam dist/default/debug/singcig_c.X.debug.o
 __Lrdata 0 0 COMRAM 1 rdata dist/default/debug/singcig_c.X.debug.o
@@ -595,10 +933,11 @@ __Ltext6 0 0 ABS 0 text6 dist/default/debug/singcig_c.X.debug.o
 __Ltext7 0 0 ABS 0 text7 dist/default/debug/singcig_c.X.debug.o
 __Ltext8 0 0 ABS 0 text8 dist/default/debug/singcig_c.X.debug.o
 __Ltext9 0 0 ABS 0 text9 dist/default/debug/singcig_c.X.debug.o
-_TMR1_StopTimer FB2 0 CODE 0 text9 dist/default/debug/singcig_c.X.debug.o
+_TMR1_StopTimer 14A4 0 CODE 0 text25 dist/default/debug/singcig_c.X.debug.o
 __Hfarbss 0 0 FARRAM 0 farbss dist/default/debug/singcig_c.X.debug.o
-_PORTBbits 3FCB 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
-_CMP1_Initialize F86 0 CODE 0 text25 dist/default/debug/singcig_c.X.debug.o
+_PORTAbits 3FCA 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+_CMP1_Initialize 13EE 0 CODE 0 text50 dist/default/debug/singcig_c.X.debug.o
+__end_of_note_rejected 81E 0 SMALLCONST 0 smallconst dist/default/debug/singcig_c.X.debug.o
 __Habs1 0 0 ABS 0 abs1 dist/default/debug/singcig_c.X.debug.o
 __Hdata 0 0 ABS 0 data dist/default/debug/singcig_c.X.debug.o
 __Hheap 0 0 HEAP 7 heap dist/default/debug/singcig_c.X.debug.o
@@ -615,26 +954,47 @@ __Lrbit 0 0 COMRAM 1 rbit dist/default/debug/singcig_c.X.debug.o
 __Lrbss 0 0 COMRAM 1 rbss dist/default/debug/singcig_c.X.debug.o
 __Ltemp 0 0 COMRAM 1 temp dist/default/debug/singcig_c.X.debug.o
 __Ltext 0 0 ABS 0 text dist/default/debug/singcig_c.X.debug.o
-_venflags 12 0 COMRAM 1 bssCOMRAM dist/default/debug/singcig_c.X.debug.o
+_venflags 24 0 COMRAM 1 bssCOMRAM dist/default/debug/singcig_c.X.debug.o
+__end_of_note_escrow 82B 0 SMALLCONST 0 smallconst dist/default/debug/singcig_c.X.debug.o
+__end_of_cashint 80C 0 SMALLCONST 0 smallconst dist/default/debug/singcig_c.X.debug.o
+__end_of_cashinv 810 0 SMALLCONST 0 smallconst dist/default/debug/singcig_c.X.debug.o
 __HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/debug/singcig_c.X.debug.o
-vend_init@timeval 4 0 COMRAM 1 cstackCOMRAM dist/default/debug/singcig_c.X.debug.o
+__end_of_UART2_SetErrorHandler 1486 0 CODE 0 text37 dist/default/debug/singcig_c.X.debug.o
+vend_init@timeval 4C 0 COMRAM 1 cstackCOMRAM dist/default/debug/singcig_c.X.debug.o
 __Hirdata 0 0 CODE 0 irdata dist/default/debug/singcig_c.X.debug.o
 __S0 8000 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
-__S1 20 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+__S1 5B 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
 __S4 0 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
 __S5 0 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
-_enter_service 99C 0 CODE 0 text2 dist/default/debug/singcig_c.X.debug.o
-_credit 1D 0 COMRAM 1 bssCOMRAM dist/default/debug/singcig_c.X.debug.o
-__end_of_DATAEE_WriteByte D66 0 CODE 0 text15 dist/default/debug/singcig_c.X.debug.o
+_enter_service B12 0 CODE 0 text18 dist/default/debug/singcig_c.X.debug.o
+_uart1RxLastError 46 0 COMRAM 1 bssCOMRAM dist/default/debug/singcig_c.X.debug.o
+__end_of_UART1_Initialize F7E 0 CODE 0 text38 dist/default/debug/singcig_c.X.debug.o
+_SPI1BAUD 3D19 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+_SPI1CON0 3D14 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+_SPI1CON1 3D15 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+_SPI1CON2 3D16 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+_credit 44 0 COMRAM 1 bssCOMRAM dist/default/debug/singcig_c.X.debug.o
+_UART2_Initialize F7E 0 CODE 0 text34 dist/default/debug/singcig_c.X.debug.o
+init_mdbdata@initdata 49 0 COMRAM 1 cstackCOMRAM dist/default/debug/singcig_c.X.debug.o
+__end_of_DATAEE_WriteByte 1118 0 CODE 0 text31 dist/default/debug/singcig_c.X.debug.o
+__end_of_just_busy 826 0 SMALLCONST 0 smallconst dist/default/debug/singcig_c.X.debug.o
+mdb_transmit@txbyte 4A 0 COMRAM 1 cstackCOMRAM dist/default/debug/singcig_c.X.debug.o
+__HidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/debug/singcig_c.X.debug.o
 __Lbigdata 0 0 BIGRAM 1 bigdata dist/default/debug/singcig_c.X.debug.o
+_errorflags 39 0 COMRAM 1 bssCOMRAM dist/default/debug/singcig_c.X.debug.o
+_UART2_SetFramingErrorHandler 1472 0 CODE 0 text36 dist/default/debug/singcig_c.X.debug.o
 __Hnvrram 0 0 COMRAM 1 nvrram dist/default/debug/singcig_c.X.debug.o
-_SYSTEM_Initialize F18 0 CODE 0 text17 dist/default/debug/singcig_c.X.debug.o
+_UART2_SetOverrunErrorHandler 1468 0 CODE 0 text35 dist/default/debug/singcig_c.X.debug.o
+_UART2_SetErrorHandler 147C 0 CODE 0 text37 dist/default/debug/singcig_c.X.debug.o
+_SYSTEM_Initialize 1250 0 CODE 0 text33 dist/default/debug/singcig_c.X.debug.o
+_jammed_err 823 0 SMALLCONST 0 smallconst dist/default/debug/singcig_c.X.debug.o
 __Hramtop 800 0 RAM 0 ramtop dist/default/debug/singcig_c.X.debug.o
 __Hrparam 0 0 COMRAM 1 rparam dist/default/debug/singcig_c.X.debug.o
-__end_of_TMR1_StopTimer FB6 0 CODE 0 text9 dist/default/debug/singcig_c.X.debug.o
-__end_of_vend_init B8C 0 CODE 0 text1 dist/default/debug/singcig_c.X.debug.o
-__end_of_TMR5_Initialize DDC 0 CODE 0 text18 dist/default/debug/singcig_c.X.debug.o
-__activetblptr 1 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+__end_of_TMR1_StopTimer 14A8 0 CODE 0 text25 dist/default/debug/singcig_c.X.debug.o
+__end_of_vend_init D9E 0 CODE 0 text1 dist/default/debug/singcig_c.X.debug.o
+__end_of_TMR5_Initialize 1188 0 CODE 0 text42 dist/default/debug/singcig_c.X.debug.o
+__activetblptr 2 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+__end_of_vendstore 80E 0 SMALLCONST 0 smallconst dist/default/debug/singcig_c.X.debug.o
 __Hstruct 0 0 COMRAM 1 struct dist/default/debug/singcig_c.X.debug.o
 __Htext10 0 0 ABS 0 text10 dist/default/debug/singcig_c.X.debug.o
 __Htext11 0 0 ABS 0 text11 dist/default/debug/singcig_c.X.debug.o
@@ -652,79 +1012,166 @@ __Htext22 0 0 ABS 0 text22 dist/default/debug/singcig_c.X.debug.o
 __Htext23 0 0 ABS 0 text23 dist/default/debug/singcig_c.X.debug.o
 __Htext24 0 0 ABS 0 text24 dist/default/debug/singcig_c.X.debug.o
 __Htext25 0 0 ABS 0 text25 dist/default/debug/singcig_c.X.debug.o
-_button_flash C80 0 CODE 0 text3 dist/default/debug/singcig_c.X.debug.o
-__end_of_coin_in D20 0 CODE 0 text11 dist/default/debug/singcig_c.X.debug.o
-_second_5 809 0 SMALLCONST 0 smallconst dist/default/debug/singcig_c.X.debug.o
-__ptext10 FB6 0 CODE 0 text10 dist/default/debug/singcig_c.X.debug.o
-__ptext11 CD0 0 CODE 0 text11 dist/default/debug/singcig_c.X.debug.o
-__ptext12 B8C 0 CODE 0 text12 dist/default/debug/singcig_c.X.debug.o
-__ptext13 F9A 0 CODE 0 text13 dist/default/debug/singcig_c.X.debug.o
-__ptext14 E76 0 CODE 0 text14 dist/default/debug/singcig_c.X.debug.o
-__ptext15 D20 0 CODE 0 text15 dist/default/debug/singcig_c.X.debug.o
-__ptext16 F54 0 CODE 0 text16 dist/default/debug/singcig_c.X.debug.o
-__ptext17 F18 0 CODE 0 text17 dist/default/debug/singcig_c.X.debug.o
-__ptext18 DA6 0 CODE 0 text18 dist/default/debug/singcig_c.X.debug.o
-__ptext19 DDC 0 CODE 0 text19 dist/default/debug/singcig_c.X.debug.o
-__ptext20 E12 0 CODE 0 text20 dist/default/debug/singcig_c.X.debug.o
-__ptext21 EF4 0 CODE 0 text21 dist/default/debug/singcig_c.X.debug.o
-__ptext22 D66 0 CODE 0 text22 dist/default/debug/singcig_c.X.debug.o
-__ptext23 F6E 0 CODE 0 text23 dist/default/debug/singcig_c.X.debug.o
-__ptext24 FA6 0 CODE 0 text24 dist/default/debug/singcig_c.X.debug.o
-__ptext25 F86 0 CODE 0 text25 dist/default/debug/singcig_c.X.debug.o
-__end_of_PIN_MANAGER_Initialize DA6 0 CODE 0 text22 dist/default/debug/singcig_c.X.debug.o
+__Htext26 0 0 ABS 0 text26 dist/default/debug/singcig_c.X.debug.o
+__Htext27 0 0 ABS 0 text27 dist/default/debug/singcig_c.X.debug.o
+__Htext28 0 0 ABS 0 text28 dist/default/debug/singcig_c.X.debug.o
+__Htext29 0 0 ABS 0 text29 dist/default/debug/singcig_c.X.debug.o
+__Htext30 0 0 ABS 0 text30 dist/default/debug/singcig_c.X.debug.o
+__Htext31 0 0 ABS 0 text31 dist/default/debug/singcig_c.X.debug.o
+__Htext32 0 0 ABS 0 text32 dist/default/debug/singcig_c.X.debug.o
+__Htext33 0 0 ABS 0 text33 dist/default/debug/singcig_c.X.debug.o
+__Htext34 0 0 ABS 0 text34 dist/default/debug/singcig_c.X.debug.o
+__Htext35 0 0 ABS 0 text35 dist/default/debug/singcig_c.X.debug.o
+__Htext36 0 0 ABS 0 text36 dist/default/debug/singcig_c.X.debug.o
+__Htext37 0 0 ABS 0 text37 dist/default/debug/singcig_c.X.debug.o
+__Htext38 0 0 ABS 0 text38 dist/default/debug/singcig_c.X.debug.o
+__Htext39 0 0 ABS 0 text39 dist/default/debug/singcig_c.X.debug.o
+__Htext40 0 0 ABS 0 text40 dist/default/debug/singcig_c.X.debug.o
+__Htext41 0 0 ABS 0 text41 dist/default/debug/singcig_c.X.debug.o
+__Htext42 0 0 ABS 0 text42 dist/default/debug/singcig_c.X.debug.o
+__Htext43 0 0 ABS 0 text43 dist/default/debug/singcig_c.X.debug.o
+__Htext44 0 0 ABS 0 text44 dist/default/debug/singcig_c.X.debug.o
+__Htext45 0 0 ABS 0 text45 dist/default/debug/singcig_c.X.debug.o
+__Htext46 0 0 ABS 0 text46 dist/default/debug/singcig_c.X.debug.o
+__Htext47 0 0 ABS 0 text47 dist/default/debug/singcig_c.X.debug.o
+__Htext48 0 0 ABS 0 text48 dist/default/debug/singcig_c.X.debug.o
+__Htext49 0 0 ABS 0 text49 dist/default/debug/singcig_c.X.debug.o
+__Htext50 0 0 ABS 0 text50 dist/default/debug/singcig_c.X.debug.o
+__Htext51 0 0 ABS 0 text51 dist/default/debug/singcig_c.X.debug.o
+__Htext52 0 0 ABS 0 text52 dist/default/debug/singcig_c.X.debug.o
+_just_busy 825 0 SMALLCONST 0 smallconst dist/default/debug/singcig_c.X.debug.o
+__end_of_note_removed 822 0 SMALLCONST 0 smallconst dist/default/debug/singcig_c.X.debug.o
+_button_flash 1032 0 CODE 0 text19 dist/default/debug/singcig_c.X.debug.o
+mdb_comm@mcount 4B 0 COMRAM 1 cstackCOMRAM dist/default/debug/singcig_c.X.debug.o
+_mcount 3F 0 COMRAM 1 bssCOMRAM dist/default/debug/singcig_c.X.debug.o
+_mdb_on 14AC 0 CODE 0 text11 dist/default/debug/singcig_c.X.debug.o
+__end_of_coin_in 10D2 0 CODE 0 text27 dist/default/debug/singcig_c.X.debug.o
+_second_5 818 0 SMALLCONST 0 smallconst dist/default/debug/singcig_c.X.debug.o
+__ptext10 1372 0 CODE 0 text10 dist/default/debug/singcig_c.X.debug.o
+__ptext11 14AC 0 CODE 0 text11 dist/default/debug/singcig_c.X.debug.o
+__ptext12 127E 0 CODE 0 text12 dist/default/debug/singcig_c.X.debug.o
+__ptext13 145E 0 CODE 0 text13 dist/default/debug/singcig_c.X.debug.o
+__ptext14 BEE 0 CODE 0 text14 dist/default/debug/singcig_c.X.debug.o
+__ptext15 14AE 0 CODE 0 text15 dist/default/debug/singcig_c.X.debug.o
+__ptext16 14B0 0 CODE 0 text16 dist/default/debug/singcig_c.X.debug.o
+__ptext17 14B2 0 CODE 0 text17 dist/default/debug/singcig_c.X.debug.o
+__ptext18 B12 0 CODE 0 text18 dist/default/debug/singcig_c.X.debug.o
+__ptext19 1032 0 CODE 0 text19 dist/default/debug/singcig_c.X.debug.o
+__ptext20 C8A 0 CODE 0 text20 dist/default/debug/singcig_c.X.debug.o
+__ptext21 132A 0 CODE 0 text21 dist/default/debug/singcig_c.X.debug.o
+__ptext22 EA4 0 CODE 0 text22 dist/default/debug/singcig_c.X.debug.o
+__ptext23 11F4 0 CODE 0 text23 dist/default/debug/singcig_c.X.debug.o
+__ptext24 12AA 0 CODE 0 text24 dist/default/debug/singcig_c.X.debug.o
+__ptext25 14A4 0 CODE 0 text25 dist/default/debug/singcig_c.X.debug.o
+__ptext26 14A8 0 CODE 0 text26 dist/default/debug/singcig_c.X.debug.o
+__ptext27 1082 0 CODE 0 text27 dist/default/debug/singcig_c.X.debug.o
+__ptext28 E22 0 CODE 0 text28 dist/default/debug/singcig_c.X.debug.o
+__ptext29 1446 0 CODE 0 text29 dist/default/debug/singcig_c.X.debug.o
+__ptext30 1222 0 CODE 0 text30 dist/default/debug/singcig_c.X.debug.o
+__ptext31 10D2 0 CODE 0 text31 dist/default/debug/singcig_c.X.debug.o
+__ptext32 138C 0 CODE 0 text32 dist/default/debug/singcig_c.X.debug.o
+__ptext33 1250 0 CODE 0 text33 dist/default/debug/singcig_c.X.debug.o
+__ptext34 F7E 0 CODE 0 text34 dist/default/debug/singcig_c.X.debug.o
+__ptext35 1468 0 CODE 0 text35 dist/default/debug/singcig_c.X.debug.o
+__ptext36 1472 0 CODE 0 text36 dist/default/debug/singcig_c.X.debug.o
+__ptext37 147C 0 CODE 0 text37 dist/default/debug/singcig_c.X.debug.o
+__ptext38 F16 0 CODE 0 text38 dist/default/debug/singcig_c.X.debug.o
+__ptext39 1486 0 CODE 0 text39 dist/default/debug/singcig_c.X.debug.o
+__ptext40 1490 0 CODE 0 text40 dist/default/debug/singcig_c.X.debug.o
+__ptext41 149A 0 CODE 0 text41 dist/default/debug/singcig_c.X.debug.o
+__ptext42 1152 0 CODE 0 text42 dist/default/debug/singcig_c.X.debug.o
+__ptext43 1188 0 CODE 0 text43 dist/default/debug/singcig_c.X.debug.o
+__ptext44 11BE 0 CODE 0 text44 dist/default/debug/singcig_c.X.debug.o
+__ptext45 13A6 0 CODE 0 text45 dist/default/debug/singcig_c.X.debug.o
+__ptext46 134E 0 CODE 0 text46 dist/default/debug/singcig_c.X.debug.o
+__ptext47 D9E 0 CODE 0 text47 dist/default/debug/singcig_c.X.debug.o
+__ptext48 13C0 0 CODE 0 text48 dist/default/debug/singcig_c.X.debug.o
+__ptext49 1452 0 CODE 0 text49 dist/default/debug/singcig_c.X.debug.o
+__ptext50 13EE 0 CODE 0 text50 dist/default/debug/singcig_c.X.debug.o
+__ptext51 13D8 0 CODE 0 text51 dist/default/debug/singcig_c.X.debug.o
+__ptext52 0 0 CODE 0 text52 dist/default/debug/singcig_c.X.debug.o
+_noteen 3B 0 COMRAM 1 bssCOMRAM dist/default/debug/singcig_c.X.debug.o
+__end_of_PIN_MANAGER_Initialize E22 0 CODE 0 text47 dist/default/debug/singcig_c.X.debug.o
 __Lbigbss 0 0 BIGRAM 1 bigbss dist/default/debug/singcig_c.X.debug.o
 __Lbigram 0 0 ABS 0 bigram dist/default/debug/singcig_c.X.debug.o
 __Lbigsfr 0 0 ABS 0 bigsfr dist/default/debug/singcig_c.X.debug.o
-_vend_init B06 0 CODE 0 text1 dist/default/debug/singcig_c.X.debug.o
-__end_of_credmem 807 0 SMALLCONST 0 smallconst dist/default/debug/singcig_c.X.debug.o
-_vendprice 1A 0 COMRAM 1 bssCOMRAM dist/default/debug/singcig_c.X.debug.o
+_vend_init D18 0 CODE 0 text1 dist/default/debug/singcig_c.X.debug.o
+UART1_SetErrorHandler@interruptHandler 49 0 COMRAM 1 cstackCOMRAM dist/default/debug/singcig_c.X.debug.o
+__end_of_credmem 816 0 SMALLCONST 0 smallconst dist/default/debug/singcig_c.X.debug.o
+_vendprice 41 0 COMRAM 1 bssCOMRAM dist/default/debug/singcig_c.X.debug.o
 __Lcomram 0 0 ABS 0 comram dist/default/debug/singcig_c.X.debug.o
 __Lconfig 0 0 CONFIG 4 config dist/default/debug/singcig_c.X.debug.o
-__end_of_second_5 80B 0 SMALLCONST 0 smallconst dist/default/debug/singcig_c.X.debug.o
+_vendstore 80C 0 SMALLCONST 0 smallconst dist/default/debug/singcig_c.X.debug.o
+__end_of_rom_error 825 0 SMALLCONST 0 smallconst dist/default/debug/singcig_c.X.debug.o
+__end_of_second_5 81A 0 SMALLCONST 0 smallconst dist/default/debug/singcig_c.X.debug.o
+_LATAbits 3FBA 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+_LATBbits 3FBB 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
 _LATCbits 3FBC 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+mdb_comm@slvadd 4C 0 COMRAM 1 cstackCOMRAM dist/default/debug/singcig_c.X.debug.o
 __Lfarbss 0 0 FARRAM 0 farbss dist/default/debug/singcig_c.X.debug.o
+_slvadd 40 0 COMRAM 1 bssCOMRAM dist/default/debug/singcig_c.X.debug.o
 __Lfardata 0 0 FARRAM 0 fardata dist/default/debug/singcig_c.X.debug.o
-isa$std 1 0 ABS 0 - /tmp/xcXapPFGP.o
-stackhi 0 0 ABS 0 - /tmp/xcXapPFGP.o
-stacklo 0 0 ABS 0 - /tmp/xcXapPFGP.o
-_second1 80B 0 SMALLCONST 0 smallconst dist/default/debug/singcig_c.X.debug.o
+isa$std 1 0 ABS 0 - /tmp/xcXCNJhac.o
+__end_of_jammed_err 824 0 SMALLCONST 0 smallconst dist/default/debug/singcig_c.X.debug.o
+__end_of_UART1_Write 138C 0 CODE 0 text10 dist/default/debug/singcig_c.X.debug.o
+stackhi 0 0 ABS 0 - /tmp/xcXCNJhac.o
+stacklo 0 0 ABS 0 - /tmp/xcXCNJhac.o
+_second1 81A 0 SMALLCONST 0 smallconst dist/default/debug/singcig_c.X.debug.o
 _OSCCON1 39D9 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
 _OSCCON3 39DB 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
 _OSCTUNE 39DE 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+_sensval 806 0 SMALLCONST 0 smallconst dist/default/debug/singcig_c.X.debug.o
 __Lirdata 0 0 CODE 0 irdata dist/default/debug/singcig_c.X.debug.o
-_TMR5_Initialize DA6 0 CODE 0 text18 dist/default/debug/singcig_c.X.debug.o
+_uart2RxLastError 45 0 COMRAM 1 bssCOMRAM dist/default/debug/singcig_c.X.debug.o
+_TMR5_Initialize 1152 0 CODE 0 text42 dist/default/debug/singcig_c.X.debug.o
+_rom_error 824 0 SMALLCONST 0 smallconst dist/default/debug/singcig_c.X.debug.o
+__end_of_UART2_Initialize FDA 0 CODE 0 text34 dist/default/debug/singcig_c.X.debug.o
 __Lspace_0 0 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
 __Lspace_1 0 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
 __Lspace_2 0 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
 __Lspace_4 0 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
-__pbssCOMRAM 12 0 COMRAM 1 bssCOMRAM dist/default/debug/singcig_c.X.debug.o
+__pbssCOMRAM 1 0 COMRAM 1 bssCOMRAM dist/default/debug/singcig_c.X.debug.o
 _PIR0bits 39A0 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+_PIR2bits 39A2 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+_PIR3bits 39A3 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
 _PIR4bits 39A4 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
 _PIR6bits 39A6 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
 _PIR8bits 39A8 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
 __LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/debug/singcig_c.X.debug.o
-_buttons 1B 0 COMRAM 1 bssCOMRAM dist/default/debug/singcig_c.X.debug.o
-end_of_initialization F46 0 CODE 0 cinit dist/default/debug/singcig_c.X.debug.o
+_UART1_SetFramingErrorHandler 1490 0 CODE 0 text40 dist/default/debug/singcig_c.X.debug.o
+_buttons 42 0 COMRAM 1 bssCOMRAM dist/default/debug/singcig_c.X.debug.o
+_UART1_SetOverrunErrorHandler 1486 0 CODE 0 text39 dist/default/debug/singcig_c.X.debug.o
+_SPI1TCNTL 3D12 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+end_of_initialization 12F6 0 CODE 0 cinit dist/default/debug/singcig_c.X.debug.o
 _T5CONbits 3F9A 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
 __Lnvrram 0 0 COMRAM 1 nvrram dist/default/debug/singcig_c.X.debug.o
-__end_of_button_flash CD0 0 CODE 0 text3 dist/default/debug/singcig_c.X.debug.o
+_UART1_Read BEE 0 CODE 0 text14 dist/default/debug/singcig_c.X.debug.o
+__end_of_button_flash 1082 0 CODE 0 text19 dist/default/debug/singcig_c.X.debug.o
 __Hreset_vec 4 0 CODE 0 reset_vec dist/default/debug/singcig_c.X.debug.o
-__end_of_enter_service A78 0 CODE 0 text2 dist/default/debug/singcig_c.X.debug.o
+init_mdbdata@i 4A 0 COMRAM 1 cstackCOMRAM dist/default/debug/singcig_c.X.debug.o
+_mdb_comm 9D0 0 CODE 0 text6 dist/default/debug/singcig_c.X.debug.o
+_mdb_init 1118 0 CODE 0 text2 dist/default/debug/singcig_c.X.debug.o
+_mdbflags 3C 0 COMRAM 1 bssCOMRAM dist/default/debug/singcig_c.X.debug.o
+_UART1_FramingErrorHandler 30 0 COMRAM 1 bssCOMRAM dist/default/debug/singcig_c.X.debug.o
+_UART1_OverrunErrorHandler 2E 0 COMRAM 1 bssCOMRAM dist/default/debug/singcig_c.X.debug.o
+__end_of_enter_service BEE 0 CODE 0 text18 dist/default/debug/singcig_c.X.debug.o
 __Lramtop 800 0 RAM 0 ramtop dist/default/debug/singcig_c.X.debug.o
 __Lrparam 0 0 COMRAM 1 rparam dist/default/debug/singcig_c.X.debug.o
-__pcinit F3A 0 CODE 0 cinit dist/default/debug/singcig_c.X.debug.o
-__ptext0 810 0 CODE 0 text0 dist/default/debug/singcig_c.X.debug.o
-__ptext1 B06 0 CODE 0 text1 dist/default/debug/singcig_c.X.debug.o
-__ptext2 99C 0 CODE 0 text2 dist/default/debug/singcig_c.X.debug.o
-__ptext3 C80 0 CODE 0 text3 dist/default/debug/singcig_c.X.debug.o
-__ptext4 A78 0 CODE 0 text4 dist/default/debug/singcig_c.X.debug.o
-__ptext5 ED0 0 CODE 0 text5 dist/default/debug/singcig_c.X.debug.o
-__ptext6 C0E 0 CODE 0 text6 dist/default/debug/singcig_c.X.debug.o
-__ptext7 E48 0 CODE 0 text7 dist/default/debug/singcig_c.X.debug.o
-__ptext8 EA4 0 CODE 0 text8 dist/default/debug/singcig_c.X.debug.o
-__ptext9 FB2 0 CODE 0 text9 dist/default/debug/singcig_c.X.debug.o
+__pcinit 12D6 0 CODE 0 cinit dist/default/debug/singcig_c.X.debug.o
+__ptext0 834 0 CODE 0 text0 dist/default/debug/singcig_c.X.debug.o
+__ptext1 D18 0 CODE 0 text1 dist/default/debug/singcig_c.X.debug.o
+__ptext2 1118 0 CODE 0 text2 dist/default/debug/singcig_c.X.debug.o
+__ptext3 1402 0 CODE 0 text3 dist/default/debug/singcig_c.X.debug.o
+__ptext4 FDA 0 CODE 0 text4 dist/default/debug/singcig_c.X.debug.o
+__ptext5 1300 0 CODE 0 text5 dist/default/debug/singcig_c.X.debug.o
+__ptext6 9D0 0 CODE 0 text6 dist/default/debug/singcig_c.X.debug.o
+__ptext7 1414 0 CODE 0 text7 dist/default/debug/singcig_c.X.debug.o
+__ptext8 1438 0 CODE 0 text8 dist/default/debug/singcig_c.X.debug.o
+__ptext9 1426 0 CODE 0 text9 dist/default/debug/singcig_c.X.debug.o
 __Lstruct 0 0 COMRAM 1 struct dist/default/debug/singcig_c.X.debug.o
-DATAEE_WriteByte@bAdd 2 0 COMRAM 1 cstackCOMRAM dist/default/debug/singcig_c.X.debug.o
+DATAEE_WriteByte@bAdd 4A 0 COMRAM 1 cstackCOMRAM dist/default/debug/singcig_c.X.debug.o
+__end_of_mdb_comm B12 0 CODE 0 text6 dist/default/debug/singcig_c.X.debug.o
+__end_of_mdb_init 1152 0 CODE 0 text2 dist/default/debug/singcig_c.X.debug.o
 __Ltext10 0 0 ABS 0 text10 dist/default/debug/singcig_c.X.debug.o
 __Ltext11 0 0 ABS 0 text11 dist/default/debug/singcig_c.X.debug.o
 __Ltext12 0 0 ABS 0 text12 dist/default/debug/singcig_c.X.debug.o
@@ -741,36 +1188,93 @@ __Ltext22 0 0 ABS 0 text22 dist/default/debug/singcig_c.X.debug.o
 __Ltext23 0 0 ABS 0 text23 dist/default/debug/singcig_c.X.debug.o
 __Ltext24 0 0 ABS 0 text24 dist/default/debug/singcig_c.X.debug.o
 __Ltext25 0 0 ABS 0 text25 dist/default/debug/singcig_c.X.debug.o
-__ramtop 800 0 RAM 0 ramtop /tmp/xcXapPFGP.o
+__Ltext26 0 0 ABS 0 text26 dist/default/debug/singcig_c.X.debug.o
+__Ltext27 0 0 ABS 0 text27 dist/default/debug/singcig_c.X.debug.o
+__Ltext28 0 0 ABS 0 text28 dist/default/debug/singcig_c.X.debug.o
+__Ltext29 0 0 ABS 0 text29 dist/default/debug/singcig_c.X.debug.o
+__Ltext30 0 0 ABS 0 text30 dist/default/debug/singcig_c.X.debug.o
+__Ltext31 0 0 ABS 0 text31 dist/default/debug/singcig_c.X.debug.o
+__Ltext32 0 0 ABS 0 text32 dist/default/debug/singcig_c.X.debug.o
+__Ltext33 0 0 ABS 0 text33 dist/default/debug/singcig_c.X.debug.o
+__Ltext34 0 0 ABS 0 text34 dist/default/debug/singcig_c.X.debug.o
+__Ltext35 0 0 ABS 0 text35 dist/default/debug/singcig_c.X.debug.o
+__Ltext36 0 0 ABS 0 text36 dist/default/debug/singcig_c.X.debug.o
+__Ltext37 0 0 ABS 0 text37 dist/default/debug/singcig_c.X.debug.o
+__Ltext38 0 0 ABS 0 text38 dist/default/debug/singcig_c.X.debug.o
+__Ltext39 0 0 ABS 0 text39 dist/default/debug/singcig_c.X.debug.o
+__Ltext40 0 0 ABS 0 text40 dist/default/debug/singcig_c.X.debug.o
+__Ltext41 0 0 ABS 0 text41 dist/default/debug/singcig_c.X.debug.o
+__Ltext42 0 0 ABS 0 text42 dist/default/debug/singcig_c.X.debug.o
+__Ltext43 0 0 ABS 0 text43 dist/default/debug/singcig_c.X.debug.o
+__Ltext44 0 0 ABS 0 text44 dist/default/debug/singcig_c.X.debug.o
+__Ltext45 0 0 ABS 0 text45 dist/default/debug/singcig_c.X.debug.o
+__Ltext46 0 0 ABS 0 text46 dist/default/debug/singcig_c.X.debug.o
+__Ltext47 0 0 ABS 0 text47 dist/default/debug/singcig_c.X.debug.o
+__Ltext48 0 0 ABS 0 text48 dist/default/debug/singcig_c.X.debug.o
+__Ltext49 0 0 ABS 0 text49 dist/default/debug/singcig_c.X.debug.o
+__Ltext50 0 0 ABS 0 text50 dist/default/debug/singcig_c.X.debug.o
+__Ltext51 0 0 ABS 0 text51 dist/default/debug/singcig_c.X.debug.o
+__Ltext52 0 0 ABS 0 text52 dist/default/debug/singcig_c.X.debug.o
+__ramtop 800 0 RAM 0 ramtop /tmp/xcXCNJhac.o
 __Lpowerup 0 0 CODE 0 powerup dist/default/debug/singcig_c.X.debug.o
 __Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/debug/singcig_c.X.debug.o
-TMR1_WriteTimer@timerVal 1 0 COMRAM 1 cstackCOMRAM dist/default/debug/singcig_c.X.debug.o
-__end_of_pricestore 805 0 SMALLCONST 0 smallconst dist/default/debug/singcig_c.X.debug.o
-__end_of_TMR1_Initialize E48 0 CODE 0 text20 dist/default/debug/singcig_c.X.debug.o
-__end_of_TMR1_StartTimer FBA 0 CODE 0 text10 dist/default/debug/singcig_c.X.debug.o
-__end_of_TMR1_WriteTimer ED0 0 CODE 0 text8 dist/default/debug/singcig_c.X.debug.o
+TMR1_WriteTimer@timerVal 49 0 COMRAM 1 cstackCOMRAM dist/default/debug/singcig_c.X.debug.o
+_UART1_DefaultErrorHandler 14B2 0 CODE 0 text17 dist/default/debug/singcig_c.X.debug.o
+__end_of_pricestore 814 0 SMALLCONST 0 smallconst dist/default/debug/singcig_c.X.debug.o
+__end_of_TMR1_Initialize 11F4 0 CODE 0 text44 dist/default/debug/singcig_c.X.debug.o
+__end_of_TMR1_StartTimer 14AC 0 CODE 0 text26 dist/default/debug/singcig_c.X.debug.o
+__end_of_TMR1_WriteTimer 12D6 0 CODE 0 text24 dist/default/debug/singcig_c.X.debug.o
 __psmallconst 800 0 SMALLCONST 0 smallconst dist/default/debug/singcig_c.X.debug.o
+__end_of_CMP1_GetOutputStatus 13EE 0 CODE 0 text51 dist/default/debug/singcig_c.X.debug.o
+_U2CON0bits 3DDA 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
 __Lreset_vec 0 0 CODE 0 reset_vec dist/default/debug/singcig_c.X.debug.o
-___heap_hi 0 0 ABS 0 - /tmp/xcXapPFGP.o
-___heap_lo 0 0 ABS 0 - /tmp/xcXapPFGP.o
-_TMR1_ReadTimer ED0 0 CODE 0 text5 dist/default/debug/singcig_c.X.debug.o
+_theft_attempt 81C 0 SMALLCONST 0 smallconst dist/default/debug/singcig_c.X.debug.o
+_SLRCONA 3A43 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+_SLRCONB 3A53 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+_SLRCONC 3A63 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+___heap_hi 0 0 ABS 0 - /tmp/xcXCNJhac.o
+___heap_lo 0 0 ABS 0 - /tmp/xcXCNJhac.o
+__end_of_cashbox_err 821 0 SMALLCONST 0 smallconst dist/default/debug/singcig_c.X.debug.o
+_TMR1_ReadTimer 132A 0 CODE 0 text21 dist/default/debug/singcig_c.X.debug.o
 ___param_bank 0 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
 __Hbigdata 0 0 BIGRAM 1 bigdata dist/default/debug/singcig_c.X.debug.o
-__end_of__initialization F46 0 CODE 0 cinit dist/default/debug/singcig_c.X.debug.o
-DATAEE_ReadByte@bAdd 1 0 COMRAM 1 cstackCOMRAM dist/default/debug/singcig_c.X.debug.o
+_mdb_transmit 1438 0 CODE 0 text8 dist/default/debug/singcig_c.X.debug.o
+__end_of__initialization 12F6 0 CODE 0 cinit dist/default/debug/singcig_c.X.debug.o
+DATAEE_ReadByte@bAdd 49 0 COMRAM 1 cstackCOMRAM dist/default/debug/singcig_c.X.debug.o
+_cashint 80A 0 SMALLCONST 0 smallconst dist/default/debug/singcig_c.X.debug.o
+_cashinv 80E 0 SMALLCONST 0 smallconst dist/default/debug/singcig_c.X.debug.o
+__end_of_UART2_SetFramingErrorHandler 147C 0 CODE 0 text36 dist/default/debug/singcig_c.X.debug.o
+__end_of_UART2_SetOverrunErrorHandler 1472 0 CODE 0 text35 dist/default/debug/singcig_c.X.debug.o
 __Libigdata 0 0 CODE 0 ibigdata dist/default/debug/singcig_c.X.debug.o
+UART2_SetErrorHandler@interruptHandler 49 0 COMRAM 1 cstackCOMRAM dist/default/debug/singcig_c.X.debug.o
 _NVMCON1bits 39E5 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+_UART1_DefaultFramingErrorHandler 14B0 0 CODE 0 text16 dist/default/debug/singcig_c.X.debug.o
+_UART1_DefaultOverrunErrorHandler 14AE 0 CODE 0 text15 dist/default/debug/singcig_c.X.debug.o
 __Lclrtext 0 0 ABS 0 clrtext dist/default/debug/singcig_c.X.debug.o
-_timer1ReloadVal 18 0 COMRAM 1 bssCOMRAM dist/default/debug/singcig_c.X.debug.o
-_switch_read B8C 0 CODE 0 text12 dist/default/debug/singcig_c.X.debug.o
-__pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/default/debug/singcig_c.X.debug.o
-DATAEE_WriteByte@bData 1 0 COMRAM 1 cstackCOMRAM dist/default/debug/singcig_c.X.debug.o
+_SPI1CLK 3D1C 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+_SPI1RXB 3D10 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+_SPI1TXB 3D11 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+_note_stacker 829 0 SMALLCONST 0 smallconst dist/default/debug/singcig_c.X.debug.o
+_timer1ReloadVal 36 0 COMRAM 1 bssCOMRAM dist/default/debug/singcig_c.X.debug.o
+_motr_error 827 0 SMALLCONST 0 smallconst dist/default/debug/singcig_c.X.debug.o
+__end_of_UART1_Read C8A 0 CODE 0 text14 dist/default/debug/singcig_c.X.debug.o
+_mdbdata 1 0 COMRAM 1 bssCOMRAM dist/default/debug/singcig_c.X.debug.o
+_switch_read E22 0 CODE 0 text28 dist/default/debug/singcig_c.X.debug.o
+__end_of_UART1_SetAddresstoTransmit 1468 0 CODE 0 text13 dist/default/debug/singcig_c.X.debug.o
+__pcstackCOMRAM 49 0 COMRAM 1 cstackCOMRAM dist/default/debug/singcig_c.X.debug.o
+DATAEE_WriteByte@bData 49 0 COMRAM 1 cstackCOMRAM dist/default/debug/singcig_c.X.debug.o
 _T3CONbits 3FA6 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
-_timer3ReloadVal 16 0 COMRAM 1 bssCOMRAM dist/default/debug/singcig_c.X.debug.o
-__end_of_venderrors 803 0 SMALLCONST 0 smallconst dist/default/debug/singcig_c.X.debug.o
-__end_of_main 99C 0 CODE 0 text0 dist/default/debug/singcig_c.X.debug.o
+_timer3ReloadVal 34 0 COMRAM 1 bssCOMRAM dist/default/debug/singcig_c.X.debug.o
+__end_of_venderrors 812 0 SMALLCONST 0 smallconst dist/default/debug/singcig_c.X.debug.o
+__end_of_mdb_noten 132A 0 CODE 0 text5 dist/default/debug/singcig_c.X.debug.o
+_chkbyte 3D 0 COMRAM 1 bssCOMRAM dist/default/debug/singcig_c.X.debug.o
+__end_of_mdb_reset 1032 0 CODE 0 text4 dist/default/debug/singcig_c.X.debug.o
+__end_of_mdb_waitr 1426 0 CODE 0 text7 dist/default/debug/singcig_c.X.debug.o
+__end_of_mdb_waitx 1438 0 CODE 0 text9 dist/default/debug/singcig_c.X.debug.o
+__end_of_main 9D0 0 CODE 0 text0 dist/default/debug/singcig_c.X.debug.o
+__end_of_UART1_SetErrorHandler 14A4 0 CODE 0 text41 dist/default/debug/singcig_c.X.debug.o
 _CMOUT 3EC0 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
-Set_Timeout@timeval B 0 COMRAM 1 cstackCOMRAM dist/default/debug/singcig_c.X.debug.o
+Set_Timeout@timeval 53 0 COMRAM 1 cstackCOMRAM dist/default/debug/singcig_c.X.debug.o
 _OSCEN 39DD 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
 _PCON0 3FF0 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
 _T1CLK 3FB5 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
@@ -788,6 +1292,21 @@ _TMR5L 3F98 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
 _TRISA 3FC2 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
 _TRISB 3FC3 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
 _TRISC 3FC4 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+_U1P1H 3DED 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+_U1P1L 3DEC 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+_U1P2H 3DEF 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+_U1P2L 3DEE 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+_U1P3H 3DF1 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+_U1P3L 3DF0 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+_U1RXB 3DE8 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+_U1TXB 3DEA 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+_U1UIR 3DF8 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+_U2P1L 3DD4 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+_U2P2L 3DD6 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+_U2P3L 3DD8 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+_U2RXB 3DD0 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+_U2TXB 3DD2 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+_U2UIR 3DE0 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
 __HRAM 0 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
 __Hbss 0 0 RAM 1 bss dist/default/debug/singcig_c.X.debug.o
 __Hram 0 0 ABS 0 ram dist/default/debug/singcig_c.X.debug.o
@@ -796,22 +1315,39 @@ __LRAM 1 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
 __Lbss 0 0 RAM 1 bss dist/default/debug/singcig_c.X.debug.o
 __Lram 0 0 ABS 0 ram dist/default/debug/singcig_c.X.debug.o
 __Lsfr 0 0 ABS 0 sfr dist/default/debug/singcig_c.X.debug.o
-_TMR1_Initialize E12 0 CODE 0 text20 dist/default/debug/singcig_c.X.debug.o
-_TMR1_StartTimer FB6 0 CODE 0 text10 dist/default/debug/singcig_c.X.debug.o
-_TMR1_WriteTimer EA4 0 CODE 0 text8 dist/default/debug/singcig_c.X.debug.o
-_timer5ReloadVal 14 0 COMRAM 1 bssCOMRAM dist/default/debug/singcig_c.X.debug.o
-__end_of_OSCILLATOR_Initialize F86 0 CODE 0 text23 dist/default/debug/singcig_c.X.debug.o
-__end_of_TMR1_ReadTimer EF4 0 CODE 0 text5 dist/default/debug/singcig_c.X.debug.o
-__initialization F3A 0 CODE 0 cinit dist/default/debug/singcig_c.X.debug.o
-_coin_in CD0 0 CODE 0 text11 dist/default/debug/singcig_c.X.debug.o
+_TMR1_Initialize 11BE 0 CODE 0 text44 dist/default/debug/singcig_c.X.debug.o
+_TMR1_StartTimer 14A8 0 CODE 0 text26 dist/default/debug/singcig_c.X.debug.o
+_TMR1_WriteTimer 12AA 0 CODE 0 text24 dist/default/debug/singcig_c.X.debug.o
+_timer5ReloadVal 32 0 COMRAM 1 bssCOMRAM dist/default/debug/singcig_c.X.debug.o
+__end_of_OSCILLATOR_Initialize 13D8 0 CODE 0 text48 dist/default/debug/singcig_c.X.debug.o
+__end_of_TMR1_ReadTimer 134E 0 CODE 0 text21 dist/default/debug/singcig_c.X.debug.o
+__initialization 12D6 0 CODE 0 cinit dist/default/debug/singcig_c.X.debug.o
+_mdb_noten 1300 0 CODE 0 text5 dist/default/debug/singcig_c.X.debug.o
+_UART1_SetErrorHandler 149A 0 CODE 0 text41 dist/default/debug/singcig_c.X.debug.o
+_noteen_byte 3A 0 COMRAM 1 bssCOMRAM dist/default/debug/singcig_c.X.debug.o
+_mdb_reset FDA 0 CODE 0 text4 dist/default/debug/singcig_c.X.debug.o
+__pdataCOMRAM 5A 0 COMRAM 1 dataCOMRAM dist/default/debug/singcig_c.X.debug.o
+_mdb_waitr 1414 0 CODE 0 text7 dist/default/debug/singcig_c.X.debug.o
+_mdb_waitx 1426 0 CODE 0 text9 dist/default/debug/singcig_c.X.debug.o
+_coin_in 1082 0 CODE 0 text27 dist/default/debug/singcig_c.X.debug.o
 __Hfardata 0 0 FARRAM 0 fardata dist/default/debug/singcig_c.X.debug.o
-_credit_check F9A 0 CODE 0 text13 dist/default/debug/singcig_c.X.debug.o
-__Hsmallconst 810 0 SMALLCONST 0 smallconst dist/default/debug/singcig_c.X.debug.o
+_credit_check 1446 0 CODE 0 text29 dist/default/debug/singcig_c.X.debug.o
+__Hsmallconst 834 0 SMALLCONST 0 smallconst dist/default/debug/singcig_c.X.debug.o
+__end_of_note_poll 82D 0 SMALLCONST 0 smallconst dist/default/debug/singcig_c.X.debug.o
+__end_of_note_type 82C 0 SMALLCONST 0 smallconst dist/default/debug/singcig_c.X.debug.o
+_note_setup 82E 0 SMALLCONST 0 smallconst dist/default/debug/singcig_c.X.debug.o
 __Lifardata 0 0 CODE 0 ifardata dist/default/debug/singcig_c.X.debug.o
-credit_add@credit 4 0 COMRAM 1 cstackCOMRAM dist/default/debug/singcig_c.X.debug.o
-?_TMR1_ReadTimer 1 0 COMRAM 1 cstackCOMRAM dist/default/debug/singcig_c.X.debug.o
+_invalid_escrow 81E 0 SMALLCONST 0 smallconst dist/default/debug/singcig_c.X.debug.o
+credit_add@credit 4C 0 COMRAM 1 cstackCOMRAM dist/default/debug/singcig_c.X.debug.o
+?_TMR1_ReadTimer 49 0 COMRAM 1 cstackCOMRAM dist/default/debug/singcig_c.X.debug.o
+_U1ERRIRbits 3DF9 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
+_acept_disabled 81F 0 SMALLCONST 0 smallconst dist/default/debug/singcig_c.X.debug.o
 __Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/debug/singcig_c.X.debug.o
-_OSCILLATOR_Initialize F6E 0 CODE 0 text23 dist/default/debug/singcig_c.X.debug.o
+_OSCILLATOR_Initialize 13C0 0 CODE 0 text48 dist/default/debug/singcig_c.X.debug.o
+__end_of_motr_error 828 0 SMALLCONST 0 smallconst dist/default/debug/singcig_c.X.debug.o
+__end_of_mdb_transmit 1446 0 CODE 0 text8 dist/default/debug/singcig_c.X.debug.o
+UART1_Write@txData 49 0 COMRAM 1 cstackCOMRAM dist/default/debug/singcig_c.X.debug.o
+_U2ERRIRbits 3DE1 0 ABS 0 - dist/default/debug/singcig_c.X.debug.o
 # %SPLITSTAB Section
 # This section enumerates all the psect splits performed by the assembler.
 # The beginning of the section is indicated by %SPLITSTAB.
@@ -836,11 +1372,11 @@ _OSCILLATOR_Initialize F6E 0 CODE 0 text23 dist/default/debug/singcig_c.X.debug.
 # and size are in units of delta. The file address is in units of bytes.
 # All other numeric quantities are in decimal.
 %SEGMENTS
-text0 0 810 810 7AA 1
-cstackCOMRAM 1 1 1 1F 1
+text0 0 834 834 C81 1
 init 0 7FFC 7FFC 4 1
 reset_vec 0 0 0 4 1
-smallconst 0 800 800 10 1
+smallconst 0 800 800 34 1
+bssCOMRAM 1 1 1 5A 1
 # %NOTES Section
 # This section contains data of all the note-psects.  The beginning of the section
 # is indicated by %NOTES. The first line indicates the name and decimal

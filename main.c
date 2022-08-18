@@ -45,8 +45,9 @@
     SOFTWARE.
 */
 
-#include "mcc_generated_files/mcc.h"
+//#include "buffers.h"
 #include "vend.h"
+#include "mdb.h"
 
 /*
                          Main application

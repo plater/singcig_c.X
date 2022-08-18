@@ -24,6 +24,8 @@
             </formatting>
         </data>
         <spellchecker-wordlist xmlns="http://www.netbeans.org/ns/spellchecker-wordlist/1">
+            <word>mdbdata</word>
+            <word>slvadd</word>
             <word>uint</word>
         </spellchecker-wordlist>
     </configuration>

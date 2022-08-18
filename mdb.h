@@ -7,10 +7,7 @@
 
 #ifndef MDB_H
 #define	MDB_H
-#include "vend.h"
-#include <xc.h>
-#include "lcd.h"
-#include "mcc_generated_files/mcc.h"
+#include "buffers.h"
 
 //Next are the MDB address commands
 //Reset bill accepter
@@ -42,6 +39,19 @@ const uint8_t acept_disabled = 0x09;
 const uint8_t invalid_escrow = 0x0A;
 const uint8_t note_rejected = 0x0B;
 const uint8_t theft_attempt = 0x0C;
+
+//NVRAM address location definitions
+//Clearable total cash uint16_t
+const uint16_t  cashinv = 0x02;
+//Total vends, clearable 8 x uint8_t
+const uint16_t vendstore = 0x04;
+//Non clearable total cash uint_24_t
+const uint16_t cashint = 0x0C;
+//Note enable bits 0 to 4 uint8_t
+const uint16_t notebits = 0x18;
+//Opto vend sensor value, 0 = Least sensitive
+// 0x1F = Most sensitive.
+const uint16_t sensval = 0x19;
 
 //32 bytes allowed location 32 should always be zero
 uint8_t mdbdata[33];
@@ -136,6 +146,8 @@ void mdb_waitr(void);
 void mdb_unlock(void);
 
 void mdb_transmit(uint8_t txbyte);
+
+void usartmdb_Initialize(void);
 
 #endif	/* MDB_H */
 

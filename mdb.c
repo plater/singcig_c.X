@@ -21,9 +21,9 @@ void init_mdbdata(uint8_t initdata)
 void mdb_init(void)
 {
     __delay_ms(250);
-    noteen_byte = DATAEE_ReadByte(notebits);
+//    noteen_byte = DATAEE_ReadByte(notebits);
     ((uint8_t*) &noteen)[0] = noteen_byte;
-    eusartmdb_Initialize();
+    UART1_Initialize();
     mdbflags.noteerr = 0;
     mdbflags.isdata = 0;
     mdb_reset();
@@ -54,6 +54,7 @@ uint8_t mdb_reset(void)
     return i;
 }
 
+#if 0
 void set_notes(void)
 {
     lcd_string(setnotes, line1);
@@ -119,6 +120,7 @@ void enable_notes(uint8_t notenum)
         }
     }
 }
+#endif
 
 void note_disable(void)
 {
@@ -238,14 +240,19 @@ uint8_t mdb_comm(uint8_t slvadd, uint8_t mcount)
 {
     //Counter for data bytes in mdbdata
     uint8_t i = 0;
-    //Mode bit to 1 indicates master address bit.
-    TX1STAbits.TX9D = 1;
-    mdb_on();
+    //load slvadd.
+/*    void UART1_SetAddresstoTransmit(uint8_t txAddress)
+{
+    U1P1L = txAddress;
+}
+*/
+    UART1_SetAddresstoTransmit(slvadd);
+
     //Write appropriate poll address
     //Only a bill acceptor at this time.
  //   
     mdb_transmit(slvadd);
-    TX1STAbits.TX9D = 0;
+    U1ERRIRbits.PERIF = 0; //U1ERRIRbits.PERIF = 0;
     //Write CHK byte - checksum
     
     //Handle more bytes for enables etc
@@ -266,7 +273,7 @@ uint8_t mdb_comm(uint8_t slvadd, uint8_t mcount)
     mdb_transmit(chkbyte);
     
     //Start the 5mS timeout for receiving status from device.
-    //Monitor PIR4bits.TMR1IF for overflow EUSART1_Read();
+    //Monitor PIR4bits.TMR1IF for overflow UART1_Read();
     
     //initialize storage
     //mdb_ron();
@@ -283,14 +290,14 @@ uint8_t mdb_comm(uint8_t slvadd, uint8_t mcount)
         mdbflags.isdata = 0;
         //RC1STAbits.SPEN 
         //RC1IF goes high when there's data
-        while(PIR3bits.RC1IF && !mdbflags.isdata)
+        while(PIR3bits.U1RXIF && !mdbflags.isdata)
         {
             
             //mdb_ron();
-            mdbdata[i] = EUSART1_Read();
+            mdbdata[i] = UART1_Read();
             mdb_waitr();
             //End of transmission when 9th bit set.
-            mdbflags.isdata = RC1STAbits.RX9D;
+            mdbflags.isdata = U1ERRIRbits.PERIF;
             TMR1_Initialize();
             i++;
             
@@ -304,12 +311,12 @@ uint8_t mdb_comm(uint8_t slvadd, uint8_t mcount)
      //Send ACK on successful receive except for an ACK which = 0
     if(mdbflags.isdata == 1 && mdbdata[i] != 0x00)
     {
-        TX1STAbits.TX9D = 1;
+        U1ERRIRbits.PERIF = 1;
         mdb_on();
         mdb_transmit(0x00);
         
     }
-    //RC1STAbits.RX9D;
+    //U1ERRIRbits.PERIF;
     mdb_on();
     // i contains the number of data blocks in mdbdata[]
     return(i);
@@ -321,7 +328,7 @@ void mdb_on(void)
 //    RC1STA = 0xD0;
     // TX9 9-bit; TX9D 0; SENDB send_sync_break_next; TXEN enabled; SYNC asynchronous; BRGH hi_speed; CSRC master; 
 //    TX1STA = 0xEC;
-    LATCbits.LATC0 = 1;
+ //   LATCbits.LATC0 = 1;
 //    LATCbits.LATC1 = 0;
 //    TX1STAbits.TXEN = 1;
 //    mdb_comm(note_poll);
@@ -330,7 +337,7 @@ void mdb_on(void)
 //Wait for buffer empty
 void mdb_waitx(void)
 {
-    while(TX1STAbits.TRMT == 0)
+    while(!U1ERRIRbits.TXMTIF)
     {
         
     }
@@ -338,7 +345,7 @@ void mdb_waitx(void)
 //Wait for buffer empty
 void mdb_waitr(void)
 {
-    while(BAUD1CONbits.RCIDL == 0)
+    while(!PIR3bits.U1RXIF)
     {
         
     }
@@ -348,30 +355,28 @@ void mdb_test(void)
 {
     uint8_t i = 0;
     uint8_t x = note_reset;
-    TX1STAbits.TXEN = 1;
+    U1ERRIRbits.PERIF = 1;
     while(i < 8)
     {
         
         
-        TX1STAbits.TX9D = 1;
+        U1ERRIRbits.PERIF = 1;
         mdb_transmit(x);
         
-        TX1STAbits.TX9D = 0;
+        U1ERRIRbits.PERIF = 0;
         mdb_transmit(x);
         
-        TX1STAbits.TXEN = 0;
         asm("nop");
         mdb_ron();
         wait_ack();
         i++;
         x++;
-        TX1STAbits.TXEN = 1;
         mdb_on();
     }
-    TX1STAbits.TXEN = 0;
 }
 //Turn off and bus reset mdb bus
 //Used to disable all mdb devices
+#if 0
 void mdb_unlock(void)
 {
     __delay_ms(50);
@@ -434,9 +439,9 @@ void mdb_unlock(void)
     TMR1_Initialize();
 
 }
-
+#endif
 void mdb_transmit(uint8_t txbyte)
 {
-    EUSART1_Write(txbyte);
+    UART1_Write(txbyte);
     mdb_waitx();
 }
