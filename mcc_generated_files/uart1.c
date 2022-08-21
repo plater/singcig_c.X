@@ -90,10 +90,10 @@ void UART1_Initialize(void)
     // BRGS high speed; MODE Asynchronous 9-bit mode; RXEN enabled; TXEN enabled; ABDEN disabled; 
     U1CON0 = 0xB4;
 
-    // RXBIMD Set RXBKIF on rising RX input; BRKOVR disabled; WUE disabled; SENDB disabled; ON enabled; 
-    U1CON1 = 0x80;
+    // RXBIMD Set RXBKIF immediately; BRKOVR disabled; WUE disabled; SENDB disabled; ON enabled; 
+    U1CON1 = 0x88;
 
-    // TXPOL not inverted; FLO off; C0EN Checksum Mode 0; RXPOL not inverted; RUNOVF RX input shifter continues; STP Transmit 1Stop bit, receiver verifies first Stop bit; 
+    // TXPOL not inverted; FLO off; C0EN disabled; RXPOL not inverted; RUNOVF RX input shifter continues; STP Transmit 1Stop bit, receiver verifies first Stop bit; 
     U1CON2 = 0x80;
 
     // BRGL 56; 

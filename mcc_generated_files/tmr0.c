@@ -61,8 +61,8 @@ void TMR0_Initialize(void)
 {
     // Set TMR0 to the options selected in the User Interface
 
-    // T0CS LFINTOSC; T0CKPS 1:1; T0ASYNC synchronised; 
-    T0CON1 = 0x80;
+    // T0CS LFINTOSC; T0CKPS 1:4; T0ASYNC synchronised; 
+    T0CON1 = 0x82;
 
     // TMR0H 154; 
     TMR0H = 0x9A;

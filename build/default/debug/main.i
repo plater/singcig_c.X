@@ -25657,9 +25657,9 @@ unsigned char __t3rd16on(void);
 # 1 "./mcc_generated_files/device_config.h" 1
 # 51 "./mcc_generated_files/mcc.h" 2
 # 1 "./mcc_generated_files/pin_manager.h" 1
-# 430 "./mcc_generated_files/pin_manager.h"
+# 454 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_Initialize (void);
-# 442 "./mcc_generated_files/pin_manager.h"
+# 466 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_IOC(void);
 # 52 "./mcc_generated_files/mcc.h" 2
 
@@ -26150,6 +26150,14 @@ void TMR0_Reload(uint8_t periodVal);
 # 308 "./mcc_generated_files/tmr0.h"
 _Bool TMR0_HasOverflowOccured(void);
 # 62 "./mcc_generated_files/mcc.h" 2
+# 1 "./mcc_generated_files/dac1.h" 1
+# 93 "./mcc_generated_files/dac1.h"
+void DAC1_Initialize(void);
+# 129 "./mcc_generated_files/dac1.h"
+void DAC1_SetOutput(uint8_t inputData);
+# 163 "./mcc_generated_files/dac1.h"
+uint8_t DAC1_GetOutput(void);
+# 63 "./mcc_generated_files/mcc.h" 2
 # 1 "./mcc_generated_files/memory.h" 1
 # 99 "./mcc_generated_files/memory.h"
 uint8_t FLASH_ReadByte(uint32_t flashAddr);
@@ -26167,14 +26175,6 @@ void DATAEE_WriteByte(uint8_t bAdd, uint8_t bData);
 uint8_t DATAEE_ReadByte(uint8_t bAdd);
 
 void MEMORY_Tasks(void);
-# 63 "./mcc_generated_files/mcc.h" 2
-# 1 "./mcc_generated_files/dac1.h" 1
-# 93 "./mcc_generated_files/dac1.h"
-void DAC1_Initialize(void);
-# 129 "./mcc_generated_files/dac1.h"
-void DAC1_SetOutput(uint8_t inputData);
-# 163 "./mcc_generated_files/dac1.h"
-uint8_t DAC1_GetOutput(void);
 # 64 "./mcc_generated_files/mcc.h" 2
 # 1 "./mcc_generated_files/uart2.h" 1
 # 74 "./mcc_generated_files/uart2.h"
@@ -26242,27 +26242,11 @@ void UART1_SetOverrunErrorHandler(void (* interruptHandler)(void));
 # 450 "./mcc_generated_files/uart1.h"
 void UART1_SetErrorHandler(void (* interruptHandler)(void));
 # 66 "./mcc_generated_files/mcc.h" 2
-# 1 "./mcc_generated_files/spi1.h" 1
-# 59 "./mcc_generated_files/spi1.h"
-typedef enum {
-    SPI1_DEFAULT
-} spi1_modes_t;
-
-void SPI1_Initialize(void);
-_Bool SPI1_Open(spi1_modes_t spi1UniqueConfiguration);
-void SPI1_Close(void);
-uint8_t SPI1_ExchangeByte(uint8_t data);
-void SPI1_ExchangeBlock(void *block, size_t blockSize);
-void SPI1_WriteBlock(void *block, size_t blockSize);
-void SPI1_ReadBlock(void *block, size_t blockSize);
-void SPI1_WriteByte(uint8_t byte);
-uint8_t SPI1_ReadByte(void);
-# 67 "./mcc_generated_files/mcc.h" 2
-# 81 "./mcc_generated_files/mcc.h"
+# 80 "./mcc_generated_files/mcc.h"
 void SYSTEM_Initialize(void);
-# 94 "./mcc_generated_files/mcc.h"
+# 93 "./mcc_generated_files/mcc.h"
 void OSCILLATOR_Initialize(void);
-# 107 "./mcc_generated_files/mcc.h"
+# 106 "./mcc_generated_files/mcc.h"
 void PMD_Initialize(void);
 # 36 "./buffers.h" 2
 
@@ -26467,6 +26451,8 @@ void mdb_ron(void);
 
 uint8_t wait_ack(void);
 
+uint8_t UART9_Read(void);
+
 void mdb_test(void);
 
 void mdb_waitx(void);
@@ -26495,6 +26481,7 @@ void main(void)
     SYSTEM_Initialize();
 
     PIE4bits.TMR2IE = 0;
+    T2CONbits.ON = 0;
     TMR2_SetInterruptHandler(InterruptTMR2);
     do { LATAbits.LATA1 = 1; } while(0);
     do { LATCbits.LATC6 = 1; } while(0);
@@ -26508,7 +26495,7 @@ void main(void)
 
 
     PIE4bits.TMR2IE = 1;
-# 95 "main.c"
+# 96 "main.c"
     while (1)
     {
         if(!PORTAbits.RA3)
@@ -26516,7 +26503,7 @@ void main(void)
             enter_service();
         }
 
-        while(!CMP1_GetOutputStatus())
+        while(!CM1CON0bits.C1OUT)
         {
             do { LATCbits.LATC5 = 0; } while(0);
             do { LATCbits.LATC6 = 1; } while(0);

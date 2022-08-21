@@ -12,10 +12,12 @@
 
 void init_mdbdata(uint8_t initdata)
 {
-    for(uint8_t i = 0;i < 33; i++)
+    mdbdata[0] = initdata;
+/*    for(uint8_t i = 0;i < 33; i++)
     {
         mdbdata[i] = initdata;
     }
+ */
 }
 //Undefined error mode flashes 4 slow 2 fast
 void mdb_init(void)
@@ -30,7 +32,9 @@ void mdb_init(void)
     mdb_noten();
     mdb_security();
     uint8_t i = mdb_comm(note_poll, 0x00);
-    
+    //Enable poll timer and interrupt
+    PIE4bits.TMR2IE = 1;
+    T2CONbits.ON = 1;
 }
 
 uint8_t mdb_reset(void)
@@ -300,6 +304,7 @@ uint8_t mdb_comm(uint8_t slvadd, uint8_t mcount)
 */
     //Write appropriate poll address
     //Only a bill acceptor at this time.
+    dbcount = 0;
     UART1_SetAddresstoTransmit(slvadd);
     mdbflags.nodata = 0;
     if(!mcount)//If no data everything completes with one transmit
@@ -330,17 +335,22 @@ uint8_t mdb_comm(uint8_t slvadd, uint8_t mcount)
     }
     
     //Start the 5mS timeout for receiving status from device.
-    //Monitor T0CON0bits.OUT for overflow UART1_Read();
+    //Monitor PIR3bits.TMR0IF for overflow
     
     //initialize storage
     //mdb_ron();
+/*    U1CON1bits.ON = 0;
+    U1CON0--; // unset address mode for receive
+    U1CON0--; // unset address mode for receive
+    U1CON1bits.ON = 1;
+ */
     init_mdbdata(0xFF);
     TMR0_Initialize();
-    dbcount = 0;
     mdbflags.isdata = 0;
     i = 0;
-    //Continue until either timeout or data present.
-    while(!T0CON0bits.OUT && !mdbflags.isdata)
+    //Changing the UART MODE while ON = 1 may cause unexpected results.
+    //Continue until either timeout or data present. = 0;PIR3bits.TMR0IF PIR3bits.TMR0IF
+    while(!PIR3bits.TMR0IF && !mdbflags.isdata)
     {
         //debug count of timer
         dbcount++;
@@ -351,10 +361,10 @@ uint8_t mdb_comm(uint8_t slvadd, uint8_t mcount)
         {
             
             //mdb_ron();
-            mdbdata[i] = UART1_Read();
+            mdbdata[i] = UART9_Read();
             mdb_waitr();
             //End of transmission when 9th bit set.
-            mdbflags.isdata = U1ERRIRbits.PERIF;
+//            mdbflags.isdata = U1ERRIRbits.PERIF;
             TMR0_Initialize();
             i++;
             
@@ -364,7 +374,7 @@ uint8_t mdb_comm(uint8_t slvadd, uint8_t mcount)
     //Correct i to point to last received data
     i--;
     //If timeout occurred TMR0IF is set.
-    mdbflags.timeout = T0CON0bits.OUT;
+    mdbflags.timeout = PIR3bits.TMR0IF;
      //Send ACK on successful receive except for an ACK which = 0
     if(mdbflags.isdata == 1 && mdbdata[i] != 0x00)
     {
@@ -395,10 +405,21 @@ void mdb_waitx(void)
         
     }
 }
+
+uint8_t UART9_Read(void)
+{
+    while(!PIR3bits.U1RXIF)
+    {
+    }
+
+    mdbflags.isdata = U1ERRIRbits.PERIF;
+    return U1RXB;
+}
+
 //Wait for buffer empty
 void mdb_waitr(void)
 {
-    while(!PIR3bits.U1RXIF)
+    while(!U1FIFObits.RXIDL )
     {
         
     }
@@ -420,7 +441,6 @@ void mdb_test(void)
         mdb_transmit(x);
         
         asm("nop");
-        mdb_ron();
         wait_ack();
         i++;
         x++;

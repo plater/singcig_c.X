@@ -41,8 +41,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "249 ./mcc_generated_files/memory.h
 [; ;./mcc_generated_files/memory.h: 249: void DATAEE_WriteByte(uint8_t bAdd, uint8_t bData);
 [v _DATAEE_WriteByte `(v ~T0 @X0 0 ef2`uc`uc ]
-"81 ./mcc_generated_files/mcc.h
-[; ;./mcc_generated_files/mcc.h: 81: void SYSTEM_Initialize(void);
+"80 ./mcc_generated_files/mcc.h
+[; ;./mcc_generated_files/mcc.h: 80: void SYSTEM_Initialize(void);
 [v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
 "3585 /home/davepl/.mchp_packs/Microchip/PIC18F-K_DFP/1.6.125/xc8/pic/include/proc/pic18f25k42.h
 [; ;/home/davepl/.mchp_packs/Microchip/PIC18F-K_DFP/1.6.125/xc8/pic/include/proc/pic18f25k42.h: 3585:     struct {
@@ -55,6 +55,29 @@ Version 4.0 HI-TECH Software Intermediate Code
 "3596
 [; ;/home/davepl/.mchp_packs/Microchip/PIC18F-K_DFP/1.6.125/xc8/pic/include/proc/pic18f25k42.h: 3596: extern volatile PIE4bits_t PIE4bits __attribute__((address(0x3994)));
 [v _PIE4bits `VS157 ~T0 @X0 0 e@14740 ]
+"41960
+[; ;/home/davepl/.mchp_packs/Microchip/PIC18F-K_DFP/1.6.125/xc8/pic/include/proc/pic18f25k42.h: 41960:     struct {
+[s S1898 :4 `uc 1 :3 `uc 1 :1 `uc 1 ]
+[n S1898 . OUTPS CKPS ON ]
+"41965
+[; ;/home/davepl/.mchp_packs/Microchip/PIC18F-K_DFP/1.6.125/xc8/pic/include/proc/pic18f25k42.h: 41965:     struct {
+[s S1899 :4 `uc 1 :3 `uc 1 :1 `uc 1 ]
+[n S1899 . T2OUTPS T2CKPS T2ON ]
+"41970
+[; ;/home/davepl/.mchp_packs/Microchip/PIC18F-K_DFP/1.6.125/xc8/pic/include/proc/pic18f25k42.h: 41970:     struct {
+[s S1900 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1900 . T2OUTPS0 T2OUTPS1 T2OUTPS2 T2OUTPS3 T2CKPS0 T2CKPS1 T2CKPS2 ]
+"41979
+[; ;/home/davepl/.mchp_packs/Microchip/PIC18F-K_DFP/1.6.125/xc8/pic/include/proc/pic18f25k42.h: 41979:     struct {
+[s S1901 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1901 . OUTPS0 OUTPS1 OUTPS2 OUTPS3 CKPS0 CKPS1 CKPS2 TMR2ON ]
+"41959
+[; ;/home/davepl/.mchp_packs/Microchip/PIC18F-K_DFP/1.6.125/xc8/pic/include/proc/pic18f25k42.h: 41959: typedef union {
+[u S1897 `S1898 1 `S1899 1 `S1900 1 `S1901 1 ]
+[n S1897 . . . . . ]
+"41990
+[; ;/home/davepl/.mchp_packs/Microchip/PIC18F-K_DFP/1.6.125/xc8/pic/include/proc/pic18f25k42.h: 41990: extern volatile T2CONbits_t T2CONbits __attribute__((address(0x3FAC)));
+[v _T2CONbits `VS1897 ~T0 @X0 0 e@16300 ]
 [v F15641 `(v ~T0 @X0 0 tf ]
 "846 ./mcc_generated_files/tmr2.h
 [; ;./mcc_generated_files/tmr2.h: 846:  void TMR2_SetInterruptHandler(void (* InterruptHandler)(void));
@@ -116,9 +139,21 @@ Version 4.0 HI-TECH Software Intermediate Code
 "12 /home/davepl/.mchp_packs/Microchip/PIC18F-K_DFP/1.6.125/xc8/pic/include/builtins.h
 [v __delay `JF192 ~T0 @X0 0 e ]
 [p i __delay ]
-"132 ./mcc_generated_files/cmp1.h
-[; ;./mcc_generated_files/cmp1.h: 132: _Bool CMP1_GetOutputStatus(void);
-[v _CMP1_GetOutputStatus `(a ~T0 @X0 0 ef ]
+"26531 /home/davepl/.mchp_packs/Microchip/PIC18F-K_DFP/1.6.125/xc8/pic/include/proc/pic18f25k42.h
+[; ;/home/davepl/.mchp_packs/Microchip/PIC18F-K_DFP/1.6.125/xc8/pic/include/proc/pic18f25k42.h: 26531:     struct {
+[s S1190 :1 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1190 . SYNC HYS . POL . OUT EN ]
+"26540
+[; ;/home/davepl/.mchp_packs/Microchip/PIC18F-K_DFP/1.6.125/xc8/pic/include/proc/pic18f25k42.h: 26540:     struct {
+[s S1191 :1 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1191 . C1SYNC C1HYS . C1POL . C1OUT C1EN ]
+"26530
+[; ;/home/davepl/.mchp_packs/Microchip/PIC18F-K_DFP/1.6.125/xc8/pic/include/proc/pic18f25k42.h: 26530: typedef union {
+[u S1189 `S1190 1 `S1191 1 ]
+[n S1189 . . . ]
+"26550
+[; ;/home/davepl/.mchp_packs/Microchip/PIC18F-K_DFP/1.6.125/xc8/pic/include/proc/pic18f25k42.h: 26550: extern volatile CM1CON0bits_t CM1CON0bits __attribute__((address(0x3EBC)));
+[v _CM1CON0bits `VS1189 ~T0 @X0 0 e@16060 ]
 "23 ./vend.h
 [; ;./vend.h: 23: void coin_in(void);
 [v _coin_in `(v ~T0 @X0 0 ef ]
@@ -2568,280 +2603,283 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 70:     PIE4bits.TMR2IE = 0;
 [e = . . _PIE4bits 0 2 -> -> 0 `i `uc ]
 "71
-[; ;main.c: 71:     TMR2_SetInterruptHandler(InterruptTMR2);
-[e ( _TMR2_SetInterruptHandler (1 &U _InterruptTMR2 ]
+[; ;main.c: 71:     T2CONbits.ON = 0;
+[e = . . _T2CONbits 0 2 -> -> 0 `i `uc ]
 "72
-[; ;main.c: 72:     do { LATAbits.LATA1 = 1; } while(0);
+[; ;main.c: 72:     TMR2_SetInterruptHandler(InterruptTMR2);
+[e ( _TMR2_SetInterruptHandler (1 &U _InterruptTMR2 ]
+"73
+[; ;main.c: 73:     do { LATAbits.LATA1 = 1; } while(0);
 [e :U 2133 ]
 {
 [e = . . _LATAbits 0 1 -> -> 1 `i `uc ]
 }
 [e :U 2132 ]
-"73
-[; ;main.c: 73:     do { LATCbits.LATC6 = 1; } while(0);
+"74
+[; ;main.c: 74:     do { LATCbits.LATC6 = 1; } while(0);
 [e :U 2136 ]
 {
 [e = . . _LATCbits 0 6 -> -> 1 `i `uc ]
 }
 [e :U 2135 ]
-"74
-[; ;main.c: 74:     vend_init();
-[e ( _vend_init ..  ]
 "75
-[; ;main.c: 75:     do { LATCbits.LATC5 = 1; } while(0);
+[; ;main.c: 75:     vend_init();
+[e ( _vend_init ..  ]
+"76
+[; ;main.c: 76:     do { LATCbits.LATC5 = 1; } while(0);
 [e :U 2139 ]
 {
 [e = . . _LATCbits 0 5 -> -> 1 `i `uc ]
 }
 [e :U 2138 ]
-"76
-[; ;main.c: 76:     do { LATCbits.LATC6 = 0; } while(0);
+"77
+[; ;main.c: 77:     do { LATCbits.LATC6 = 0; } while(0);
 [e :U 2142 ]
 {
 [e = . . _LATCbits 0 6 -> -> 0 `i `uc ]
 }
 [e :U 2141 ]
-"77
-[; ;main.c: 77:     do { LATAbits.LATA1 = 0; } while(0);
+"78
+[; ;main.c: 78:     do { LATAbits.LATA1 = 0; } while(0);
 [e :U 2145 ]
 {
 [e = . . _LATAbits 0 1 -> -> 0 `i `uc ]
 }
 [e :U 2144 ]
-"78
-[; ;main.c: 78:     mdb_init();
-[e ( _mdb_init ..  ]
 "79
-[; ;main.c: 79:     do { LATCbits.LATC5 = 0; } while(0);
+[; ;main.c: 79:     mdb_init();
+[e ( _mdb_init ..  ]
+"80
+[; ;main.c: 80:     do { LATCbits.LATC5 = 0; } while(0);
 [e :U 2148 ]
 {
 [e = . . _LATCbits 0 5 -> -> 0 `i `uc ]
 }
 [e :U 2147 ]
-"83
-[; ;main.c: 83:     PIE4bits.TMR2IE = 1;
+"84
+[; ;main.c: 84:     PIE4bits.TMR2IE = 1;
 [e = . . _PIE4bits 0 2 -> -> 1 `i `uc ]
-"95
-[; ;main.c: 95:     while (1)
-[e :U 2150 ]
 "96
-[; ;main.c: 96:     {
-{
+[; ;main.c: 96:     while (1)
+[e :U 2150 ]
 "97
-[; ;main.c: 97:         if(!PORTAbits.RA3)
-[e $ ! ! != -> . . _PORTAbits 0 3 `i -> 0 `i 2152  ]
-"98
-[; ;main.c: 98:         {
+[; ;main.c: 97:     {
 {
+"98
+[; ;main.c: 98:         if(!PORTAbits.RA3)
+[e $ ! ! != -> . . _PORTAbits 0 3 `i -> 0 `i 2152  ]
 "99
-[; ;main.c: 99:             enter_service();
-[e ( _enter_service ..  ]
+[; ;main.c: 99:         {
+{
 "100
-[; ;main.c: 100:         }
+[; ;main.c: 100:             enter_service();
+[e ( _enter_service ..  ]
+"101
+[; ;main.c: 101:         }
 }
 [e :U 2152 ]
-"102
-[; ;main.c: 102:         while(!CMP1_GetOutputStatus())
+"103
+[; ;main.c: 103:         while(!CM1CON0bits.C1OUT)
 [e $U 2153  ]
 [e :U 2154 ]
-"103
-[; ;main.c: 103:         {
-{
 "104
-[; ;main.c: 104:             do { LATCbits.LATC5 = 0; } while(0);
+[; ;main.c: 104:         {
+{
+"105
+[; ;main.c: 105:             do { LATCbits.LATC5 = 0; } while(0);
 [e :U 2158 ]
 {
 [e = . . _LATCbits 0 5 -> -> 0 `i `uc ]
 }
 [e :U 2157 ]
-"105
-[; ;main.c: 105:             do { LATCbits.LATC6 = 1; } while(0);
+"106
+[; ;main.c: 106:             do { LATCbits.LATC6 = 1; } while(0);
 [e :U 2161 ]
 {
 [e = . . _LATCbits 0 6 -> -> 1 `i `uc ]
 }
 [e :U 2160 ]
-"106
-[; ;main.c: 106:             _delay((unsigned long)((100)*(12000000/4000.0)));
-[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 12000000 `l `d .4000.0 `ul ]
 "107
-[; ;main.c: 107:             do { LATCbits.LATC5 = 1; } while(0);
+[; ;main.c: 107:             _delay((unsigned long)((100)*(12000000/4000.0)));
+[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 12000000 `l `d .4000.0 `ul ]
+"108
+[; ;main.c: 108:             do { LATCbits.LATC5 = 1; } while(0);
 [e :U 2164 ]
 {
 [e = . . _LATCbits 0 5 -> -> 1 `i `uc ]
 }
 [e :U 2163 ]
-"108
-[; ;main.c: 108:             do { LATCbits.LATC6 = 0; } while(0);
+"109
+[; ;main.c: 109:             do { LATCbits.LATC6 = 0; } while(0);
 [e :U 2167 ]
 {
 [e = . . _LATCbits 0 6 -> -> 0 `i `uc ]
 }
 [e :U 2166 ]
-"109
-[; ;main.c: 109:             _delay((unsigned long)((100)*(12000000/4000.0)));
+"110
+[; ;main.c: 110:             _delay((unsigned long)((100)*(12000000/4000.0)));
 [e ( __delay (1 -> * -> -> 100 `i `d / -> -> 12000000 `l `d .4000.0 `ul ]
-"111
-[; ;main.c: 111:         }
+"112
+[; ;main.c: 112:         }
 }
 [e :U 2153 ]
-"102
-[; ;main.c: 102:         while(!CMP1_GetOutputStatus())
-[e $ ! != -> ( _CMP1_GetOutputStatus ..  `i -> 0 `i 2154  ]
+"103
+[; ;main.c: 103:         while(!CM1CON0bits.C1OUT)
+[e $ ! != -> . . _CM1CON0bits 1 5 `i -> 0 `i 2154  ]
 [e :U 2155 ]
-"112
-[; ;main.c: 112:         if(venflags.error)
-[e $ ! != -> . _venflags 1 `i -> 0 `i 2168  ]
 "113
-[; ;main.c: 113:         {
-{
+[; ;main.c: 113:         if(venflags.error)
+[e $ ! != -> . _venflags 1 `i -> 0 `i 2168  ]
 "114
-[; ;main.c: 114:             do { LATAbits.LATA4 = 0; } while(0);
+[; ;main.c: 114:         {
+{
+"115
+[; ;main.c: 115:             do { LATAbits.LATA4 = 0; } while(0);
 [e :U 2171 ]
 {
 [e = . . _LATAbits 0 4 -> -> 0 `i `uc ]
 }
 [e :U 2170 ]
-"115
-[; ;main.c: 115:         }
+"116
+[; ;main.c: 116:         }
 }
 [e $U 2172  ]
-"116
-[; ;main.c: 116:         else
-[e :U 2168 ]
 "117
-[; ;main.c: 117:         {
-{
+[; ;main.c: 117:         else
+[e :U 2168 ]
 "118
-[; ;main.c: 118:             do { LATAbits.LATA4 = 1; } while(0);
+[; ;main.c: 118:         {
+{
+"119
+[; ;main.c: 119:             do { LATAbits.LATA4 = 1; } while(0);
 [e :U 2175 ]
 {
 [e = . . _LATAbits 0 4 -> -> 1 `i `uc ]
 }
 [e :U 2174 ]
-"119
-[; ;main.c: 119:         }
+"120
+[; ;main.c: 120:         }
 }
 [e :U 2172 ]
-"121
-[; ;main.c: 121:         if(!PORTAbits.RA5)
-[e $ ! ! != -> . . _PORTAbits 0 5 `i -> 0 `i 2176  ]
 "122
-[; ;main.c: 122:         {
-{
+[; ;main.c: 122:         if(!PORTAbits.RA5)
+[e $ ! ! != -> . . _PORTAbits 0 5 `i -> 0 `i 2176  ]
 "123
-[; ;main.c: 123:             coin_in();
-[e ( _coin_in ..  ]
+[; ;main.c: 123:         {
+{
 "124
-[; ;main.c: 124:         }
+[; ;main.c: 124:             coin_in();
+[e ( _coin_in ..  ]
+"125
+[; ;main.c: 125:         }
 }
 [e :U 2176 ]
-"126
-[; ;main.c: 126:         if(venflags.error)
-[e $ ! != -> . _venflags 1 `i -> 0 `i 2177  ]
 "127
-[; ;main.c: 127:         {
-{
+[; ;main.c: 127:         if(venflags.error)
+[e $ ! != -> . _venflags 1 `i -> 0 `i 2177  ]
 "128
-[; ;main.c: 128:             button_flash();
-[e ( _button_flash ..  ]
+[; ;main.c: 128:         {
+{
 "129
-[; ;main.c: 129:         }
+[; ;main.c: 129:             button_flash();
+[e ( _button_flash ..  ]
+"130
+[; ;main.c: 130:         }
 }
 [e :U 2177 ]
-"131
-[; ;main.c: 131:         if(credit_check() >= vendprice)
-[e $ ! >= -> ( _credit_check ..  `i -> _vendprice `i 2178  ]
 "132
-[; ;main.c: 132:         {
-{
+[; ;main.c: 132:         if(credit_check() >= vendprice)
+[e $ ! >= -> ( _credit_check ..  `i -> _vendprice `i 2178  ]
 "133
-[; ;main.c: 133:             venflags.crednuff = 1;
-[e = . _venflags 10 -> -> 1 `i `uc ]
+[; ;main.c: 133:         {
+{
 "134
-[; ;main.c: 134:         }
+[; ;main.c: 134:             venflags.crednuff = 1;
+[e = . _venflags 10 -> -> 1 `i `uc ]
+"135
+[; ;main.c: 135:         }
 }
 [e $U 2179  ]
-"135
-[; ;main.c: 135:         else
-[e :U 2178 ]
 "136
-[; ;main.c: 136:         {
-{
+[; ;main.c: 136:         else
+[e :U 2178 ]
 "137
-[; ;main.c: 137:             venflags.crednuff = 0;
-[e = . _venflags 10 -> -> 0 `i `uc ]
+[; ;main.c: 137:         {
+{
 "138
-[; ;main.c: 138:         }
+[; ;main.c: 138:             venflags.crednuff = 0;
+[e = . _venflags 10 -> -> 0 `i `uc ]
+"139
+[; ;main.c: 139:         }
 }
 [e :U 2179 ]
-"140
-[; ;main.c: 140:         if(PIR8bits.TMR5IF)
-[e $ ! != -> . . _PIR8bits 0 1 `i -> 0 `i 2180  ]
 "141
-[; ;main.c: 141:         {
-{
+[; ;main.c: 141:         if(PIR8bits.TMR5IF)
+[e $ ! != -> . . _PIR8bits 0 1 `i -> 0 `i 2180  ]
 "142
-[; ;main.c: 142:             venflags.t5time = 1;
-[e = . _venflags 11 -> -> 1 `i `uc ]
+[; ;main.c: 142:         {
+{
 "143
-[; ;main.c: 143:         }
+[; ;main.c: 143:             venflags.t5time = 1;
+[e = . _venflags 11 -> -> 1 `i `uc ]
+"144
+[; ;main.c: 144:         }
 }
 [e :U 2180 ]
-"145
-[; ;main.c: 145:         if(venflags.crednuff && venflags.t5time)
-[e $ ! && != -> . _venflags 10 `i -> 0 `i != -> . _venflags 11 `i -> 0 `i 2181  ]
 "146
-[; ;main.c: 146:         {
-{
+[; ;main.c: 146:         if(venflags.crednuff && venflags.t5time)
+[e $ ! && != -> . _venflags 10 `i -> 0 `i != -> . _venflags 11 `i -> 0 `i 2181  ]
 "147
-[; ;main.c: 147:             if(!venflags.error)
-[e $ ! ! != -> . _venflags 1 `i -> 0 `i 2182  ]
-"148
-[; ;main.c: 148:             {
+[; ;main.c: 147:         {
 {
+"148
+[; ;main.c: 148:             if(!venflags.error)
+[e $ ! ! != -> . _venflags 1 `i -> 0 `i 2182  ]
 "149
-[; ;main.c: 149:                 do { LATAbits.LATA4 = 0; } while(0);
+[; ;main.c: 149:             {
+{
+"150
+[; ;main.c: 150:                 do { LATAbits.LATA4 = 0; } while(0);
 [e :U 2185 ]
 {
 [e = . . _LATAbits 0 4 -> -> 0 `i `uc ]
 }
 [e :U 2184 ]
-"150
-[; ;main.c: 150:                 do { LATCbits.LATC6 = 1; } while(0);
+"151
+[; ;main.c: 151:                 do { LATCbits.LATC6 = 1; } while(0);
 [e :U 2188 ]
 {
 [e = . . _LATCbits 0 6 -> -> 1 `i `uc ]
 }
 [e :U 2187 ]
-"151
-[; ;main.c: 151:             }
+"152
+[; ;main.c: 152:             }
 }
 [e :U 2182 ]
-"152
-[; ;main.c: 152:             if(!PORTAbits.RA6 && !venflags.error)
-[e $ ! && ! != -> . . _PORTAbits 0 6 `i -> 0 `i ! != -> . _venflags 1 `i -> 0 `i 2189  ]
 "153
-[; ;main.c: 153:             {
-{
+[; ;main.c: 153:             if(!PORTAbits.RA6 && !venflags.error)
+[e $ ! && ! != -> . . _PORTAbits 0 6 `i -> 0 `i ! != -> . _venflags 1 `i -> 0 `i 2189  ]
 "154
-[; ;main.c: 154:                 dispense();
-[e ( _dispense ..  ]
+[; ;main.c: 154:             {
+{
 "155
-[; ;main.c: 155:             }
+[; ;main.c: 155:                 dispense();
+[e ( _dispense ..  ]
+"156
+[; ;main.c: 156:             }
 }
 [e :U 2189 ]
-"156
-[; ;main.c: 156:         }
+"157
+[; ;main.c: 157:         }
 }
 [e :U 2181 ]
-"157
-[; ;main.c: 157:     }
+"158
+[; ;main.c: 158:     }
 }
 [e :U 2149 ]
 [e $U 2150  ]
 [e :U 2151 ]
-"158
-[; ;main.c: 158: }
+"159
+[; ;main.c: 159: }
 [e :UE 2129 ]
 }

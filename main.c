@@ -68,6 +68,7 @@ void main(void)
     SYSTEM_Initialize();
   //Disable poll timer interrupt
     PIE4bits.TMR2IE = 0;
+    T2CONbits.ON = 0;
     TMR2_SetInterruptHandler(InterruptTMR2);
     BUZZER_SetHigh();
     LIGHT1_SetHigh();
@@ -99,7 +100,7 @@ void main(void)
             enter_service();
         }
         
-        while(!CMP1_GetOutputStatus())
+        while(!CM1CON0bits.C1OUT)
         {
             LIGHT2_SetLow();
             LIGHT1_SetHigh();

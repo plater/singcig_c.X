@@ -65,7 +65,7 @@ void PIN_MANAGER_Initialize(void)
     TRISx registers
     */
     TRISA = 0xE9;
-    TRISB = 0xCC;
+    TRISB = 0xC4;
     TRISC = 0x1D;
 
     /**
@@ -121,13 +121,9 @@ void PIN_MANAGER_Initialize(void)
     
 	
     U2RXPPS = 0x10;   //RC0->UART2:RX2;    
-    SPI1SCKPPS = 0x0D;   //RB5->SPI1:SCK1;    
     RB1PPS = 0x13;   //RB1->UART1:TX1;    
-    RB5PPS = 0x1E;   //RB5->SPI1:SCK1;    
     RC1PPS = 0x16;   //RC1->UART2:TX2;    
-    RB4PPS = 0x1F;   //RB4->SPI1:SDO1;    
     U1RXPPS = 0x0A;   //RB2->UART1:RX1;    
-    SPI1SDIPPS = 0x0B;   //RB3->SPI1:SDI1;    
 }
   
 void PIN_MANAGER_IOC(void)

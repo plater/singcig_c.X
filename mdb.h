@@ -128,6 +128,8 @@ void mdb_ron(void);
 
 uint8_t wait_ack(void);
 
+uint8_t UART9_Read(void);
+
 void mdb_test(void);
 
 void mdb_waitx(void);
