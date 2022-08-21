@@ -7,7 +7,7 @@
 # 1 "/home/davepl/.mchp_packs/Microchip/PIC18F-K_DFP/1.6.125/xc8/pic/include/language_support.h" 1 3
 # 2 "<built-in>" 2
 # 1 "main.c" 2
-# 49 "main.c"
+# 53 "main.c"
 # 1 "./vend.h" 1
 # 11 "./vend.h"
 # 1 "./buffers.h" 1
@@ -25657,9 +25657,9 @@ unsigned char __t3rd16on(void);
 # 1 "./mcc_generated_files/device_config.h" 1
 # 51 "./mcc_generated_files/mcc.h" 2
 # 1 "./mcc_generated_files/pin_manager.h" 1
-# 498 "./mcc_generated_files/pin_manager.h"
+# 430 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_Initialize (void);
-# 510 "./mcc_generated_files/pin_manager.h"
+# 442 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_IOC(void);
 # 52 "./mcc_generated_files/mcc.h" 2
 
@@ -25818,6 +25818,10 @@ char *ctermid(char *);
 char *tempnam(const char *, const char *);
 # 8 "/opt/microchip/xc8/v2.40/pic/include/c99/conio.h" 2 3
 # 55 "./mcc_generated_files/mcc.h" 2
+# 1 "./mcc_generated_files/interrupt_manager.h" 1
+# 87 "./mcc_generated_files/interrupt_manager.h"
+void INTERRUPT_Initialize (void);
+# 56 "./mcc_generated_files/mcc.h" 2
 # 1 "./mcc_generated_files/tmr5.h" 1
 # 100 "./mcc_generated_files/tmr5.h"
 void TMR5_Initialize(void);
@@ -25837,7 +25841,7 @@ void TMR5_StartSinglePulseAcquisition(void);
 uint8_t TMR5_CheckGateValueStatus(void);
 # 387 "./mcc_generated_files/tmr5.h"
 _Bool TMR5_HasOverflowOccured(void);
-# 56 "./mcc_generated_files/mcc.h" 2
+# 57 "./mcc_generated_files/mcc.h" 2
 # 1 "./mcc_generated_files/tmr3.h" 1
 # 100 "./mcc_generated_files/tmr3.h"
 void TMR3_Initialize(void);
@@ -25857,7 +25861,7 @@ void TMR3_StartSinglePulseAcquisition(void);
 uint8_t TMR3_CheckGateValueStatus(void);
 # 387 "./mcc_generated_files/tmr3.h"
 _Bool TMR3_HasOverflowOccured(void);
-# 57 "./mcc_generated_files/mcc.h" 2
+# 58 "./mcc_generated_files/mcc.h" 2
 # 1 "./mcc_generated_files/tmr1.h" 1
 # 100 "./mcc_generated_files/tmr1.h"
 void TMR1_Initialize(void);
@@ -25877,13 +25881,275 @@ void TMR1_StartSinglePulseAcquisition(void);
 uint8_t TMR1_CheckGateValueStatus(void);
 # 387 "./mcc_generated_files/tmr1.h"
 _Bool TMR1_HasOverflowOccured(void);
-# 58 "./mcc_generated_files/mcc.h" 2
+# 59 "./mcc_generated_files/mcc.h" 2
+# 1 "./mcc_generated_files/tmr2.h" 1
+# 79 "./mcc_generated_files/tmr2.h"
+typedef enum
+{
+# 89 "./mcc_generated_files/tmr2.h"
+   TMR2_ROP_STARTS_TMRON,
+
+
+
+
+   TMR2_ROP_STARTS_TMRON_ERSHIGH,
+
+
+
+
+   TMR2_ROP_STARTS_TMRON_ERSLOW,
+
+
+
+
+   TMR2_ROP_RESETS_ERSBOTHEDGE,
+
+
+
+
+   TMR2_ROP_RESETS_ERSRISINGEDGE,
+
+
+
+
+   TMR2_ROP_RESETS_ERSFALLINGEDGE,
+
+
+
+
+   TMR2_ROP_RESETS_ERSLOW,
+
+
+
+
+   TMR2_ROP_RESETS_ERSHIGH,
+# 135 "./mcc_generated_files/tmr2.h"
+   TMR2_OS_STARTS_TMRON,
+
+
+
+
+   TMR2_OS_STARTS_ERSRISINGEDGE ,
+
+
+
+
+   TMR2_OS_STARTS_ERSFALLINGEDGE ,
+
+
+
+
+   TMR2_OS_STARTS_ERSBOTHEDGE,
+
+
+
+
+
+   TMR2_OS_STARTS_ERSFIRSTRISINGEDGE,
+
+
+
+
+
+   TMR2_OS_STARTS_ERSFIRSTFALLINGEDGE,
+
+
+
+
+
+   TMR2_OS_STARTS_ERSRISINGEDGEDETECT,
+
+
+
+
+   TMR2_OS_STARTS_ERSFALLINGEDGEDETECT,
+
+
+
+
+   TMR2_OS_STARTS_TMRON_ERSHIGH = 0x16,
+
+
+
+
+   TMR2_OS_STARTS_TMRON_ERSLOW = 0x17,
+# 192 "./mcc_generated_files/tmr2.h"
+   TMR2_MS_STARTS_TMRON_ERSRISINGEDGEDETECT = 0x11,
+
+
+
+
+   TMR2_MS_STARTS_TMRON_ERSFALLINGEDGEDETECT = 0x12,
+
+
+
+
+
+   TMR2_MS_STARTS_TMRON_ERSBOTHEDGE = 0x13
+
+} TMR2_HLT_MODE;
+# 220 "./mcc_generated_files/tmr2.h"
+typedef enum
+{
+
+
+    TMR2_T2INPPS,
+
+
+
+    TMR2_RESERVED,
+
+
+
+    TMR2_T4POSTSCALED,
+
+
+
+    TMR2_T6POSTSCALED,
+
+
+
+    TMR2_CCP1_OUT,
+
+
+
+    TMR2_CCP2_OUT,
+
+
+
+    TMR2_CCP3_OUT,
+
+
+
+    TMR2_CCP4_OUT,
+
+
+
+    TMR2_PWM5_OUT,
+
+
+
+    TMR2_PWM6_OUT,
+
+
+
+    TMR2_PWM7_OUT,
+
+
+
+    TMR2_PWM8_OUT,
+
+
+
+    TMR2_RESERVED_2,
+
+
+
+    TMR2_RESERVED_3,
+
+
+
+    TMR2_C1_OUT_SYNC,
+
+
+
+    TMR2_C2_OUT_SYNC,
+
+
+
+    TMR2_ZCD_OUTPUT,
+
+
+
+    TMR2_CLC1_OUT,
+
+
+
+    TMR2_CLC2_OUT,
+
+
+
+    TMR2_CLC3_OUT,
+
+
+
+    TMR2_CLC4_OUT,
+
+
+
+    TMR2_UART1_RX_EDGE,
+
+
+
+    TMR2_UART1_TX_EDGE,
+
+
+
+    TMR2_UART2_RX_EDGE,
+
+
+
+    TMR2_UART2_TX_EDGE
+
+
+} TMR2_HLT_EXT_RESET_SOURCE;
+# 365 "./mcc_generated_files/tmr2.h"
+void TMR2_Initialize(void);
+# 401 "./mcc_generated_files/tmr2.h"
+void TMR2_ModeSet(TMR2_HLT_MODE mode);
+# 436 "./mcc_generated_files/tmr2.h"
+void TMR2_ExtResetSourceSet(TMR2_HLT_EXT_RESET_SOURCE reset);
+# 465 "./mcc_generated_files/tmr2.h"
+void TMR2_Start(void);
+# 494 "./mcc_generated_files/tmr2.h"
+void TMR2_StartTimer(void);
+# 526 "./mcc_generated_files/tmr2.h"
+void TMR2_Stop(void);
+# 558 "./mcc_generated_files/tmr2.h"
+void TMR2_StopTimer(void);
+# 593 "./mcc_generated_files/tmr2.h"
+uint8_t TMR2_Counter8BitGet(void);
+# 628 "./mcc_generated_files/tmr2.h"
+uint8_t TMR2_ReadTimer(void);
+# 667 "./mcc_generated_files/tmr2.h"
+void TMR2_Counter8BitSet(uint8_t timerVal);
+# 706 "./mcc_generated_files/tmr2.h"
+void TMR2_WriteTimer(uint8_t timerVal);
+# 758 "./mcc_generated_files/tmr2.h"
+void TMR2_Period8BitSet(uint8_t periodVal);
+# 810 "./mcc_generated_files/tmr2.h"
+void TMR2_LoadPeriodRegister(uint8_t periodVal);
+# 828 "./mcc_generated_files/tmr2.h"
+void TMR2_ISR(void);
+# 846 "./mcc_generated_files/tmr2.h"
+ void TMR2_SetInterruptHandler(void (* InterruptHandler)(void));
+# 864 "./mcc_generated_files/tmr2.h"
+extern void (*TMR2_InterruptHandler)(void);
+# 882 "./mcc_generated_files/tmr2.h"
+void TMR2_DefaultInterruptHandler(void);
+# 60 "./mcc_generated_files/mcc.h" 2
 # 1 "./mcc_generated_files/cmp1.h" 1
 # 92 "./mcc_generated_files/cmp1.h"
 void CMP1_Initialize(void);
 # 132 "./mcc_generated_files/cmp1.h"
 _Bool CMP1_GetOutputStatus(void);
-# 59 "./mcc_generated_files/mcc.h" 2
+# 61 "./mcc_generated_files/mcc.h" 2
+# 1 "./mcc_generated_files/tmr0.h" 1
+# 100 "./mcc_generated_files/tmr0.h"
+void TMR0_Initialize(void);
+# 129 "./mcc_generated_files/tmr0.h"
+void TMR0_StartTimer(void);
+# 161 "./mcc_generated_files/tmr0.h"
+void TMR0_StopTimer(void);
+# 196 "./mcc_generated_files/tmr0.h"
+uint8_t TMR0_ReadTimer(void);
+# 235 "./mcc_generated_files/tmr0.h"
+void TMR0_WriteTimer(uint8_t timerVal);
+# 272 "./mcc_generated_files/tmr0.h"
+void TMR0_Reload(uint8_t periodVal);
+# 308 "./mcc_generated_files/tmr0.h"
+_Bool TMR0_HasOverflowOccured(void);
+# 62 "./mcc_generated_files/mcc.h" 2
 # 1 "./mcc_generated_files/memory.h" 1
 # 99 "./mcc_generated_files/memory.h"
 uint8_t FLASH_ReadByte(uint32_t flashAddr);
@@ -25901,7 +26167,7 @@ void DATAEE_WriteByte(uint8_t bAdd, uint8_t bData);
 uint8_t DATAEE_ReadByte(uint8_t bAdd);
 
 void MEMORY_Tasks(void);
-# 60 "./mcc_generated_files/mcc.h" 2
+# 63 "./mcc_generated_files/mcc.h" 2
 # 1 "./mcc_generated_files/dac1.h" 1
 # 93 "./mcc_generated_files/dac1.h"
 void DAC1_Initialize(void);
@@ -25909,7 +26175,7 @@ void DAC1_Initialize(void);
 void DAC1_SetOutput(uint8_t inputData);
 # 163 "./mcc_generated_files/dac1.h"
 uint8_t DAC1_GetOutput(void);
-# 61 "./mcc_generated_files/mcc.h" 2
+# 64 "./mcc_generated_files/mcc.h" 2
 # 1 "./mcc_generated_files/uart2.h" 1
 # 74 "./mcc_generated_files/uart2.h"
 typedef union {
@@ -25941,7 +26207,7 @@ void UART2_SetFramingErrorHandler(void (* interruptHandler)(void));
 void UART2_SetOverrunErrorHandler(void (* interruptHandler)(void));
 # 431 "./mcc_generated_files/uart2.h"
 void UART2_SetErrorHandler(void (* interruptHandler)(void));
-# 62 "./mcc_generated_files/mcc.h" 2
+# 65 "./mcc_generated_files/mcc.h" 2
 # 1 "./mcc_generated_files/uart1.h" 1
 # 74 "./mcc_generated_files/uart1.h"
 typedef union {
@@ -25975,7 +26241,7 @@ void UART1_SetFramingErrorHandler(void (* interruptHandler)(void));
 void UART1_SetOverrunErrorHandler(void (* interruptHandler)(void));
 # 450 "./mcc_generated_files/uart1.h"
 void UART1_SetErrorHandler(void (* interruptHandler)(void));
-# 63 "./mcc_generated_files/mcc.h" 2
+# 66 "./mcc_generated_files/mcc.h" 2
 # 1 "./mcc_generated_files/spi1.h" 1
 # 59 "./mcc_generated_files/spi1.h"
 typedef enum {
@@ -25991,12 +26257,12 @@ void SPI1_WriteBlock(void *block, size_t blockSize);
 void SPI1_ReadBlock(void *block, size_t blockSize);
 void SPI1_WriteByte(uint8_t byte);
 uint8_t SPI1_ReadByte(void);
-# 64 "./mcc_generated_files/mcc.h" 2
-# 78 "./mcc_generated_files/mcc.h"
+# 67 "./mcc_generated_files/mcc.h" 2
+# 81 "./mcc_generated_files/mcc.h"
 void SYSTEM_Initialize(void);
-# 91 "./mcc_generated_files/mcc.h"
+# 94 "./mcc_generated_files/mcc.h"
 void OSCILLATOR_Initialize(void);
-# 104 "./mcc_generated_files/mcc.h"
+# 107 "./mcc_generated_files/mcc.h"
 void PMD_Initialize(void);
 # 36 "./buffers.h" 2
 
@@ -26007,6 +26273,14 @@ volatile uint8_t cash;
 volatile uint8_t buttons;
 volatile uint8_t vendprice;
 volatile uint16_t timeout;
+
+uint8_t mdbdata[33];
+uint8_t slvadd;
+uint8_t mcount = 0;
+uint8_t notebyte;
+uint8_t chkbyte;
+uint16_t dbcount=0;
+uint8_t notenum = 0xFF;
 
 
 const uint16_t second1 = 0xF0DD ;
@@ -26046,13 +26320,17 @@ struct
    unsigned spare6 : 1;
    unsigned spare7 : 1;
 } venflags;
+
+void credit_add(uint8_t credit);
+
+void poll_mdb(void);
+
+void InterruptTMR2(void);
 # 12 "./vend.h" 2
 
 void vend_init(void);
 
 uint8_t credit_check(void);
-
-void credit_add(uint8_t credit);
 
 void credit_subtract(uint8_t credit);
 
@@ -26069,7 +26347,7 @@ void button_flash(void);
 void Set_Timeout(void);
 
 _Bool switch_read(void);
-# 50 "main.c" 2
+# 54 "main.c" 2
 # 1 "./mdb.h" 1
 # 14 "./mdb.h"
 const uint8_t note_reset = 0x30;
@@ -26115,15 +26393,6 @@ const uint16_t notebits = 0x18;
 const uint16_t sensval = 0x19;
 
 
-uint8_t mdbdata[33];
-uint8_t slvadd;
-uint8_t mcount = 0;
-uint8_t notebyte;
-uint8_t chkbyte;
-uint16_t dbcount=0;
-uint8_t notenum = 0xFF;
-
-
 
 struct
 {
@@ -26135,7 +26404,7 @@ struct
     unsigned vending : 1;
     unsigned noteset : 1;
     unsigned endis : 1;
-    unsigned spare5 : 1;
+    unsigned nodata : 1;
 }mdbflags;
 
 
@@ -26209,7 +26478,7 @@ void mdb_unlock(void);
 void mdb_transmit(uint8_t txbyte);
 
 void usartmdb_Initialize(void);
-# 51 "main.c" 2
+# 55 "main.c" 2
 
 
 
@@ -26224,13 +26493,22 @@ void main(void)
         DATAEE_WriteByte(credmem, 0x00);
     }
     SYSTEM_Initialize();
+
+    PIE4bits.TMR2IE = 0;
+    TMR2_SetInterruptHandler(InterruptTMR2);
+    do { LATAbits.LATA1 = 1; } while(0);
     do { LATCbits.LATC6 = 1; } while(0);
     vend_init();
     do { LATCbits.LATC5 = 1; } while(0);
-    mdb_init();
     do { LATCbits.LATC6 = 0; } while(0);
+    do { LATAbits.LATA1 = 0; } while(0);
+    mdb_init();
     do { LATCbits.LATC5 = 0; } while(0);
-# 82 "main.c"
+
+
+
+    PIE4bits.TMR2IE = 1;
+# 95 "main.c"
     while (1)
     {
         if(!PORTAbits.RA3)

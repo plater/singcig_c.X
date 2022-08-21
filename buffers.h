@@ -41,6 +41,14 @@ volatile uint8_t cash;
 volatile uint8_t buttons;
 volatile uint8_t vendprice;
 volatile uint16_t timeout;
+//32 bytes allowed location 32 should always be zero
+uint8_t mdbdata[33];
+uint8_t slvadd;
+uint8_t mcount = 0;
+uint8_t notebyte;
+uint8_t chkbyte;
+uint16_t dbcount=0;
+uint8_t notenum = 0xFF;
 
 //Timer values for vend motor timing
 const uint16_t second1 = 0xF0DD ;
@@ -81,6 +89,11 @@ struct
    unsigned spare7 : 1;
 } venflags;
 
+void credit_add(uint8_t credit);
+
+void poll_mdb(void);
+
+void InterruptTMR2(void);
 
 #endif	/* XC_HEADER_TEMPLATE_H */
 

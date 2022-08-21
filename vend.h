@@ -14,8 +14,6 @@ void vend_init(void);
 
 uint8_t credit_check(void);
 
-void credit_add(uint8_t credit);
-
 void credit_subtract(uint8_t credit);
 
 void dispense(void);

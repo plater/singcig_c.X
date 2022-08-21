@@ -21,9 +21,9 @@ void init_mdbdata(uint8_t initdata)
 void mdb_init(void)
 {
     __delay_ms(250);
-//    noteen_byte = DATAEE_ReadByte(notebits);
+    noteen_byte = DATAEE_ReadByte(notebits);
     ((uint8_t*) &noteen)[0] = noteen_byte;
-    UART1_Initialize();
+//    UART1_Initialize();
     mdbflags.noteerr = 0;
     mdbflags.isdata = 0;
     mdb_reset();
@@ -156,11 +156,63 @@ void mdb_security()
     mdb_comm(note_security, 0x01);
 }
 
+void InterruptTMR2(void)
+{
+    PIE4bits.TMR2IE = 0;
+    poll_mdb();
+    TMR2_Initialize();
+}
+
+void poll_mdb(void)
+{
+    {
+        credit = mdb_poll();
+        if(credit != 0x00)
+        {
+            if(mdbflags.noteerr == 1)
+            {
+                switch(credit)
+                {
+                    //Just reset
+                    case 0x06 : mdb_init();
+                    mdbflags.noteerr == 0;
+                    credit = 0;
+                    break;
+                    //Accept disabled
+                    case 0x09:
+                    if(mdbflags.vending)
+                    {
+                        credit = 0;
+                    }
+                    else
+                    {
+                        mdb_init();
+                        credit = 0;
+                    }
+                    break;
+                    case 0x10:mdbflags.noteerr == 0;
+                    credit = 0;
+                    break;
+                    case 0x0C : mdbflags.noteerr == 0;
+                    credit = 0;
+                    break;
+                    }
+                }
+                else
+                {
+                    credit_add(credit);
+                    venflags.iscredit = 1;
+                }
+            }
+        }
+// End of mdb poll section
+}
+
 uint8_t mdb_poll(void)
 {
     //Timer3 is the poll timer, poll every 50ms.
     //This timer is also used by cctalk time out.
-    TMR3_Initialize();
+    
     uint8_t i = mdb_comm(note_poll, 0x00);
     notebyte = mdbdata[0];
     //if only an ACK is received, no data to process.
@@ -242,22 +294,24 @@ uint8_t mdb_comm(uint8_t slvadd, uint8_t mcount)
     uint8_t i = 0;
     //load slvadd.
 /*    void UART1_SetAddresstoTransmit(uint8_t txAddress)
-{
-    U1P1L = txAddress;
-}
+ * This routine from PIC18F25K40 automatically transmits
+ * the address before the data ie. if set address then
+ * two bytes are transmitted
 */
-    UART1_SetAddresstoTransmit(slvadd);
-
     //Write appropriate poll address
     //Only a bill acceptor at this time.
- //   
-    mdb_transmit(slvadd);
-    U1ERRIRbits.PERIF = 0; //U1ERRIRbits.PERIF = 0;
+    UART1_SetAddresstoTransmit(slvadd);
+    mdbflags.nodata = 0;
+    if(!mcount)//If no data everything completes with one transmit
+    {
+        mdb_transmit(slvadd);
+        mdbflags.nodata = 1;
+    }
     //Write CHK byte - checksum
     
     //Handle more bytes for enables etc
     chkbyte = slvadd;
-    if(mcount != 0)
+    if(!mdbflags.nodata)
     {
         i = mcount + 1;
         while(i != 0)
@@ -270,20 +324,23 @@ uint8_t mdb_comm(uint8_t slvadd, uint8_t mcount)
             mcount--;
         }
     }
-    mdb_transmit(chkbyte);
+    if(!mdbflags.nodata)
+    {
+        mdb_transmit(chkbyte);
+    }
     
     //Start the 5mS timeout for receiving status from device.
-    //Monitor PIR4bits.TMR1IF for overflow UART1_Read();
+    //Monitor T0CON0bits.OUT for overflow UART1_Read();
     
     //initialize storage
     //mdb_ron();
     init_mdbdata(0xFF);
-    TMR1_Initialize();
+    TMR0_Initialize();
     dbcount = 0;
     mdbflags.isdata = 0;
     i = 0;
     //Continue until either timeout or data present.
-    while(!PIR4bits.TMR1IF && !mdbflags.isdata)
+    while(!T0CON0bits.OUT && !mdbflags.isdata)
     {
         //debug count of timer
         dbcount++;
@@ -298,7 +355,7 @@ uint8_t mdb_comm(uint8_t slvadd, uint8_t mcount)
             mdb_waitr();
             //End of transmission when 9th bit set.
             mdbflags.isdata = U1ERRIRbits.PERIF;
-            TMR1_Initialize();
+            TMR0_Initialize();
             i++;
             
         }
@@ -306,18 +363,14 @@ uint8_t mdb_comm(uint8_t slvadd, uint8_t mcount)
     }
     //Correct i to point to last received data
     i--;
-    //If timeout occurred TMR1IF is set.
-    mdbflags.timeout = PIR4bits.TMR1IF;
+    //If timeout occurred TMR0IF is set.
+    mdbflags.timeout = T0CON0bits.OUT;
      //Send ACK on successful receive except for an ACK which = 0
     if(mdbflags.isdata == 1 && mdbdata[i] != 0x00)
     {
-        U1ERRIRbits.PERIF = 1;
-        mdb_on();
         mdb_transmit(0x00);
-        
     }
     //U1ERRIRbits.PERIF;
-    mdb_on();
     // i contains the number of data blocks in mdbdata[]
     return(i);
 }
@@ -436,7 +489,7 @@ void mdb_unlock(void)
     RX2PPSbits.RXPPS = 0x0;   //RB4->EUSART2:RX2;*/
     TMR3_Initialize();
     TMR5_Initialize();
-    TMR1_Initialize();
+    TMR0_Initialize();
 
 }
 #endif

@@ -53,15 +53,6 @@ const uint16_t notebits = 0x18;
 // 0x1F = Most sensitive.
 const uint16_t sensval = 0x19;
 
-//32 bytes allowed location 32 should always be zero
-uint8_t mdbdata[33];
-uint8_t slvadd;
-uint8_t mcount = 0;
-uint8_t notebyte;
-uint8_t chkbyte;
-uint16_t dbcount=0;
-uint8_t notenum = 0xFF;
-
 //const uint8_t note_reset = 0x30;
 //MDB flags isdata noteer mode = 1 master address or end of slave transmission.
 struct
@@ -74,7 +65,7 @@ struct
     unsigned vending : 1;
     unsigned noteset : 1;
     unsigned endis : 1;
-    unsigned spare5 : 1;
+    unsigned nodata : 1;
 }mdbflags;
 
 //Notes enabled or disabled

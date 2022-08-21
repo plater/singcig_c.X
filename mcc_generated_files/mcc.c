@@ -49,16 +49,19 @@
 
 void SYSTEM_Initialize(void)
 {
+    INTERRUPT_Initialize();
     PMD_Initialize();
     PIN_MANAGER_Initialize();
     OSCILLATOR_Initialize();
+    TMR2_Initialize();
+    TMR0_Initialize();
     CMP1_Initialize();
     TMR3_Initialize();
     DAC1_Initialize();
     TMR5_Initialize();
     TMR1_Initialize();
-    UART2_Initialize();
     UART1_Initialize();
+    UART2_Initialize();
     SPI1_Initialize();
 }
 

@@ -1,24 +1,26 @@
 /**
-  @Generated PIC10 / PIC12 / PIC16 / PIC18 MCUs Header File
+  Generated Interrupt Manager Source File
 
   @Company:
     Microchip Technology Inc.
 
   @File Name:
-    mcc.h
+    interrupt_manager.c
 
   @Summary:
-    This is the mcc.h file generated using PIC10 / PIC12 / PIC16 / PIC18 MCUs
+    This is the Interrupt Manager file generated using PIC10 / PIC12 / PIC16 / PIC18 MCUs
 
   @Description:
-    This header file provides implementations for driver APIs for all modules selected in the GUI.
+    This header file provides implementations for global interrupt handling.
+    For individual peripheral handlers please see the peripheral driver for
+    all modules selected in the GUI.
     Generation Information :
         Product Revision  :  PIC10 / PIC12 / PIC16 / PIC18 MCUs - 1.81.4
         Device            :  PIC18F25K42
-        Driver Version    :  2.00
+        Driver Version    :  2.03
     The generated drivers are tested against the following:
         Compiler          :  XC8 2.20 and above or later
-        MPLAB             :  MPLAB X 5.40
+        MPLAB 	          :  MPLAB X 5.40
 */
 
 /*
@@ -44,70 +46,27 @@
     SOFTWARE.
 */
 
-#ifndef MCC_H
-#define	MCC_H
-#include <xc.h>
-#include "device_config.h"
-#include "pin_manager.h"
-#include <stdint.h>
-#include <stdbool.h>
-#include <conio.h>
 #include "interrupt_manager.h"
-#include "tmr5.h"
-#include "tmr3.h"
-#include "tmr1.h"
-#include "tmr2.h"
-#include "cmp1.h"
-#include "tmr0.h"
-#include "memory.h"
-#include "dac1.h"
-#include "uart2.h"
-#include "uart1.h"
-#include "spi1.h"
+#include "mcc.h"
 
+void  INTERRUPT_Initialize (void)
+{
+    // Disable Interrupt Priority Vectors (16CXXX Compatibility Mode)
+    INTCON0bits.IPEN = 0;
+}
 
-
-/**
- * @Param
-    none
- * @Returns
-    none
- * @Description
-    Initializes the device to the default states configured in the
- *                  MCC GUI
- * @Example
-    SYSTEM_Initialize(void);
- */
-void SYSTEM_Initialize(void);
-
-/**
- * @Param
-    none
- * @Returns
-    none
- * @Description
-    Initializes the oscillator to the default states configured in the
- *                  MCC GUI
- * @Example
-    OSCILLATOR_Initialize(void);
- */
-void OSCILLATOR_Initialize(void);
-
-/**
- * @Param
-    none
- * @Returns
-    none
- * @Description
-    Initializes the PMD module to the default states configured in the
- *                  MCC GUI
- * @Example
-    PMD_Initialize(void);
- */
-void PMD_Initialize(void);
-
-
-#endif	/* MCC_H */
+void __interrupt() INTERRUPT_InterruptManager (void)
+{
+    // interrupt handler
+    if(PIE4bits.TMR2IE == 1 && PIR4bits.TMR2IF == 1)
+    {
+        TMR2_ISR();
+    }
+    else
+    {
+        //Unhandled Interrupt
+    }
+}
 /**
  End of File
 */

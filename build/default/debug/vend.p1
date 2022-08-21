@@ -1,6 +1,6 @@
 Version 4.0 HI-TECH Software Intermediate Code
-"65 ./buffers.h
-[; ;./buffers.h: 65: {
+"73 ./buffers.h
+[; ;./buffers.h: 73: {
 [s S2125 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S2125 . iscredit error initialrun service priceset setprice mottime settime swclosed bflash crednuff t5time spare4 spare5 spare6 spare7 ]
 "44216 /home/davepl/.mchp_packs/Microchip/PIC18F-K_DFP/1.6.125/xc8/pic/include/proc/pic18f25k42.h
@@ -46,13 +46,13 @@ Version 4.0 HI-TECH Software Intermediate Code
 "100 ./mcc_generated_files/tmr5.h
 [; ;./mcc_generated_files/tmr5.h: 100: void TMR5_Initialize(void);
 [v _TMR5_Initialize `(v ~T0 @X0 0 ef ]
-"33 ./vend.h
-[; ;./vend.h: 33: _Bool switch_read(void);
+"31 ./vend.h
+[; ;./vend.h: 31: _Bool switch_read(void);
 [v _switch_read `(a ~T0 @X0 0 ef ]
-"17
-[; ;./vend.h: 17: void credit_add(uint8_t credit);
+"92 ./buffers.h
+[; ;./buffers.h: 92: void credit_add(uint8_t credit);
 [v _credit_add `(v ~T0 @X0 0 ef1`uc ]
-"15
+"15 ./vend.h
 [; ;./vend.h: 15: uint8_t credit_check(void);
 [v _credit_check `(uc ~T0 @X0 0 ef ]
 "249 ./mcc_generated_files/memory.h
@@ -139,8 +139,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "44525
 [; ;/home/davepl/.mchp_packs/Microchip/PIC18F-K_DFP/1.6.125/xc8/pic/include/proc/pic18f25k42.h: 44525: extern volatile PORTAbits_t PORTAbits __attribute__((address(0x3FCA)));
 [v _PORTAbits `VS2004 ~T0 @X0 0 e@16330 ]
-"31 ./vend.h
-[; ;./vend.h: 31: void Set_Timeout(void);
+"29 ./vend.h
+[; ;./vend.h: 29: void Set_Timeout(void);
 [v _Set_Timeout `(v ~T0 @X0 0 ef ]
 "196 ./mcc_generated_files/tmr1.h
 [; ;./mcc_generated_files/tmr1.h: 196: uint16_t TMR1_ReadTimer(void);
@@ -2299,50 +2299,80 @@ Version 4.0 HI-TECH Software Intermediate Code
 "43
 [; ;./buffers.h: 43: volatile uint16_t timeout;
 [v _timeout `Vus ~T0 @X0 1 e ]
+"45
+[; ;./buffers.h: 45: uint8_t mdbdata[33];
+[v _mdbdata `uc ~T0 @X0 -> 33 `i e ]
 "46
-[; ;./buffers.h: 46: const uint16_t second1 = 0xF0DD ;
+[; ;./buffers.h: 46: uint8_t slvadd;
+[v _slvadd `uc ~T0 @X0 1 e ]
+"47
+[; ;./buffers.h: 47: uint8_t mcount = 0;
+[v _mcount `uc ~T0 @X0 1 e ]
+[i _mcount
+-> -> 0 `i `uc
+]
+"48
+[; ;./buffers.h: 48: uint8_t notebyte;
+[v _notebyte `uc ~T0 @X0 1 e ]
+"49
+[; ;./buffers.h: 49: uint8_t chkbyte;
+[v _chkbyte `uc ~T0 @X0 1 e ]
+"50
+[; ;./buffers.h: 50: uint16_t dbcount=0;
+[v _dbcount `us ~T0 @X0 1 e ]
+[i _dbcount
+-> -> 0 `i `us
+]
+"51
+[; ;./buffers.h: 51: uint8_t notenum = 0xFF;
+[v _notenum `uc ~T0 @X0 1 e ]
+[i _notenum
+-> -> 255 `i `uc
+]
+"54
+[; ;./buffers.h: 54: const uint16_t second1 = 0xF0DD ;
 [v _second1 `Cus ~T0 @X0 1 e ]
 [i _second1
 -> -> 61661 `ui `us
 ]
-"48
-[; ;./buffers.h: 48: const uint16_t second_5 = 0x0F23 ;
+"56
+[; ;./buffers.h: 56: const uint16_t second_5 = 0x0F23 ;
 [v _second_5 `Cus ~T0 @X0 1 e ]
 [i _second_5
 -> -> 3875 `i `us
 ]
-"50
-[; ;./buffers.h: 50: const uint16_t secondadd = 0x1E46 ;
+"58
+[; ;./buffers.h: 58: const uint16_t secondadd = 0x1E46 ;
 [v _secondadd `Cus ~T0 @X0 1 e ]
 [i _secondadd
 -> -> 7750 `i `us
 ]
-"54
-[; ;./buffers.h: 54: const uint16_t credmem = 0x00;
+"62
+[; ;./buffers.h: 62: const uint16_t credmem = 0x00;
 [v _credmem `Cus ~T0 @X0 1 e ]
 [i _credmem
 -> -> 0 `i `us
 ]
-"56
-[; ;./buffers.h: 56: const uint16_t pricestore = 0x01;
+"64
+[; ;./buffers.h: 64: const uint16_t pricestore = 0x01;
 [v _pricestore `Cus ~T0 @X0 1 e ]
 [i _pricestore
 -> -> 1 `i `us
 ]
-"58
-[; ;./buffers.h: 58: const uint16_t venderrors = 0x02;
+"66
+[; ;./buffers.h: 66: const uint16_t venderrors = 0x02;
 [v _venderrors `Cus ~T0 @X0 1 e ]
 [i _venderrors
 -> -> 2 `i `us
 ]
-"60
-[; ;./buffers.h: 60: const uint16_t mototime = 0x03;
+"68
+[; ;./buffers.h: 68: const uint16_t mototime = 0x03;
 [v _mototime `Cus ~T0 @X0 1 e ]
 [i _mototime
 -> -> 3 `i `us
 ]
-"82
-[; ;./buffers.h: 82: } venflags;
+"90
+[; ;./buffers.h: 90: } venflags;
 [v _venflags `S2125 ~T0 @X0 1 e ]
 "9 vend.c
 [; ;vend.c: 9: void vend_init(void)

@@ -7,6 +7,58 @@
 [e E355 . `uc
 SPI1_DEFAULT 0
 ]
+"96 /home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr2.c
+[e E15219 . `uc
+TMR2_ROP_STARTS_TMRON 0
+TMR2_ROP_STARTS_TMRON_ERSHIGH 1
+TMR2_ROP_STARTS_TMRON_ERSLOW 2
+TMR2_ROP_RESETS_ERSBOTHEDGE 3
+TMR2_ROP_RESETS_ERSRISINGEDGE 4
+TMR2_ROP_RESETS_ERSFALLINGEDGE 5
+TMR2_ROP_RESETS_ERSLOW 6
+TMR2_ROP_RESETS_ERSHIGH 7
+TMR2_OS_STARTS_TMRON 8
+TMR2_OS_STARTS_ERSRISINGEDGE 9
+TMR2_OS_STARTS_ERSFALLINGEDGE 10
+TMR2_OS_STARTS_ERSBOTHEDGE 11
+TMR2_OS_STARTS_ERSFIRSTRISINGEDGE 12
+TMR2_OS_STARTS_ERSFIRSTFALLINGEDGE 13
+TMR2_OS_STARTS_ERSRISINGEDGEDETECT 14
+TMR2_OS_STARTS_ERSFALLINGEDGEDETECT 15
+TMR2_OS_STARTS_TMRON_ERSHIGH 22
+TMR2_OS_STARTS_TMRON_ERSLOW 23
+TMR2_MS_STARTS_TMRON_ERSRISINGEDGEDETECT 17
+TMR2_MS_STARTS_TMRON_ERSFALLINGEDGEDETECT 18
+TMR2_MS_STARTS_TMRON_ERSBOTHEDGE 19
+]
+"102
+[e E15242 . `uc
+TMR2_T2INPPS 0
+TMR2_RESERVED 1
+TMR2_T4POSTSCALED 2
+TMR2_T6POSTSCALED 3
+TMR2_CCP1_OUT 4
+TMR2_CCP2_OUT 5
+TMR2_CCP3_OUT 6
+TMR2_CCP4_OUT 7
+TMR2_PWM5_OUT 8
+TMR2_PWM6_OUT 9
+TMR2_PWM7_OUT 10
+TMR2_PWM8_OUT 11
+TMR2_RESERVED_2 12
+TMR2_RESERVED_3 13
+TMR2_C1_OUT_SYNC 14
+TMR2_C2_OUT_SYNC 15
+TMR2_ZCD_OUTPUT 16
+TMR2_CLC1_OUT 17
+TMR2_CLC2_OUT 18
+TMR2_CLC3_OUT 19
+TMR2_CLC4_OUT 20
+TMR2_UART1_RX_EDGE 21
+TMR2_UART1_TX_EDGE 22
+TMR2_UART2_RX_EDGE 23
+TMR2_UART2_TX_EDGE 24
+]
 "4 /opt/microchip/xc8/v2.40/pic/sources/c99/common/fleq.c
 [v ___fleq __fleq `(b  1 e 0 0 ]
 "62 /opt/microchip/xc8/v2.40/pic/sources/c99/common/float.c
@@ -31,7 +83,7 @@ SPI1_DEFAULT 0
 [v ___lmul __lmul `(ul  1 e 4 0 ]
 "91 /opt/microchip/xc8/v2.40/pic/sources/c99/common/Umul64.c
 [v ___omul __omul `(uo  1 e 8 0 ]
-"55 /home/davepl/MPLABXProjects/singcig_c.X/main.c
+"59 /home/davepl/MPLABXProjects/singcig_c.X/main.c
 [v _main main `(v  1 e 1 0 ]
 "58 /home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/cmp1.c
 [v _CMP1_Initialize CMP1_Initialize `(v  1 e 1 0 ]
@@ -39,11 +91,15 @@ SPI1_DEFAULT 0
 [v _CMP1_GetOutputStatus CMP1_GetOutputStatus `(a  1 e 1 0 ]
 "58 /home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/dac1.c
 [v _DAC1_Initialize DAC1_Initialize `(v  1 e 1 0 ]
+"52 /home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
+"58
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `IIH(v  1 e 1 0 ]
 "50 /home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
-"65
+"68
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
-"79
+"82
 [v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
 "59 /home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/memory.c
 [v _FLASH_ReadByte FLASH_ReadByte `(uc  1 e 1 0 ]
@@ -53,14 +109,19 @@ SPI1_DEFAULT 0
 [v _FLASH_EraseBlock FLASH_EraseBlock `(v  1 e 1 0 ]
 "165
 [v _DATAEE_WriteByte DATAEE_WriteByte `(v  1 e 1 0 ]
+[v i2_DATAEE_WriteByte DATAEE_WriteByte `(v  1 e 1 0 ]
 "186
 [v _DATAEE_ReadByte DATAEE_ReadByte `(uc  1 e 1 0 ]
+[v i2_DATAEE_ReadByte DATAEE_ReadByte `(uc  1 e 1 0 ]
 "55 /home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
 "64 /home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/spi1.c
 [v _SPI1_Initialize SPI1_Initialize `(v  1 e 1 0 ]
 "100
 [v _SPI1_ExchangeByte SPI1_ExchangeByte `(uc  1 e 1 0 ]
+"60 /home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr0.c
+[v _TMR0_Initialize TMR0_Initialize `(v  1 e 1 0 ]
+[v i2_TMR0_Initialize TMR0_Initialize `(v  1 e 1 0 ]
 "63 /home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr1.c
 [v _TMR1_Initialize TMR1_Initialize `(v  1 e 1 0 ]
 "92
@@ -71,6 +132,26 @@ SPI1_DEFAULT 0
 [v _TMR1_ReadTimer TMR1_ReadTimer `(us  1 e 2 0 ]
 "120
 [v _TMR1_WriteTimer TMR1_WriteTimer `(v  1 e 1 0 ]
+"64 /home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr2.c
+[v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
+[v i2_TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
+"108
+[v _TMR2_Start TMR2_Start `(v  1 e 1 0 ]
+"119
+[v _TMR2_Stop TMR2_Stop `(v  1 e 1 0 ]
+"130
+[v _TMR2_Counter8BitGet TMR2_Counter8BitGet `(uc  1 e 1 0 ]
+"144
+[v _TMR2_Counter8BitSet TMR2_Counter8BitSet `(v  1 e 1 0 ]
+"155
+[v _TMR2_Period8BitSet TMR2_Period8BitSet `(v  1 e 1 0 ]
+"165
+[v _TMR2_ISR TMR2_ISR `(v  1 e 1 0 ]
+"178
+[v _TMR2_SetInterruptHandler TMR2_SetInterruptHandler `(v  1 e 1 0 ]
+[v i2_TMR2_SetInterruptHandler TMR2_SetInterruptHandler `(v  1 e 1 0 ]
+"182
+[v _TMR2_DefaultInterruptHandler TMR2_DefaultInterruptHandler `(v  1 e 1 0 ]
 "63 /home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr3.c
 [v _TMR3_Initialize TMR3_Initialize `(v  1 e 1 0 ]
 "120
@@ -83,16 +164,22 @@ SPI1_DEFAULT 0
 [v _UART1_Initialize UART1_Initialize `(v  1 e 1 0 ]
 "145
 [v _UART1_Read UART1_Read `(uc  1 e 1 0 ]
+[v i2_UART1_Read UART1_Read `(uc  1 e 1 0 ]
 "170
 [v _UART1_Write UART1_Write `(v  1 e 1 0 ]
+[v i2_UART1_Write UART1_Write `(v  1 e 1 0 ]
 "179
 [v _UART1_SetAddresstoTransmit UART1_SetAddresstoTransmit `(v  1 e 1 0 ]
+[v i2_UART1_SetAddresstoTransmit UART1_SetAddresstoTransmit `(v  1 e 1 0 ]
 "188
 [v _UART1_DefaultFramingErrorHandler UART1_DefaultFramingErrorHandler `(v  1 e 1 0 ]
+[v i2_UART1_DefaultFramingErrorHandler UART1_DefaultFramingErrorHandler `(v  1 e 1 0 ]
 "190
 [v _UART1_DefaultOverrunErrorHandler UART1_DefaultOverrunErrorHandler `(v  1 e 1 0 ]
+[v i2_UART1_DefaultOverrunErrorHandler UART1_DefaultOverrunErrorHandler `(v  1 e 1 0 ]
 "192
 [v _UART1_DefaultErrorHandler UART1_DefaultErrorHandler `(v  1 e 1 0 ]
+[v i2_UART1_DefaultErrorHandler UART1_DefaultErrorHandler `(v  1 e 1 0 ]
 "195
 [v _UART1_SetFramingErrorHandler UART1_SetFramingErrorHandler `(v  1 e 1 0 ]
 "199
@@ -115,24 +202,39 @@ SPI1_DEFAULT 0
 [v _UART2_SetErrorHandler UART2_SetErrorHandler `(v  1 e 1 0 ]
 "13 /home/davepl/MPLABXProjects/singcig_c.X/mdb.c
 [v _init_mdbdata init_mdbdata `(v  1 e 1 0 ]
+[v i2_init_mdbdata init_mdbdata `(v  1 e 1 0 ]
 "21
 [v _mdb_init mdb_init `(v  1 e 1 0 ]
+[v i2_mdb_init mdb_init `(v  1 e 1 0 ]
 "36
 [v _mdb_reset mdb_reset `(uc  1 e 1 0 ]
+[v i2_mdb_reset mdb_reset `(uc  1 e 1 0 ]
 "137
 [v _mdb_noten mdb_noten `(v  1 e 1 0 ]
+[v i2_mdb_noten mdb_noten `(v  1 e 1 0 ]
 "153
 [v _mdb_security mdb_security `(v  1 e 1 0 ]
-"239
+[v i2_mdb_security mdb_security `(v  1 e 1 0 ]
+"159
+[v _InterruptTMR2 InterruptTMR2 `(v  1 e 1 0 ]
+"166
+[v _poll_mdb poll_mdb `(v  1 e 1 0 ]
+"211
+[v _mdb_poll mdb_poll `(uc  1 e 1 0 ]
+"291
 [v _mdb_comm mdb_comm `(uc  1 e 1 0 ]
-"325
+[v i2_mdb_comm mdb_comm `(uc  1 e 1 0 ]
+"378
 [v _mdb_on mdb_on `(v  1 e 1 0 ]
-"338
+"391
 [v _mdb_waitx mdb_waitx `(v  1 e 1 0 ]
-"346
+[v i2_mdb_waitx mdb_waitx `(v  1 e 1 0 ]
+"399
 [v _mdb_waitr mdb_waitr `(v  1 e 1 0 ]
-"443
+[v i2_mdb_waitr mdb_waitr `(v  1 e 1 0 ]
+"496
 [v _mdb_transmit mdb_transmit `(v  1 e 1 0 ]
+[v i2_mdb_transmit mdb_transmit `(v  1 e 1 0 ]
 "9 /home/davepl/MPLABXProjects/singcig_c.X/vend.c
 [v _vend_init vend_init `(v  1 e 1 0 ]
 "33
@@ -141,6 +243,7 @@ SPI1_DEFAULT 0
 [v _credit_check credit_check `(uc  1 e 1 0 ]
 "56
 [v _credit_add credit_add `(v  1 e 1 0 ]
+[v i2_credit_add credit_add `(v  1 e 1 0 ]
 "68
 [v _credit_subtract credit_subtract `(v  1 e 1 0 ]
 "81
@@ -163,7 +266,17 @@ SPI1_DEFAULT 0
 [v _vendprice vendprice `VEuc  1 e 1 0 ]
 "43
 [v _timeout timeout `VEus  1 e 2 0 ]
-[s S1387 . 2 `uc 1 iscredit 1 0 :1:0 
+"45
+[v _mdbdata mdbdata `[33]uc  1 e 33 0 ]
+"47
+[v _mcount mcount `uc  1 e 1 0 ]
+"48
+[v _notebyte notebyte `uc  1 e 1 0 ]
+"49
+[v _chkbyte chkbyte `uc  1 e 1 0 ]
+"50
+[v _dbcount dbcount `us  1 e 2 0 ]
+[s S1821 . 2 `uc 1 iscredit 1 0 :1:0 
 `uc 1 error 1 0 :1:1 
 `uc 1 initialrun 1 0 :1:2 
 `uc 1 service 1 0 :1:3 
@@ -180,30 +293,20 @@ SPI1_DEFAULT 0
 `uc 1 spare6 1 1 :1:6 
 `uc 1 spare7 1 1 :1:7 
 ]
-"82
-[v _venflags venflags `S1387  1 e 2 0 ]
-"57 /home/davepl/MPLABXProjects/singcig_c.X/mdb.h
-[v _mdbdata mdbdata `[33]uc  1 e 33 0 ]
-"59
-[v _mcount mcount `uc  1 e 1 0 ]
-"60
-[v _notebyte notebyte `uc  1 e 1 0 ]
-"61
-[v _chkbyte chkbyte `uc  1 e 1 0 ]
-"62
-[v _dbcount dbcount `us  1 e 2 0 ]
-[s S1404 . 1 `uc 1 isdata 1 0 :1:0 
+"90
+[v _venflags venflags `S1821  1 e 2 0 ]
+[s S1838 . 1 `uc 1 isdata 1 0 :1:0 
 `uc 1 noteerr 1 0 :1:1 
 `uc 1 mode 1 0 :1:2 
 `uc 1 timeout 1 0 :1:3 
 `uc 1 vending 1 0 :1:4 
 `uc 1 noteset 1 0 :1:5 
 `uc 1 endis 1 0 :1:6 
-`uc 1 spare5 1 0 :1:7 
+`uc 1 nodata 1 0 :1:7 
 ]
-"78
-[v _mdbflags mdbflags `S1404  1 e 1 0 ]
-[s S1413 . 1 `uc 1 R10 1 0 :1:0 
+"69 /home/davepl/MPLABXProjects/singcig_c.X/mdb.h
+[v _mdbflags mdbflags `S1838  1 e 1 0 ]
+[s S1847 . 1 `uc 1 R10 1 0 :1:0 
 `uc 1 R20 1 0 :1:1 
 `uc 1 R50 1 0 :1:2 
 `uc 1 R100 1 0 :1:3 
@@ -212,10 +315,22 @@ SPI1_DEFAULT 0
 `uc 1 spare1 1 0 :1:6 
 `uc 1 spare2 1 0 :1:7 
 ]
-"92
-[v _noteen noteen `S1413  1 e 1 0 ]
-"93
+"83
+[v _noteen noteen `S1847  1 e 1 0 ]
+"84
 [v _noteen_byte noteen_byte `VEuc  1 e 1 0 ]
+[s S1489 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR1GIE 1 0 :1:1 
+`uc 1 TMR2IE 1 0 :1:2 
+`uc 1 CCP1IE 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 NCO1IE 1 0 :1:5 
+`uc 1 CWG1IE 1 0 :1:6 
+`uc 1 CLC1IE 1 0 :1:7 
+]
+"3596 /home/davepl/.mchp_packs/Microchip/PIC18F-K_DFP/1.6.125/xc8/pic/include/proc/pic18f25k42.h
+[u S1498 . 1 `S1489 1 . 1 0 ]
+[v _PIE4bits PIE4bits `VES1498  1 e 1 @14740 ]
 [s S208 . 1 `uc 1 SWIF 1 0 :1:0 
 `uc 1 HLVDIF 1 0 :1:1 
 `uc 1 OSFIF 1 0 :1:2 
@@ -225,10 +340,10 @@ SPI1_DEFAULT 0
 `uc 1 CRCIF 1 0 :1:6 
 `uc 1 IOCIF 1 0 :1:7 
 ]
-"3913 /home/davepl/.mchp_packs/Microchip/PIC18F-K_DFP/1.6.125/xc8/pic/include/proc/pic18f25k42.h
+"3913
 [u S217 . 1 `S208 1 . 1 0 ]
 [v _PIR0bits PIR0bits `VES217  1 e 1 @14752 ]
-[s S876 . 1 `uc 1 DMA1SCNTIF 1 0 :1:0 
+[s S888 . 1 `uc 1 DMA1SCNTIF 1 0 :1:0 
 `uc 1 DMA1DCNTIF 1 0 :1:1 
 `uc 1 DMA1ORIF 1 0 :1:2 
 `uc 1 DMA1AIF 1 0 :1:3 
@@ -238,9 +353,9 @@ SPI1_DEFAULT 0
 `uc 1 I2C1RXIF 1 0 :1:7 
 ]
 "4037
-[u S885 . 1 `S876 1 . 1 0 ]
-[v _PIR2bits PIR2bits `VES885  1 e 1 @14754 ]
-[s S1003 . 1 `uc 1 I2C1TXIF 1 0 :1:0 
+[u S897 . 1 `S888 1 . 1 0 ]
+[v _PIR2bits PIR2bits `VES897  1 e 1 @14754 ]
+[s S1015 . 1 `uc 1 I2C1TXIF 1 0 :1:0 
 `uc 1 I2C1IF 1 0 :1:1 
 `uc 1 I2C1EIF 1 0 :1:2 
 `uc 1 U1RXIF 1 0 :1:3 
@@ -250,9 +365,9 @@ SPI1_DEFAULT 0
 `uc 1 TMR0IF 1 0 :1:7 
 ]
 "4099
-[u S1012 . 1 `S1003 1 . 1 0 ]
-[v _PIR3bits PIR3bits `VES1012  1 e 1 @14755 ]
-[s S340 . 1 `uc 1 TMR1IF 1 0 :1:0 
+[u S1024 . 1 `S1015 1 . 1 0 ]
+[v _PIR3bits PIR3bits `VES1024  1 e 1 @14755 ]
+[s S352 . 1 `uc 1 TMR1IF 1 0 :1:0 
 `uc 1 TMR1GIF 1 0 :1:1 
 `uc 1 TMR2IF 1 0 :1:2 
 `uc 1 CCP1IF 1 0 :1:3 
@@ -262,9 +377,9 @@ SPI1_DEFAULT 0
 `uc 1 CLC1IF 1 0 :1:7 
 ]
 "4161
-[u S349 . 1 `S340 1 . 1 0 ]
-[v _PIR4bits PIR4bits `VES349  1 e 1 @14756 ]
-[s S504 . 1 `uc 1 I2C2IF 1 0 :1:0 
+[u S361 . 1 `S352 1 . 1 0 ]
+[v _PIR4bits PIR4bits `VES361  1 e 1 @14756 ]
+[s S516 . 1 `uc 1 I2C2IF 1 0 :1:0 
 `uc 1 I2C2EIF 1 0 :1:1 
 `uc 1 U2RXIF 1 0 :1:2 
 `uc 1 U2TXIF 1 0 :1:3 
@@ -274,15 +389,15 @@ SPI1_DEFAULT 0
 `uc 1 TMR3GIF 1 0 :1:7 
 ]
 "4280
-[u S513 . 1 `S504 1 . 1 0 ]
-[v _PIR6bits PIR6bits `VES513  1 e 1 @14758 ]
-[s S668 . 1 `uc 1 . 1 0 :6:0 
+[u S525 . 1 `S516 1 . 1 0 ]
+[v _PIR6bits PIR6bits `VES525  1 e 1 @14758 ]
+[s S680 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 TMR5IF 1 0 :1:6 
 `uc 1 TMR5GIF 1 0 :1:7 
 ]
 "4382
-[u S672 . 1 `S668 1 . 1 0 ]
-[v _PIR8bits PIR8bits `VES672  1 e 1 @14760 ]
+[u S684 . 1 `S680 1 . 1 0 ]
+[v _PIR8bits PIR8bits `VES684  1 e 1 @14760 ]
 "4461
 [v _PMD0 PMD0 `VEuc  1 e 1 @14784 ]
 "4523
@@ -403,21 +518,21 @@ SPI1_DEFAULT 0
 [v _SPI1TCNTL SPI1TCNTL `VEuc  1 e 1 @15634 ]
 "21386
 [v _SPI1CON0 SPI1CON0 `VEuc  1 e 1 @15636 ]
-[s S846 . 1 `uc 1 BMODE 1 0 :1:0 
+[s S858 . 1 `uc 1 BMODE 1 0 :1:0 
 `uc 1 MST 1 0 :1:1 
 `uc 1 LSBF 1 0 :1:2 
 `uc 1 . 1 0 :4:3 
 `uc 1 EN 1 0 :1:7 
 ]
 "21407
-[s S852 . 1 `uc 1 SPI1BMODE 1 0 :1:0 
+[s S864 . 1 `uc 1 SPI1BMODE 1 0 :1:0 
 `uc 1 SPI1MST 1 0 :1:1 
 `uc 1 SPI1LSBF 1 0 :1:2 
 `uc 1 . 1 0 :4:3 
 `uc 1 SPI1SPIEN 1 0 :1:7 
 ]
-[u S858 . 1 `S846 1 . 1 0 `S852 1 . 1 0 ]
-[v _SPI1CON0bits SPI1CON0bits `VES858  1 e 1 @15636 ]
+[u S870 . 1 `S858 1 . 1 0 `S864 1 . 1 0 ]
+[v _SPI1CON0bits SPI1CON0bits `VES870  1 e 1 @15636 ]
 "21452
 [v _SPI1CON1 SPI1CON1 `VEuc  1 e 1 @15637 ]
 "21554
@@ -438,29 +553,29 @@ SPI1_DEFAULT 0
 [v _U2P3L U2P3L `VEuc  1 e 1 @15832 ]
 "24275
 [v _U2CON0 U2CON0 `VEuc  1 e 1 @15834 ]
-[s S1245 . 1 `uc 1 MODE0 1 0 :1:0 
+[s S1257 . 1 `uc 1 MODE0 1 0 :1:0 
 `uc 1 MODE1 1 0 :1:1 
 `uc 1 MODE2 1 0 :1:2 
 ]
 "24306
-[s S1249 . 1 `uc 1 U2MODE 1 0 :4:0 
+[s S1261 . 1 `uc 1 U2MODE 1 0 :4:0 
 `uc 1 U2RXEN 1 0 :1:4 
 `uc 1 U2TXEN 1 0 :1:5 
 `uc 1 U2ABDEN 1 0 :1:6 
 `uc 1 U2BRGS 1 0 :1:7 
 ]
-[s S1255 . 1 `uc 1 U2MODE0 1 0 :1:0 
+[s S1267 . 1 `uc 1 U2MODE0 1 0 :1:0 
 `uc 1 U2MODE1 1 0 :1:1 
 `uc 1 U2MODE2 1 0 :1:2 
 ]
-[s S1040 . 1 `uc 1 MODE 1 0 :4:0 
+[s S1052 . 1 `uc 1 MODE 1 0 :4:0 
 `uc 1 RXEN 1 0 :1:4 
 `uc 1 TXEN 1 0 :1:5 
 `uc 1 ABDEN 1 0 :1:6 
 `uc 1 BRGS 1 0 :1:7 
 ]
-[u S1265 . 1 `S1245 1 . 1 0 `S1249 1 . 1 0 `S1255 1 . 1 0 `S1040 1 . 1 0 ]
-[v _U2CON0bits U2CON0bits `VES1265  1 e 1 @15834 ]
+[u S1277 . 1 `S1257 1 . 1 0 `S1261 1 . 1 0 `S1267 1 . 1 0 `S1052 1 . 1 0 ]
+[v _U2CON0bits U2CON0bits `VES1277  1 e 1 @15834 ]
 "24391
 [v _U2CON1 U2CON1 `VEuc  1 e 1 @15835 ]
 "24471
@@ -475,7 +590,7 @@ SPI1_DEFAULT 0
 [v _U2UIR U2UIR `VEuc  1 e 1 @15840 ]
 "24836
 [v _U2ERRIR U2ERRIR `VEuc  1 e 1 @15841 ]
-[s S1074 . 1 `uc 1 TXCIF 1 0 :1:0 
+[s S1086 . 1 `uc 1 TXCIF 1 0 :1:0 
 `uc 1 RXFOIF 1 0 :1:1 
 `uc 1 RXBKIF 1 0 :1:2 
 `uc 1 FERIF 1 0 :1:3 
@@ -485,7 +600,7 @@ SPI1_DEFAULT 0
 `uc 1 TXMTIF 1 0 :1:7 
 ]
 "24863
-[s S1300 . 1 `uc 1 U2TXCIF 1 0 :1:0 
+[s S1312 . 1 `uc 1 U2TXCIF 1 0 :1:0 
 `uc 1 U2RXFOIF 1 0 :1:1 
 `uc 1 U2RXBKIF 1 0 :1:2 
 `uc 1 U2FERIF 1 0 :1:3 
@@ -494,8 +609,8 @@ SPI1_DEFAULT 0
 `uc 1 U2PERIF 1 0 :1:6 
 `uc 1 U2TXMTIF 1 0 :1:7 
 ]
-[u S1309 . 1 `S1074 1 . 1 0 `S1300 1 . 1 0 ]
-[v _U2ERRIRbits U2ERRIRbits `VES1309  1 e 1 @15841 ]
+[u S1321 . 1 `S1086 1 . 1 0 `S1312 1 . 1 0 ]
+[v _U2ERRIRbits U2ERRIRbits `VES1321  1 e 1 @15841 ]
 "24948
 [v _U2ERRIE U2ERRIE `VEuc  1 e 1 @15842 ]
 "25060
@@ -516,25 +631,25 @@ SPI1_DEFAULT 0
 [v _U1P3H U1P3H `VEuc  1 e 1 @15857 ]
 "25317
 [v _U1CON0 U1CON0 `VEuc  1 e 1 @15858 ]
-[s S1024 . 1 `uc 1 MODE0 1 0 :1:0 
+[s S1036 . 1 `uc 1 MODE0 1 0 :1:0 
 `uc 1 MODE1 1 0 :1:1 
 `uc 1 MODE2 1 0 :1:2 
 `uc 1 MODE3 1 0 :1:3 
 ]
 "25350
-[s S1029 . 1 `uc 1 U1MODE 1 0 :4:0 
+[s S1041 . 1 `uc 1 U1MODE 1 0 :4:0 
 `uc 1 U1RXEN 1 0 :1:4 
 `uc 1 U1TXEN 1 0 :1:5 
 `uc 1 U1ABDEN 1 0 :1:6 
 `uc 1 U1BRGS 1 0 :1:7 
 ]
-[s S1035 . 1 `uc 1 U1MODE0 1 0 :1:0 
+[s S1047 . 1 `uc 1 U1MODE0 1 0 :1:0 
 `uc 1 U1MODE1 1 0 :1:1 
 `uc 1 U1MODE2 1 0 :1:2 
 `uc 1 U1MODE3 1 0 :1:3 
 ]
-[u S1046 . 1 `S1024 1 . 1 0 `S1029 1 . 1 0 `S1035 1 . 1 0 `S1040 1 . 1 0 ]
-[v _U1CON0bits U1CON0bits `VES1046  1 e 1 @15858 ]
+[u S1058 . 1 `S1036 1 . 1 0 `S1041 1 . 1 0 `S1047 1 . 1 0 `S1052 1 . 1 0 ]
+[v _U1CON0bits U1CON0bits `VES1058  1 e 1 @15858 ]
 "25445
 [v _U1CON1 U1CON1 `VEuc  1 e 1 @15859 ]
 "25525
@@ -550,7 +665,7 @@ SPI1_DEFAULT 0
 "25900
 [v _U1ERRIR U1ERRIR `VEuc  1 e 1 @15865 ]
 "25927
-[s S1083 . 1 `uc 1 U1TXCIF 1 0 :1:0 
+[s S1095 . 1 `uc 1 U1TXCIF 1 0 :1:0 
 `uc 1 U1RXFOIF 1 0 :1:1 
 `uc 1 U1RXBKIF 1 0 :1:2 
 `uc 1 U1FERIF 1 0 :1:3 
@@ -559,8 +674,8 @@ SPI1_DEFAULT 0
 `uc 1 U1PERIF 1 0 :1:6 
 `uc 1 U1TXMTIF 1 0 :1:7 
 ]
-[u S1092 . 1 `S1074 1 . 1 0 `S1083 1 . 1 0 ]
-[v _U1ERRIRbits U1ERRIRbits `VES1092  1 e 1 @15865 ]
+[u S1104 . 1 `S1086 1 . 1 0 `S1095 1 . 1 0 ]
+[v _U1ERRIRbits U1ERRIRbits `VES1104  1 e 1 @15865 ]
 "26012
 [v _U1ERRIE U1ERRIE `VEuc  1 e 1 @15866 ]
 "26124
@@ -602,14 +717,14 @@ SPI1_DEFAULT 0
 [v _TMR5H TMR5H `VEuc  1 e 1 @16281 ]
 "39666
 [v _T5CON T5CON `VEuc  1 e 1 @16282 ]
-[s S362 . 1 `uc 1 ON 1 0 :1:0 
+[s S374 . 1 `uc 1 ON 1 0 :1:0 
 `uc 1 RD16 1 0 :1:1 
 `uc 1 NOT_SYNC 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
 `uc 1 CKPS 1 0 :2:4 
 ]
 "39702
-[s S686 . 1 `uc 1 TMR5ON 1 0 :1:0 
+[s S698 . 1 `uc 1 TMR5ON 1 0 :1:0 
 `uc 1 T5RD16 1 0 :1:1 
 `uc 1 NOT_T5SYNC 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -617,22 +732,22 @@ SPI1_DEFAULT 0
 `uc 1 T5CKPS1 1 0 :1:5 
 ]
 "39702
-[s S375 . 1 `uc 1 . 1 0 :4:0 
+[s S387 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 CKPS0 1 0 :1:4 
 `uc 1 CKPS1 1 0 :1:5 
 ]
 "39702
-[s S697 . 1 `uc 1 . 1 0 :1:0 
+[s S709 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 RD165 1 0 :1:1 
 ]
 "39702
-[u S700 . 1 `S362 1 . 1 0 `S686 1 . 1 0 `S375 1 . 1 0 `S697 1 . 1 0 ]
+[u S712 . 1 `S374 1 . 1 0 `S698 1 . 1 0 `S387 1 . 1 0 `S709 1 . 1 0 ]
 "39702
 "39702
-[v _T5CONbits T5CONbits `VES700  1 e 1 @16282 ]
+[v _T5CONbits T5CONbits `VES712  1 e 1 @16282 ]
 "39856
 [v _T5GCON T5GCON `VEuc  1 e 1 @16283 ]
-[s S408 . 1 `uc 1 . 1 0 :2:0 
+[s S420 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 GVAL 1 0 :1:2 
 `uc 1 GGO 1 0 :1:3 
 `uc 1 GSPM 1 0 :1:4 
@@ -641,7 +756,7 @@ SPI1_DEFAULT 0
 `uc 1 GE 1 0 :1:7 
 ]
 "39894
-[s S734 . 1 `uc 1 . 1 0 :2:0 
+[s S746 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 T5GVAL 1 0 :1:2 
 `uc 1 T5GGO 1 0 :1:3 
 `uc 1 T5GSPM 1 0 :1:4 
@@ -650,18 +765,18 @@ SPI1_DEFAULT 0
 `uc 1 T5GE 1 0 :1:7 
 ]
 "39894
-[s S424 . 1 `uc 1 . 1 0 :3:0 
+[s S436 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 NOT_DONE 1 0 :1:3 
 ]
 "39894
-[s S745 . 1 `uc 1 . 1 0 :3:0 
+[s S757 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 NOT_T5DONE 1 0 :1:3 
 ]
 "39894
-[u S748 . 1 `S408 1 . 1 0 `S734 1 . 1 0 `S424 1 . 1 0 `S745 1 . 1 0 ]
+[u S760 . 1 `S420 1 . 1 0 `S746 1 . 1 0 `S436 1 . 1 0 `S757 1 . 1 0 ]
 "39894
 "39894
-[v _T5GCONbits T5GCONbits `VES748  1 e 1 @16283 ]
+[v _T5GCONbits T5GCONbits `VES760  1 e 1 @16283 ]
 "40070
 [v _T5GATE T5GATE `VEuc  1 e 1 @16284 ]
 "40236
@@ -673,7 +788,7 @@ SPI1_DEFAULT 0
 "41142
 [v _T3CON T3CON `VEuc  1 e 1 @16294 ]
 "41178
-[s S532 . 1 `uc 1 TMR3ON 1 0 :1:0 
+[s S544 . 1 `uc 1 TMR3ON 1 0 :1:0 
 `uc 1 T3RD16 1 0 :1:1 
 `uc 1 NOT_T3SYNC 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -682,18 +797,18 @@ SPI1_DEFAULT 0
 ]
 "41178
 "41178
-[s S543 . 1 `uc 1 . 1 0 :1:0 
+[s S555 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 RD163 1 0 :1:1 
 ]
 "41178
-[u S546 . 1 `S362 1 . 1 0 `S532 1 . 1 0 `S375 1 . 1 0 `S543 1 . 1 0 ]
+[u S558 . 1 `S374 1 . 1 0 `S544 1 . 1 0 `S387 1 . 1 0 `S555 1 . 1 0 ]
 "41178
 "41178
-[v _T3CONbits T3CONbits `VES546  1 e 1 @16294 ]
+[v _T3CONbits T3CONbits `VES558  1 e 1 @16294 ]
 "41332
 [v _T3GCON T3GCON `VEuc  1 e 1 @16295 ]
 "41370
-[s S580 . 1 `uc 1 . 1 0 :2:0 
+[s S592 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 T3GVAL 1 0 :1:2 
 `uc 1 T3GGO 1 0 :1:3 
 `uc 1 T3GSPM 1 0 :1:4 
@@ -703,18 +818,121 @@ SPI1_DEFAULT 0
 ]
 "41370
 "41370
-[s S591 . 1 `uc 1 . 1 0 :3:0 
+[s S603 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 NOT_T3DONE 1 0 :1:3 
 ]
 "41370
-[u S594 . 1 `S408 1 . 1 0 `S580 1 . 1 0 `S424 1 . 1 0 `S591 1 . 1 0 ]
+[u S606 . 1 `S420 1 . 1 0 `S592 1 . 1 0 `S436 1 . 1 0 `S603 1 . 1 0 ]
 "41370
 "41370
-[v _T3GCONbits T3GCONbits `VES594  1 e 1 @16295 ]
+[v _T3GCONbits T3GCONbits `VES606  1 e 1 @16295 ]
 "41546
 [v _T3GATE T3GATE `VEuc  1 e 1 @16296 ]
 "41712
 [v _T3CLK T3CLK `VEuc  1 e 1 @16297 ]
+"41878
+[v _T2TMR T2TMR `VEuc  1 e 1 @16298 ]
+"41883
+[v _TMR2 TMR2 `VEuc  1 e 1 @16298 ]
+"41916
+[v _T2PR T2PR `VEuc  1 e 1 @16299 ]
+"41921
+[v _PR2 PR2 `VEuc  1 e 1 @16299 ]
+"41954
+[v _T2CON T2CON `VEuc  1 e 1 @16300 ]
+[s S1657 . 1 `uc 1 OUTPS 1 0 :4:0 
+`uc 1 CKPS 1 0 :3:4 
+`uc 1 ON 1 0 :1:7 
+]
+"41990
+[s S1661 . 1 `uc 1 T2OUTPS 1 0 :4:0 
+`uc 1 T2CKPS 1 0 :3:4 
+`uc 1 T2ON 1 0 :1:7 
+]
+"41990
+[s S1665 . 1 `uc 1 T2OUTPS0 1 0 :1:0 
+`uc 1 T2OUTPS1 1 0 :1:1 
+`uc 1 T2OUTPS2 1 0 :1:2 
+`uc 1 T2OUTPS3 1 0 :1:3 
+`uc 1 T2CKPS0 1 0 :1:4 
+`uc 1 T2CKPS1 1 0 :1:5 
+`uc 1 T2CKPS2 1 0 :1:6 
+]
+"41990
+[s S1673 . 1 `uc 1 OUTPS0 1 0 :1:0 
+`uc 1 OUTPS1 1 0 :1:1 
+`uc 1 OUTPS2 1 0 :1:2 
+`uc 1 OUTPS3 1 0 :1:3 
+`uc 1 CKPS0 1 0 :1:4 
+`uc 1 CKPS1 1 0 :1:5 
+`uc 1 CKPS2 1 0 :1:6 
+`uc 1 TMR2ON 1 0 :1:7 
+]
+"41990
+[u S1682 . 1 `S1657 1 . 1 0 `S1661 1 . 1 0 `S1665 1 . 1 0 `S1673 1 . 1 0 ]
+"41990
+"41990
+[v _T2CONbits T2CONbits `VES1682  1 e 1 @16300 ]
+"42100
+[v _T2HLT T2HLT `VEuc  1 e 1 @16301 ]
+[s S1543 . 1 `uc 1 MODE 1 0 :5:0 
+`uc 1 CKSYNC 1 0 :1:5 
+`uc 1 CKPOL 1 0 :1:6 
+`uc 1 PSYNC 1 0 :1:7 
+]
+"42133
+[s S1548 . 1 `uc 1 MODE0 1 0 :1:0 
+`uc 1 MODE1 1 0 :1:1 
+`uc 1 MODE2 1 0 :1:2 
+`uc 1 MODE3 1 0 :1:3 
+`uc 1 MODE4 1 0 :1:4 
+]
+"42133
+[s S1554 . 1 `uc 1 T2MODE 1 0 :5:0 
+`uc 1 T2CKSYNC 1 0 :1:5 
+`uc 1 T2CKPOL 1 0 :1:6 
+`uc 1 T2PSYNC 1 0 :1:7 
+]
+"42133
+[s S1559 . 1 `uc 1 T2MODE0 1 0 :1:0 
+`uc 1 T2MODE1 1 0 :1:1 
+`uc 1 T2MODE2 1 0 :1:2 
+`uc 1 T2MODE3 1 0 :1:3 
+`uc 1 T2MODE4 1 0 :1:4 
+]
+"42133
+[u S1565 . 1 `S1543 1 . 1 0 `S1548 1 . 1 0 `S1554 1 . 1 0 `S1559 1 . 1 0 ]
+"42133
+"42133
+[v _T2HLTbits T2HLTbits `VES1565  1 e 1 @16301 ]
+"42228
+[v _T2CLKCON T2CLKCON `VEuc  1 e 1 @16302 ]
+"42386
+[v _T2RST T2RST `VEuc  1 e 1 @16303 ]
+[s S1619 . 1 `uc 1 RSEL 1 0 :5:0 
+]
+"42413
+[s S1621 . 1 `uc 1 RSEL0 1 0 :1:0 
+`uc 1 RSEL1 1 0 :1:1 
+`uc 1 RSEL2 1 0 :1:2 
+`uc 1 RSEL3 1 0 :1:3 
+`uc 1 RSEL4 1 0 :1:4 
+]
+"42413
+[s S1627 . 1 `uc 1 T2RSEL 1 0 :5:0 
+]
+"42413
+[s S1629 . 1 `uc 1 T2RSEL0 1 0 :1:0 
+`uc 1 T2RSEL1 1 0 :1:1 
+`uc 1 T2RSEL2 1 0 :1:2 
+`uc 1 T2RSEL3 1 0 :1:3 
+`uc 1 T2RSEL4 1 0 :1:4 
+]
+"42413
+[u S1635 . 1 `S1619 1 . 1 0 `S1621 1 . 1 0 `S1627 1 . 1 0 `S1629 1 . 1 0 ]
+"42413
+"42413
+[v _T2RSTbits T2RSTbits `VES1635  1 e 1 @16303 ]
 "42478
 [v _TMR1L TMR1L `VEuc  1 e 1 @16304 ]
 "42548
@@ -722,7 +940,7 @@ SPI1_DEFAULT 0
 "42618
 [v _T1CON T1CON `VEuc  1 e 1 @16306 ]
 "42654
-[s S368 . 1 `uc 1 TMR1ON 1 0 :1:0 
+[s S380 . 1 `uc 1 TMR1ON 1 0 :1:0 
 `uc 1 T1RD16 1 0 :1:1 
 `uc 1 NOT_T1SYNC 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -731,18 +949,18 @@ SPI1_DEFAULT 0
 ]
 "42654
 "42654
-[s S379 . 1 `uc 1 . 1 0 :1:0 
+[s S391 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 RD161 1 0 :1:1 
 ]
 "42654
-[u S382 . 1 `S362 1 . 1 0 `S368 1 . 1 0 `S375 1 . 1 0 `S379 1 . 1 0 ]
+[u S394 . 1 `S374 1 . 1 0 `S380 1 . 1 0 `S387 1 . 1 0 `S391 1 . 1 0 ]
 "42654
 "42654
-[v _T1CONbits T1CONbits `VES382  1 e 1 @16306 ]
+[v _T1CONbits T1CONbits `VES394  1 e 1 @16306 ]
 "42808
 [v _T1GCON T1GCON `VEuc  1 e 1 @16307 ]
 "42846
-[s S416 . 1 `uc 1 . 1 0 :2:0 
+[s S428 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 T1GVAL 1 0 :1:2 
 `uc 1 T1GGO 1 0 :1:3 
 `uc 1 T1GSPM 1 0 :1:4 
@@ -752,21 +970,54 @@ SPI1_DEFAULT 0
 ]
 "42846
 "42846
-[s S427 . 1 `uc 1 . 1 0 :3:0 
+[s S439 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 NOT_T1DONE 1 0 :1:3 
 ]
 "42846
-[u S430 . 1 `S408 1 . 1 0 `S416 1 . 1 0 `S424 1 . 1 0 `S427 1 . 1 0 ]
+[u S442 . 1 `S420 1 . 1 0 `S428 1 . 1 0 `S436 1 . 1 0 `S439 1 . 1 0 ]
 "42846
 "42846
-[v _T1GCONbits T1GCONbits `VES430  1 e 1 @16307 ]
+[v _T1GCONbits T1GCONbits `VES442  1 e 1 @16307 ]
 "43022
 [v _T1GATE T1GATE `VEuc  1 e 1 @16308 ]
 "43188
 [v _T1CLK T1CLK `VEuc  1 e 1 @16309 ]
+"43354
+[v _TMR0L TMR0L `VEuc  1 e 1 @16310 ]
+"43492
+[v _TMR0H TMR0H `VEuc  1 e 1 @16311 ]
+"43746
+[v _T0CON0 T0CON0 `VEuc  1 e 1 @16312 ]
+[s S1415 . 1 `uc 1 OUTPS 1 0 :4:0 
+`uc 1 MD16 1 0 :1:4 
+`uc 1 OUT 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 EN 1 0 :1:7 
+]
+"43774
+[s S1421 . 1 `uc 1 T0OUTPS 1 0 :4:0 
+`uc 1 T0MD16 1 0 :1:4 
+`uc 1 T0OUT 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 T0EN 1 0 :1:7 
+]
+"43774
+[s S1427 . 1 `uc 1 OUTPS0 1 0 :1:0 
+`uc 1 OUTPS1 1 0 :1:1 
+`uc 1 OUTPS2 1 0 :1:2 
+`uc 1 OUTPS3 1 0 :1:3 
+`uc 1 T016BIT 1 0 :1:4 
+]
+"43774
+[u S1433 . 1 `S1415 1 . 1 0 `S1421 1 . 1 0 `S1427 1 . 1 0 ]
+"43774
+"43774
+[v _T0CON0bits T0CON0bits `VES1433  1 e 1 @16312 ]
+"43844
+[v _T0CON1 T0CON1 `VEuc  1 e 1 @16313 ]
 "43986
 [v _LATA LATA `VEuc  1 e 1 @16314 ]
-[s S1537 . 1 `uc 1 LATA0 1 0 :1:0 
+[s S1909 . 1 `uc 1 LATA0 1 0 :1:0 
 `uc 1 LATA1 1 0 :1:1 
 `uc 1 LATA2 1 0 :1:2 
 `uc 1 LATA3 1 0 :1:3 
@@ -776,7 +1027,7 @@ SPI1_DEFAULT 0
 `uc 1 LATA7 1 0 :1:7 
 ]
 "44013
-[s S1546 . 1 `uc 1 LA0 1 0 :1:0 
+[s S1918 . 1 `uc 1 LA0 1 0 :1:0 
 `uc 1 LA1 1 0 :1:1 
 `uc 1 LA2 1 0 :1:2 
 `uc 1 LA3 1 0 :1:3 
@@ -786,13 +1037,13 @@ SPI1_DEFAULT 0
 `uc 1 LA7 1 0 :1:7 
 ]
 "44013
-[u S1555 . 1 `S1537 1 . 1 0 `S1546 1 . 1 0 ]
+[u S1927 . 1 `S1909 1 . 1 0 `S1918 1 . 1 0 ]
 "44013
 "44013
-[v _LATAbits LATAbits `VES1555  1 e 1 @16314 ]
+[v _LATAbits LATAbits `VES1927  1 e 1 @16314 ]
 "44098
 [v _LATB LATB `VEuc  1 e 1 @16315 ]
-[s S1805 . 1 `uc 1 LATB0 1 0 :1:0 
+[s S2257 . 1 `uc 1 LATB0 1 0 :1:0 
 `uc 1 LATB1 1 0 :1:1 
 `uc 1 LATB2 1 0 :1:2 
 `uc 1 LATB3 1 0 :1:3 
@@ -802,7 +1053,7 @@ SPI1_DEFAULT 0
 `uc 1 LATB7 1 0 :1:7 
 ]
 "44125
-[s S1814 . 1 `uc 1 LB0 1 0 :1:0 
+[s S2266 . 1 `uc 1 LB0 1 0 :1:0 
 `uc 1 LB1 1 0 :1:1 
 `uc 1 LB2 1 0 :1:2 
 `uc 1 LB3 1 0 :1:3 
@@ -812,13 +1063,13 @@ SPI1_DEFAULT 0
 `uc 1 LB7 1 0 :1:7 
 ]
 "44125
-[u S1823 . 1 `S1805 1 . 1 0 `S1814 1 . 1 0 ]
+[u S2275 . 1 `S2257 1 . 1 0 `S2266 1 . 1 0 ]
 "44125
 "44125
-[v _LATBbits LATBbits `VES1823  1 e 1 @16315 ]
+[v _LATBbits LATBbits `VES2275  1 e 1 @16315 ]
 "44210
 [v _LATC LATC `VEuc  1 e 1 @16316 ]
-[s S1457 . 1 `uc 1 LATC0 1 0 :1:0 
+[s S1949 . 1 `uc 1 LATC0 1 0 :1:0 
 `uc 1 LATC1 1 0 :1:1 
 `uc 1 LATC2 1 0 :1:2 
 `uc 1 LATC3 1 0 :1:3 
@@ -828,7 +1079,7 @@ SPI1_DEFAULT 0
 `uc 1 LATC7 1 0 :1:7 
 ]
 "44237
-[s S1466 . 1 `uc 1 LC0 1 0 :1:0 
+[s S1958 . 1 `uc 1 LC0 1 0 :1:0 
 `uc 1 LC1 1 0 :1:1 
 `uc 1 LC2 1 0 :1:2 
 `uc 1 LC3 1 0 :1:3 
@@ -838,15 +1089,15 @@ SPI1_DEFAULT 0
 `uc 1 LC7 1 0 :1:7 
 ]
 "44237
-[u S1475 . 1 `S1457 1 . 1 0 `S1466 1 . 1 0 ]
+[u S1967 . 1 `S1949 1 . 1 0 `S1958 1 . 1 0 ]
 "44237
 "44237
-[v _LATCbits LATCbits `VES1475  1 e 1 @16316 ]
+[v _LATCbits LATCbits `VES1967  1 e 1 @16316 ]
 "44322
 [v _TRISA TRISA `VEuc  1 e 1 @16322 ]
 "44384
 [v _TRISB TRISB `VEuc  1 e 1 @16323 ]
-[s S823 . 1 `uc 1 TRISB0 1 0 :1:0 
+[s S835 . 1 `uc 1 TRISB0 1 0 :1:0 
 `uc 1 TRISB1 1 0 :1:1 
 `uc 1 TRISB2 1 0 :1:2 
 `uc 1 TRISB3 1 0 :1:3 
@@ -856,13 +1107,13 @@ SPI1_DEFAULT 0
 `uc 1 TRISB7 1 0 :1:7 
 ]
 "44401
-[u S832 . 1 `S823 1 . 1 0 ]
+[u S844 . 1 `S835 1 . 1 0 ]
 "44401
 "44401
-[v _TRISBbits TRISBbits `VES832  1 e 1 @16323 ]
+[v _TRISBbits TRISBbits `VES844  1 e 1 @16323 ]
 "44446
 [v _TRISC TRISC `VEuc  1 e 1 @16324 ]
-[s S1505 . 1 `uc 1 RA0 1 0 :1:0 
+[s S1997 . 1 `uc 1 RA0 1 0 :1:0 
 `uc 1 RA1 1 0 :1:1 
 `uc 1 RA2 1 0 :1:2 
 `uc 1 RA3 1 0 :1:3 
@@ -872,10 +1123,10 @@ SPI1_DEFAULT 0
 `uc 1 RA7 1 0 :1:7 
 ]
 "44525
-[u S1514 . 1 `S1505 1 . 1 0 ]
+[u S2006 . 1 `S1997 1 . 1 0 ]
 "44525
 "44525
-[v _PORTAbits PORTAbits `VES1514  1 e 1 @16330 ]
+[v _PORTAbits PORTAbits `VES2006  1 e 1 @16330 ]
 [s S170 . 1 `uc 1 INT0EDG 1 0 :1:0 
 `uc 1 INT1EDG 1 0 :1:1 
 `uc 1 INT2EDG 1 0 :1:2 
@@ -895,22 +1146,22 @@ SPI1_DEFAULT 0
 [v _INTCON0bits INTCON0bits `VES181  1 e 1 @16338 ]
 "45623
 [v _PCON0 PCON0 `VEuc  1 e 1 @16368 ]
-[s S1432 . 1 `uc 1 . 1 0 :1:0 
+[s S1866 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 NOT_MEMV 1 0 :1:1 
 ]
 "45795
-[s S1435 . 1 `uc 1 . 1 0 :1:0 
+[s S1869 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 nMEMV 1 0 :1:1 
 ]
 "45795
-[s S1438 . 1 `uc 1 . 1 0 :1:0 
+[s S1872 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 MEMV 1 0 :1:1 
 ]
 "45795
-[u S1441 . 1 `S1432 1 . 1 0 `S1435 1 . 1 0 `S1438 1 . 1 0 ]
+[u S1875 . 1 `S1866 1 . 1 0 `S1869 1 . 1 0 `S1872 1 . 1 0 ]
 "45795
 "45795
-[v _PCON1bits PCON1bits `VES1441  1 e 1 @16369 ]
+[v _PCON1bits PCON1bits `VES1875  1 e 1 @16369 ]
 "45862
 [v _TABLAT TABLAT `VEuc  1 e 1 @16373 ]
 "45891
@@ -919,23 +1170,25 @@ SPI1_DEFAULT 0
 [v _TBLPTRH TBLPTRH `VEuc  1 e 1 @16375 ]
 "45931
 [v _TBLPTRU TBLPTRU `VEuc  1 e 1 @16376 ]
-[s S812 . 5 `uc 1 con0 1 0 `uc 1 con1 1 1 `uc 1 con2 1 2 `uc 1 baud 1 3 `uc 1 operation 1 4 ]
+[s S824 . 5 `uc 1 con0 1 0 `uc 1 con1 1 1 `uc 1 con2 1 2 `uc 1 baud 1 3 `uc 1 operation 1 4 ]
 "60 /home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/spi1.c
-[v _spi1_configuration spi1_configuration `C[1]S812  1 s 5 spi1_configuration ]
+[v _spi1_configuration spi1_configuration `C[1]S824  1 s 5 spi1_configuration ]
 "57 /home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr1.c
 [v _timer1ReloadVal timer1ReloadVal `VEus  1 e 2 0 ]
+"58 /home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr2.c
+[v _TMR2_InterruptHandler TMR2_InterruptHandler `*.37(v  1 e 2 0 ]
 "57 /home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr3.c
 [v _timer3ReloadVal timer3ReloadVal `VEus  1 e 2 0 ]
 "57 /home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr5.c
 [v _timer5ReloadVal timer5ReloadVal `VEus  1 e 2 0 ]
-[s S947 . 1 `uc 1 perr 1 0 :1:0 
+[s S959 . 1 `uc 1 perr 1 0 :1:0 
 `uc 1 ferr 1 0 :1:1 
 `uc 1 oerr 1 0 :1:2 
 `uc 1 reserved 1 0 :5:3 
 ]
 "53 /home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart1.c
-[u S952 . 1 `S947 1 . 1 0 `uc 1 status 1 0 ]
-[v _uart1RxLastError uart1RxLastError `VES952  1 s 1 uart1RxLastError ]
+[u S964 . 1 `S959 1 . 1 0 `uc 1 status 1 0 ]
+[v _uart1RxLastError uart1RxLastError `VES964  1 s 1 uart1RxLastError ]
 "58
 [v _UART1_FramingErrorHandler UART1_FramingErrorHandler `*.37(v  1 e 2 0 ]
 "59
@@ -943,23 +1196,23 @@ SPI1_DEFAULT 0
 "60
 [v _UART1_ErrorHandler UART1_ErrorHandler `*.37(v  1 e 2 0 ]
 "53 /home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart2.c
-[v _uart2RxLastError uart2RxLastError `VES952  1 s 1 uart2RxLastError ]
+[v _uart2RxLastError uart2RxLastError `VES964  1 s 1 uart2RxLastError ]
 "58
 [v _UART2_FramingErrorHandler UART2_FramingErrorHandler `*.37(v  1 e 2 0 ]
 "59
 [v _UART2_OverrunErrorHandler UART2_OverrunErrorHandler `*.37(v  1 e 2 0 ]
 "60
 [v _UART2_ErrorHandler UART2_ErrorHandler `*.37(v  1 e 2 0 ]
-"55 /home/davepl/MPLABXProjects/singcig_c.X/main.c
+"59 /home/davepl/MPLABXProjects/singcig_c.X/main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"145
+"158
 } 0
 "9 /home/davepl/MPLABXProjects/singcig_c.X/vend.c
 [v _vend_init vend_init `(v  1 e 1 0 ]
 {
 "14
-[v vend_init@timeval timeval `*.39uc  1 a 2 3 ]
+[v vend_init@timeval timeval `*.39uc  1 a 2 16 ]
 "31
 } 0
 "21 /home/davepl/MPLABXProjects/singcig_c.X/mdb.c
@@ -976,7 +1229,7 @@ SPI1_DEFAULT 0
 [v _mdb_reset mdb_reset `(uc  1 e 1 0 ]
 {
 "47
-[v mdb_reset@i_2155 i `uc  1 a 1 6 ]
+[v mdb_reset@i_2642 i `uc  1 a 1 19 ]
 "55
 } 0
 "137
@@ -984,60 +1237,55 @@ SPI1_DEFAULT 0
 {
 "152
 } 0
-"239
+"291
 [v _mdb_comm mdb_comm `(uc  1 e 1 0 ]
 {
 [v mdb_comm@slvadd slvadd `uc  1 a 1 wreg ]
-"242
-[v mdb_comm@i i `uc  1 a 1 4 ]
-"239
+"294
+[v mdb_comm@i i `uc  1 a 1 17 ]
+"291
 [v mdb_comm@slvadd slvadd `uc  1 a 1 wreg ]
-[v mdb_comm@mcount mcount `uc  1 p 1 2 ]
-[v mdb_comm@slvadd slvadd `uc  1 a 1 3 ]
-"323
+[v mdb_comm@mcount mcount `uc  1 p 1 15 ]
+[v mdb_comm@slvadd slvadd `uc  1 a 1 16 ]
+"376
 } 0
-"346
+"399
 [v _mdb_waitr mdb_waitr `(v  1 e 1 0 ]
 {
-"352
+"405
 } 0
-"443
+"496
 [v _mdb_transmit mdb_transmit `(v  1 e 1 0 ]
 {
 [v mdb_transmit@txbyte txbyte `uc  1 a 1 wreg ]
 [v mdb_transmit@txbyte txbyte `uc  1 a 1 wreg ]
-"445
-[v mdb_transmit@txbyte txbyte `uc  1 a 1 1 ]
-"447
+"498
+[v mdb_transmit@txbyte txbyte `uc  1 a 1 14 ]
+"500
 } 0
-"338
+"391
 [v _mdb_waitx mdb_waitx `(v  1 e 1 0 ]
 {
-"344
+"397
 } 0
 "170 /home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart1.c
 [v _UART1_Write UART1_Write `(v  1 e 1 0 ]
 {
 [v UART1_Write@txData txData `uc  1 a 1 wreg ]
 [v UART1_Write@txData txData `uc  1 a 1 wreg ]
-[v UART1_Write@txData txData `uc  1 a 1 0 ]
+[v UART1_Write@txData txData `uc  1 a 1 13 ]
 "177
 } 0
-"325 /home/davepl/MPLABXProjects/singcig_c.X/mdb.c
-[v _mdb_on mdb_on `(v  1 e 1 0 ]
-{
-"335
-} 0
-"13
+"13 /home/davepl/MPLABXProjects/singcig_c.X/mdb.c
 [v _init_mdbdata init_mdbdata `(v  1 e 1 0 ]
 {
 [v init_mdbdata@initdata initdata `uc  1 a 1 wreg ]
 "15
-[v init_mdbdata@i i `uc  1 a 1 1 ]
+[v init_mdbdata@i i `uc  1 a 1 14 ]
 "13
 [v init_mdbdata@initdata initdata `uc  1 a 1 wreg ]
 "15
-[v init_mdbdata@initdata initdata `uc  1 a 1 0 ]
+[v init_mdbdata@initdata initdata `uc  1 a 1 13 ]
 "19
 } 0
 "179 /home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart1.c
@@ -1046,7 +1294,7 @@ SPI1_DEFAULT 0
 [v UART1_SetAddresstoTransmit@txAddress txAddress `uc  1 a 1 wreg ]
 [v UART1_SetAddresstoTransmit@txAddress txAddress `uc  1 a 1 wreg ]
 "181
-[v UART1_SetAddresstoTransmit@txAddress txAddress `uc  1 a 1 0 ]
+[v UART1_SetAddresstoTransmit@txAddress txAddress `uc  1 a 1 13 ]
 "182
 } 0
 "145
@@ -1081,22 +1329,22 @@ SPI1_DEFAULT 0
 [v _Set_Timeout Set_Timeout `(v  1 e 1 0 ]
 {
 "180
-[v Set_Timeout@timeval timeval `*.39uc  1 a 2 10 ]
+[v Set_Timeout@timeval timeval `*.39uc  1 a 2 23 ]
 "182
-[v Set_Timeout@readValHigh readValHigh `uc  1 a 1 9 ]
+[v Set_Timeout@readValHigh readValHigh `uc  1 a 1 22 ]
 "181
-[v Set_Timeout@readValLow readValLow `uc  1 a 1 8 ]
+[v Set_Timeout@readValLow readValLow `uc  1 a 1 21 ]
 "188
 } 0
 "104 /home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr1.c
 [v _TMR1_ReadTimer TMR1_ReadTimer `(us  1 e 2 0 ]
 {
 "106
-[v TMR1_ReadTimer@readVal readVal `us  1 a 2 4 ]
+[v TMR1_ReadTimer@readVal readVal `us  1 a 2 17 ]
 "108
-[v TMR1_ReadTimer@readValLow readValLow `uc  1 a 1 7 ]
+[v TMR1_ReadTimer@readValLow readValLow `uc  1 a 1 20 ]
 "107
-[v TMR1_ReadTimer@readValHigh readValHigh `uc  1 a 1 6 ]
+[v TMR1_ReadTimer@readValHigh readValHigh `uc  1 a 1 19 ]
 "118
 } 0
 "81 /home/davepl/MPLABXProjects/singcig_c.X/vend.c
@@ -1109,14 +1357,14 @@ SPI1_DEFAULT 0
 {
 [v credit_subtract@credit credit `uc  1 a 1 wreg ]
 [v credit_subtract@credit credit `uc  1 a 1 wreg ]
-"54 /home/davepl/MPLABXProjects/singcig_c.X/buffers.h
-[v credit_subtract@credit credit `uc  1 a 1 3 ]
+"62 /home/davepl/MPLABXProjects/singcig_c.X/buffers.h
+[v credit_subtract@credit credit `uc  1 a 1 16 ]
 "77 /home/davepl/MPLABXProjects/singcig_c.X/vend.c
 } 0
 "120 /home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr1.c
 [v _TMR1_WriteTimer TMR1_WriteTimer `(v  1 e 1 0 ]
 {
-[v TMR1_WriteTimer@timerVal timerVal `us  1 p 2 0 ]
+[v TMR1_WriteTimer@timerVal timerVal `us  1 p 2 13 ]
 "140
 } 0
 "98
@@ -1149,8 +1397,8 @@ SPI1_DEFAULT 0
 {
 [v credit_add@credit credit `uc  1 a 1 wreg ]
 [v credit_add@credit credit `uc  1 a 1 wreg ]
-"54 /home/davepl/MPLABXProjects/singcig_c.X/buffers.h
-[v credit_add@credit credit `uc  1 a 1 3 ]
+"62 /home/davepl/MPLABXProjects/singcig_c.X/buffers.h
+[v credit_add@credit credit `uc  1 a 1 16 ]
 "66 /home/davepl/MPLABXProjects/singcig_c.X/vend.c
 } 0
 "165 /home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/memory.c
@@ -1158,12 +1406,12 @@ SPI1_DEFAULT 0
 {
 [v DATAEE_WriteByte@bAdd bAdd `uc  1 a 1 wreg ]
 "167
-[v DATAEE_WriteByte@GIEBitValue GIEBitValue `uc  1 a 1 2 ]
+[v DATAEE_WriteByte@GIEBitValue GIEBitValue `uc  1 a 1 15 ]
 "165
 [v DATAEE_WriteByte@bAdd bAdd `uc  1 a 1 wreg ]
-[v DATAEE_WriteByte@bData bData `uc  1 p 1 0 ]
+[v DATAEE_WriteByte@bData bData `uc  1 p 1 13 ]
 "167
-[v DATAEE_WriteByte@bAdd bAdd `uc  1 a 1 1 ]
+[v DATAEE_WriteByte@bAdd bAdd `uc  1 a 1 14 ]
 "184
 } 0
 "186
@@ -1172,13 +1420,13 @@ SPI1_DEFAULT 0
 [v DATAEE_ReadByte@bAdd bAdd `uc  1 a 1 wreg ]
 [v DATAEE_ReadByte@bAdd bAdd `uc  1 a 1 wreg ]
 "188
-[v DATAEE_ReadByte@bAdd bAdd `uc  1 a 1 0 ]
+[v DATAEE_ReadByte@bAdd bAdd `uc  1 a 1 13 ]
 "195
 } 0
 "50 /home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
 {
-"63
+"66
 } 0
 "66 /home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart2.c
 [v _UART2_Initialize UART2_Initialize `(v  1 e 1 0 ]
@@ -1188,19 +1436,19 @@ SPI1_DEFAULT 0
 "185
 [v _UART2_SetOverrunErrorHandler UART2_SetOverrunErrorHandler `(v  1 e 1 0 ]
 {
-[v UART2_SetOverrunErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
+[v UART2_SetOverrunErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 13 ]
 "187
 } 0
 "181
 [v _UART2_SetFramingErrorHandler UART2_SetFramingErrorHandler `(v  1 e 1 0 ]
 {
-[v UART2_SetFramingErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
+[v UART2_SetFramingErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 13 ]
 "183
 } 0
 "189
 [v _UART2_SetErrorHandler UART2_SetErrorHandler `(v  1 e 1 0 ]
 {
-[v UART2_SetErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
+[v UART2_SetErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 13 ]
 "191
 } 0
 "66 /home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart1.c
@@ -1211,19 +1459,19 @@ SPI1_DEFAULT 0
 "199
 [v _UART1_SetOverrunErrorHandler UART1_SetOverrunErrorHandler `(v  1 e 1 0 ]
 {
-[v UART1_SetOverrunErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
+[v UART1_SetOverrunErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 13 ]
 "201
 } 0
 "195
 [v _UART1_SetFramingErrorHandler UART1_SetFramingErrorHandler `(v  1 e 1 0 ]
 {
-[v UART1_SetFramingErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
+[v UART1_SetFramingErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 13 ]
 "197
 } 0
 "203
 [v _UART1_SetErrorHandler UART1_SetErrorHandler `(v  1 e 1 0 ]
 {
-[v UART1_SetErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
+[v UART1_SetErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 13 ]
 "205
 } 0
 "63 /home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr5.c
@@ -1236,30 +1484,51 @@ SPI1_DEFAULT 0
 {
 "90
 } 0
+"64 /home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr2.c
+[v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
+{
+"94
+} 0
+"178
+[v _TMR2_SetInterruptHandler TMR2_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v TMR2_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 13 ]
+"180
+} 0
 "63 /home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr1.c
 [v _TMR1_Initialize TMR1_Initialize `(v  1 e 1 0 ]
 {
 "90
+} 0
+"60 /home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr0.c
+[v _TMR0_Initialize TMR0_Initialize `(v  1 e 1 0 ]
+{
+"78
 } 0
 "64 /home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/spi1.c
 [v _SPI1_Initialize SPI1_Initialize `(v  1 e 1 0 ]
 {
 "77
 } 0
-"79 /home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/mcc.c
+"82 /home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/mcc.c
 [v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
 {
-"97
+"100
 } 0
 "55 /home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
 {
 "131
 } 0
-"65 /home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/mcc.c
+"68 /home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/mcc.c
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
 {
-"77
+"80
+} 0
+"52 /home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
+{
+"56
 } 0
 "58 /home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/dac1.c
 [v _DAC1_Initialize DAC1_Initialize `(v  1 e 1 0 ]
@@ -1273,6 +1542,183 @@ SPI1_DEFAULT 0
 } 0
 "75
 [v _CMP1_GetOutputStatus CMP1_GetOutputStatus `(a  1 e 1 0 ]
+{
+"78
+} 0
+"58 /home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `IIH(v  1 e 1 0 ]
+{
+"69
+} 0
+"165 /home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr2.c
+[v _TMR2_ISR TMR2_ISR `(v  1 e 1 0 ]
+{
+"175
+} 0
+"159 /home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+[v _InterruptTMR2 InterruptTMR2 `(v  1 e 1 0 ]
+{
+"164
+} 0
+"182 /home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr2.c
+[v _TMR2_DefaultInterruptHandler TMR2_DefaultInterruptHandler `(v  1 e 1 0 ]
+{
+"185
+} 0
+"64
+[v i2_TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
+{
+"94
+} 0
+"178
+[v i2_TMR2_SetInterruptHandler TMR2_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v i2TMR2_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 0 ]
+"180
+} 0
+"166 /home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+[v _poll_mdb poll_mdb `(v  1 e 1 0 ]
+{
+"209
+} 0
+"21
+[v i2_mdb_init mdb_init `(v  1 e 1 0 ]
+{
+"34
+} 0
+"153
+[v i2_mdb_security mdb_security `(v  1 e 1 0 ]
+{
+"157
+} 0
+"36
+[v i2_mdb_reset mdb_reset `(uc  1 e 1 0 ]
+{
+"47
+[v i2mdb_reset@i_2642 i `uc  1 a 1 6 ]
+"55
+} 0
+"137
+[v i2_mdb_noten mdb_noten `(v  1 e 1 0 ]
+{
+"152
+} 0
+"56 /home/davepl/MPLABXProjects/singcig_c.X/vend.c
+[v i2_credit_add credit_add `(v  1 e 1 0 ]
+{
+[v i2credit_add@credit credit `uc  1 a 1 wreg ]
+[v i2credit_add@credit credit `uc  1 a 1 wreg ]
+"62 /home/davepl/MPLABXProjects/singcig_c.X/buffers.h
+[v i2credit_add@credit credit `uc  1 a 1 3 ]
+"66 /home/davepl/MPLABXProjects/singcig_c.X/vend.c
+} 0
+"165 /home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/memory.c
+[v i2_DATAEE_WriteByte DATAEE_WriteByte `(v  1 e 1 0 ]
+{
+[v i2DATAEE_WriteByte@bAdd bAdd `uc  1 a 1 wreg ]
+"167
+[v i2DATAEE_WriteByte@GIEBitValue GIEBitValue `uc  1 a 1 2 ]
+"165
+[v i2DATAEE_WriteByte@bAdd bAdd `uc  1 a 1 wreg ]
+[v i2DATAEE_WriteByte@bData bData `uc  1 p 1 0 ]
+"167
+[v i2DATAEE_WriteByte@bAdd bAdd `uc  1 a 1 1 ]
+"184
+} 0
+"186
+[v i2_DATAEE_ReadByte DATAEE_ReadByte `(uc  1 e 1 0 ]
+{
+[v i2DATAEE_ReadByte@bAdd bAdd `uc  1 a 1 wreg ]
+[v i2DATAEE_ReadByte@bAdd bAdd `uc  1 a 1 wreg ]
+"188
+[v i2DATAEE_ReadByte@bAdd bAdd `uc  1 a 1 0 ]
+"195
+} 0
+"211 /home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+[v _mdb_poll mdb_poll `(uc  1 e 1 0 ]
+{
+"289
+} 0
+"291
+[v i2_mdb_comm mdb_comm `(uc  1 e 1 0 ]
+{
+[v i2mdb_comm@slvadd slvadd `uc  1 a 1 wreg ]
+"294
+[v i2mdb_comm@i i `uc  1 a 1 4 ]
+"291
+[v i2mdb_comm@slvadd slvadd `uc  1 a 1 wreg ]
+[v i2mdb_comm@mcount mcount `uc  1 p 1 2 ]
+[v i2mdb_comm@slvadd slvadd `uc  1 a 1 3 ]
+"376
+} 0
+"399
+[v i2_mdb_waitr mdb_waitr `(v  1 e 1 0 ]
+{
+"405
+} 0
+"496
+[v i2_mdb_transmit mdb_transmit `(v  1 e 1 0 ]
+{
+[v i2mdb_transmit@txbyte txbyte `uc  1 a 1 wreg ]
+[v i2mdb_transmit@txbyte txbyte `uc  1 a 1 wreg ]
+"498
+[v i2mdb_transmit@txbyte txbyte `uc  1 a 1 1 ]
+"500
+} 0
+"391
+[v i2_mdb_waitx mdb_waitx `(v  1 e 1 0 ]
+{
+"397
+} 0
+"170 /home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart1.c
+[v i2_UART1_Write UART1_Write `(v  1 e 1 0 ]
+{
+[v i2UART1_Write@txData txData `uc  1 a 1 wreg ]
+[v i2UART1_Write@txData txData `uc  1 a 1 wreg ]
+[v i2UART1_Write@txData txData `uc  1 a 1 0 ]
+"177
+} 0
+"13 /home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+[v i2_init_mdbdata init_mdbdata `(v  1 e 1 0 ]
+{
+[v i2init_mdbdata@initdata initdata `uc  1 a 1 wreg ]
+"15
+[v i2init_mdbdata@i i `uc  1 a 1 1 ]
+"13
+[v i2init_mdbdata@initdata initdata `uc  1 a 1 wreg ]
+"15
+[v i2init_mdbdata@initdata initdata `uc  1 a 1 0 ]
+"19
+} 0
+"179 /home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/uart1.c
+[v i2_UART1_SetAddresstoTransmit UART1_SetAddresstoTransmit `(v  1 e 1 0 ]
+{
+[v i2UART1_SetAddresstoTransmit@txAddress txAddress `uc  1 a 1 wreg ]
+[v i2UART1_SetAddresstoTransmit@txAddress txAddress `uc  1 a 1 wreg ]
+"181
+[v i2UART1_SetAddresstoTransmit@txAddress txAddress `uc  1 a 1 0 ]
+"182
+} 0
+"145
+[v i2_UART1_Read UART1_Read `(uc  1 e 1 0 ]
+{
+"168
+} 0
+"190
+[v i2_UART1_DefaultOverrunErrorHandler UART1_DefaultOverrunErrorHandler `(v  1 e 1 0 ]
+{
+} 0
+"188
+[v i2_UART1_DefaultFramingErrorHandler UART1_DefaultFramingErrorHandler `(v  1 e 1 0 ]
+{
+} 0
+"192
+[v i2_UART1_DefaultErrorHandler UART1_DefaultErrorHandler `(v  1 e 1 0 ]
+{
+"193
+} 0
+"60 /home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr0.c
+[v i2_TMR0_Initialize TMR0_Initialize `(v  1 e 1 0 ]
 {
 "78
 } 0

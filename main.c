@@ -44,6 +44,10 @@
     OF FEES, IF ANY, THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS 
     SOFTWARE.
 */
+/* mdb.c's timers
+ * TMR3 = 50ms mdb poll
+ * TMR0 = 5ms   mdb receive timeout
+ *  */
 
 //#include "buffers.h"
 #include "vend.h"
@@ -62,13 +66,22 @@ void main(void)
         DATAEE_WriteByte(credmem, 0x00);
     }
     SYSTEM_Initialize();
+  //Disable poll timer interrupt
+    PIE4bits.TMR2IE = 0;
+    TMR2_SetInterruptHandler(InterruptTMR2);
+    BUZZER_SetHigh();
     LIGHT1_SetHigh();
     vend_init();
     LIGHT2_SetHigh();
-    mdb_init();
     LIGHT1_SetLow();
+    BUZZER_SetLow();
+    mdb_init();
     LIGHT2_SetLow();
-   
+  /* Enable poll timer interrupt routine
+   * 
+   */
+    PIE4bits.TMR2IE = 1;
+  
     // If using interrupts in PIC18 High/Low Priority Mode you need to enable the Global High and Low Interrupts
     // If using interrupts in PIC Mid-Range Compatibility Mode you need to enable the Global Interrupts
     // Use the following macros to:
