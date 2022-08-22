@@ -33,8 +33,8 @@ void mdb_init(void)
     mdb_security();
     uint8_t i = mdb_comm(note_poll, 0x00);
     //Enable poll timer and interrupt
-    PIE4bits.TMR2IE = 1;
-    T2CONbits.ON = 1;
+    TMR2_Initialize();
+    INTCON0bits.GIE = 1;
 }
 
 uint8_t mdb_reset(void)
@@ -402,7 +402,7 @@ void mdb_waitx(void)
 {
     while(!U1ERRIRbits.TXMTIF)
     {
-        
+        uint8_t x = U1ERRIR;
     }
 }
 

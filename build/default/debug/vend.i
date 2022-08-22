@@ -26342,7 +26342,6 @@ void vend_init(void)
 {
     venflags.bflash = 0;
     venflags.priceset = 0;
-    do { LATCbits.LATC6 = 1; } while(0);
     uint8_t *timeval = &timeout;
     timeval[0] = DATAEE_ReadByte(mototime);
     timeval[1] = DATAEE_ReadByte(mototime + 1);

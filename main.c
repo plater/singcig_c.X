@@ -64,12 +64,13 @@ void main(void)
     {
         DATAEE_WriteByte(venderrors, 0x00);
         DATAEE_WriteByte(credmem, 0x00);
+        DATAEE_WriteByte(notebits, 0x1F);
     }
+    TMR2_SetInterruptHandler(InterruptTMR2);
     SYSTEM_Initialize();
   //Disable poll timer interrupt
     PIE4bits.TMR2IE = 0;
     T2CONbits.ON = 0;
-    TMR2_SetInterruptHandler(InterruptTMR2);
     BUZZER_SetHigh();
     LIGHT1_SetHigh();
     vend_init();
@@ -81,7 +82,6 @@ void main(void)
   /* Enable poll timer interrupt routine
    * 
    */
-    PIE4bits.TMR2IE = 1;
   
     // If using interrupts in PIC18 High/Low Priority Mode you need to enable the Global High and Low Interrupts
     // If using interrupts in PIC Mid-Range Compatibility Mode you need to enable the Global Interrupts
@@ -92,14 +92,18 @@ void main(void)
 
     // Disable the Global Interrupts
     //INTERRUPT_GlobalInterruptDisable();
-
+    
     while (1)
     {
         if(!SERVICE_GetValue())
         {
             enter_service();
         }
-        
+/*        if(PIR4bits.TMR2IF)
+        {
+            PIR4bits.TMR2IF = 0;
+        }
+*/            
         while(!CM1CON0bits.C1OUT)
         {
             LIGHT2_SetLow();

@@ -140,8 +140,6 @@ TMR2_UART2_TX_EDGE 24
 "178
 [v _TMR2_SetInterruptHandler TMR2_SetInterruptHandler `(v  1 e 1 0 ]
 [v i2_TMR2_SetInterruptHandler TMR2_SetInterruptHandler `(v  1 e 1 0 ]
-"182
-[v _TMR2_DefaultInterruptHandler TMR2_DefaultInterruptHandler `(v  1 e 1 0 ]
 "63 /home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr3.c
 [v _TMR3_Initialize TMR3_Initialize `(v  1 e 1 0 ]
 "120
@@ -224,24 +222,24 @@ TMR2_UART2_TX_EDGE 24
 [v i2_mdb_transmit mdb_transmit `(v  1 e 1 0 ]
 "9 /home/davepl/MPLABXProjects/singcig_c.X/vend.c
 [v _vend_init vend_init `(v  1 e 1 0 ]
-"33
+"32
 [v _coin_in coin_in `(v  1 e 1 0 ]
-"50
+"49
 [v _credit_check credit_check `(uc  1 e 1 0 ]
-"56
+"55
 [v _credit_add credit_add `(v  1 e 1 0 ]
 [v i2_credit_add credit_add `(v  1 e 1 0 ]
-"68
+"67
 [v _credit_subtract credit_subtract `(v  1 e 1 0 ]
-"81
+"80
 [v _dispense dispense `(v  1 e 1 0 ]
-"116
+"115
 [v _button_flash button_flash `(v  1 e 1 0 ]
-"131
+"130
 [v _enter_service enter_service `(v  1 e 1 0 ]
-"168
+"167
 [v _Set_Timeout Set_Timeout `(v  1 e 1 0 ]
-"190
+"189
 [v _switch_read switch_read `(a  1 e 1 0 ]
 "39 /home/davepl/MPLABXProjects/singcig_c.X/buffers.h
 [v _credit credit `VEuc  1 e 1 0 ]
@@ -263,7 +261,7 @@ TMR2_UART2_TX_EDGE 24
 [v _chkbyte chkbyte `uc  1 e 1 0 ]
 "50
 [v _dbcount dbcount `us  1 e 2 0 ]
-[s S1678 . 2 `uc 1 iscredit 1 0 :1:0 
+[s S1674 . 2 `uc 1 iscredit 1 0 :1:0 
 `uc 1 error 1 0 :1:1 
 `uc 1 initialrun 1 0 :1:2 
 `uc 1 service 1 0 :1:3 
@@ -281,8 +279,8 @@ TMR2_UART2_TX_EDGE 24
 `uc 1 spare7 1 1 :1:7 
 ]
 "90
-[v _venflags venflags `S1678  1 e 2 0 ]
-[s S1695 . 1 `uc 1 isdata 1 0 :1:0 
+[v _venflags venflags `S1674  1 e 2 0 ]
+[s S1691 . 1 `uc 1 isdata 1 0 :1:0 
 `uc 1 noteerr 1 0 :1:1 
 `uc 1 mode 1 0 :1:2 
 `uc 1 timeout 1 0 :1:3 
@@ -292,8 +290,8 @@ TMR2_UART2_TX_EDGE 24
 `uc 1 nodata 1 0 :1:7 
 ]
 "69 /home/davepl/MPLABXProjects/singcig_c.X/mdb.h
-[v _mdbflags mdbflags `S1695  1 e 1 0 ]
-[s S1704 . 1 `uc 1 R10 1 0 :1:0 
+[v _mdbflags mdbflags `S1691  1 e 1 0 ]
+[s S1700 . 1 `uc 1 R10 1 0 :1:0 
 `uc 1 R20 1 0 :1:1 
 `uc 1 R50 1 0 :1:2 
 `uc 1 R100 1 0 :1:3 
@@ -303,7 +301,7 @@ TMR2_UART2_TX_EDGE 24
 `uc 1 spare2 1 0 :1:7 
 ]
 "83
-[v _noteen noteen `S1704  1 e 1 0 ]
+[v _noteen noteen `S1700  1 e 1 0 ]
 "84
 [v _noteen_byte noteen_byte `VEuc  1 e 1 0 ]
 [s S1346 . 1 `uc 1 TMR1IE 1 0 :1:0 
@@ -596,7 +594,7 @@ TMR2_UART2_TX_EDGE 24
 [v _U1BRGH U1BRGH `VEuc  1 e 1 @15862 ]
 "25714
 [v _U1FIFO U1FIFO `VEuc  1 e 1 @15863 ]
-[s S2497 . 1 `uc 1 RXBF 1 0 :1:0 
+[s S2478 . 1 `uc 1 RXBF 1 0 :1:0 
 `uc 1 RXBE 1 0 :1:1 
 `uc 1 XON 1 0 :1:2 
 `uc 1 RXIDL 1 0 :1:3 
@@ -606,7 +604,7 @@ TMR2_UART2_TX_EDGE 24
 `uc 1 TXWRE 1 0 :1:7 
 ]
 "25749
-[s S2506 . 1 `uc 1 U1RXBF 1 0 :1:0 
+[s S2487 . 1 `uc 1 U1RXBF 1 0 :1:0 
 `uc 1 U1RXBE 1 0 :1:1 
 `uc 1 U1XON 1 0 :1:2 
 `uc 1 U1RXIDL 1 0 :1:3 
@@ -615,14 +613,14 @@ TMR2_UART2_TX_EDGE 24
 `uc 1 U1STPMD 1 0 :1:6 
 `uc 1 U1TXWRE 1 0 :1:7 
 ]
-[s S2515 . 1 `uc 1 . 1 0 :3:0 
+[s S2496 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 U1RCIDL 1 0 :1:3 
 ]
-[s S2518 . 1 `uc 1 . 1 0 :3:0 
+[s S2499 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 RCIDL 1 0 :1:3 
 ]
-[u S2521 . 1 `S2497 1 . 1 0 `S2506 1 . 1 0 `S2515 1 . 1 0 `S2518 1 . 1 0 ]
-[v _U1FIFObits U1FIFObits `VES2521  1 e 1 @15863 ]
+[u S2502 . 1 `S2478 1 . 1 0 `S2487 1 . 1 0 `S2496 1 . 1 0 `S2499 1 . 1 0 ]
+[v _U1FIFObits U1FIFObits `VES2502  1 e 1 @15863 ]
 "25844
 [v _U1UIR U1UIR `VEuc  1 e 1 @15864 ]
 "25900
@@ -803,17 +801,17 @@ TMR2_UART2_TX_EDGE 24
 [v _PR2 PR2 `VEuc  1 e 1 @16299 ]
 "41954
 [v _T2CON T2CON `VEuc  1 e 1 @16300 ]
-[s S1514 . 1 `uc 1 OUTPS 1 0 :4:0 
+[s S1510 . 1 `uc 1 OUTPS 1 0 :4:0 
 `uc 1 CKPS 1 0 :3:4 
 `uc 1 ON 1 0 :1:7 
 ]
 "41990
-[s S1518 . 1 `uc 1 T2OUTPS 1 0 :4:0 
+[s S1514 . 1 `uc 1 T2OUTPS 1 0 :4:0 
 `uc 1 T2CKPS 1 0 :3:4 
 `uc 1 T2ON 1 0 :1:7 
 ]
 "41990
-[s S1522 . 1 `uc 1 T2OUTPS0 1 0 :1:0 
+[s S1518 . 1 `uc 1 T2OUTPS0 1 0 :1:0 
 `uc 1 T2OUTPS1 1 0 :1:1 
 `uc 1 T2OUTPS2 1 0 :1:2 
 `uc 1 T2OUTPS3 1 0 :1:3 
@@ -822,7 +820,7 @@ TMR2_UART2_TX_EDGE 24
 `uc 1 T2CKPS2 1 0 :1:6 
 ]
 "41990
-[s S1530 . 1 `uc 1 OUTPS0 1 0 :1:0 
+[s S1526 . 1 `uc 1 OUTPS0 1 0 :1:0 
 `uc 1 OUTPS1 1 0 :1:1 
 `uc 1 OUTPS2 1 0 :1:2 
 `uc 1 OUTPS3 1 0 :1:3 
@@ -832,70 +830,70 @@ TMR2_UART2_TX_EDGE 24
 `uc 1 TMR2ON 1 0 :1:7 
 ]
 "41990
-[u S1539 . 1 `S1514 1 . 1 0 `S1518 1 . 1 0 `S1522 1 . 1 0 `S1530 1 . 1 0 ]
+[u S1535 . 1 `S1510 1 . 1 0 `S1514 1 . 1 0 `S1518 1 . 1 0 `S1526 1 . 1 0 ]
 "41990
 "41990
-[v _T2CONbits T2CONbits `VES1539  1 e 1 @16300 ]
+[v _T2CONbits T2CONbits `VES1535  1 e 1 @16300 ]
 "42100
 [v _T2HLT T2HLT `VEuc  1 e 1 @16301 ]
-[s S1400 . 1 `uc 1 MODE 1 0 :5:0 
+[s S1396 . 1 `uc 1 MODE 1 0 :5:0 
 `uc 1 CKSYNC 1 0 :1:5 
 `uc 1 CKPOL 1 0 :1:6 
 `uc 1 PSYNC 1 0 :1:7 
 ]
 "42133
-[s S1405 . 1 `uc 1 MODE0 1 0 :1:0 
+[s S1401 . 1 `uc 1 MODE0 1 0 :1:0 
 `uc 1 MODE1 1 0 :1:1 
 `uc 1 MODE2 1 0 :1:2 
 `uc 1 MODE3 1 0 :1:3 
 `uc 1 MODE4 1 0 :1:4 
 ]
 "42133
-[s S1411 . 1 `uc 1 T2MODE 1 0 :5:0 
+[s S1407 . 1 `uc 1 T2MODE 1 0 :5:0 
 `uc 1 T2CKSYNC 1 0 :1:5 
 `uc 1 T2CKPOL 1 0 :1:6 
 `uc 1 T2PSYNC 1 0 :1:7 
 ]
 "42133
-[s S1416 . 1 `uc 1 T2MODE0 1 0 :1:0 
+[s S1412 . 1 `uc 1 T2MODE0 1 0 :1:0 
 `uc 1 T2MODE1 1 0 :1:1 
 `uc 1 T2MODE2 1 0 :1:2 
 `uc 1 T2MODE3 1 0 :1:3 
 `uc 1 T2MODE4 1 0 :1:4 
 ]
 "42133
-[u S1422 . 1 `S1400 1 . 1 0 `S1405 1 . 1 0 `S1411 1 . 1 0 `S1416 1 . 1 0 ]
+[u S1418 . 1 `S1396 1 . 1 0 `S1401 1 . 1 0 `S1407 1 . 1 0 `S1412 1 . 1 0 ]
 "42133
 "42133
-[v _T2HLTbits T2HLTbits `VES1422  1 e 1 @16301 ]
+[v _T2HLTbits T2HLTbits `VES1418  1 e 1 @16301 ]
 "42228
 [v _T2CLKCON T2CLKCON `VEuc  1 e 1 @16302 ]
 "42386
 [v _T2RST T2RST `VEuc  1 e 1 @16303 ]
-[s S1476 . 1 `uc 1 RSEL 1 0 :5:0 
+[s S1472 . 1 `uc 1 RSEL 1 0 :5:0 
 ]
 "42413
-[s S1478 . 1 `uc 1 RSEL0 1 0 :1:0 
+[s S1474 . 1 `uc 1 RSEL0 1 0 :1:0 
 `uc 1 RSEL1 1 0 :1:1 
 `uc 1 RSEL2 1 0 :1:2 
 `uc 1 RSEL3 1 0 :1:3 
 `uc 1 RSEL4 1 0 :1:4 
 ]
 "42413
-[s S1484 . 1 `uc 1 T2RSEL 1 0 :5:0 
+[s S1480 . 1 `uc 1 T2RSEL 1 0 :5:0 
 ]
 "42413
-[s S1486 . 1 `uc 1 T2RSEL0 1 0 :1:0 
+[s S1482 . 1 `uc 1 T2RSEL0 1 0 :1:0 
 `uc 1 T2RSEL1 1 0 :1:1 
 `uc 1 T2RSEL2 1 0 :1:2 
 `uc 1 T2RSEL3 1 0 :1:3 
 `uc 1 T2RSEL4 1 0 :1:4 
 ]
 "42413
-[u S1492 . 1 `S1476 1 . 1 0 `S1478 1 . 1 0 `S1484 1 . 1 0 `S1486 1 . 1 0 ]
+[u S1488 . 1 `S1472 1 . 1 0 `S1474 1 . 1 0 `S1480 1 . 1 0 `S1482 1 . 1 0 ]
 "42413
 "42413
-[v _T2RSTbits T2RSTbits `VES1492  1 e 1 @16303 ]
+[v _T2RSTbits T2RSTbits `VES1488  1 e 1 @16303 ]
 "42478
 [v _TMR1L TMR1L `VEuc  1 e 1 @16304 ]
 "42548
@@ -980,7 +978,7 @@ TMR2_UART2_TX_EDGE 24
 [v _T0CON1 T0CON1 `VEuc  1 e 1 @16313 ]
 "43986
 [v _LATA LATA `VEuc  1 e 1 @16314 ]
-[s S1797 . 1 `uc 1 LATA0 1 0 :1:0 
+[s S1793 . 1 `uc 1 LATA0 1 0 :1:0 
 `uc 1 LATA1 1 0 :1:1 
 `uc 1 LATA2 1 0 :1:2 
 `uc 1 LATA3 1 0 :1:3 
@@ -990,7 +988,7 @@ TMR2_UART2_TX_EDGE 24
 `uc 1 LATA7 1 0 :1:7 
 ]
 "44013
-[s S1806 . 1 `uc 1 LA0 1 0 :1:0 
+[s S1802 . 1 `uc 1 LA0 1 0 :1:0 
 `uc 1 LA1 1 0 :1:1 
 `uc 1 LA2 1 0 :1:2 
 `uc 1 LA3 1 0 :1:3 
@@ -1000,13 +998,13 @@ TMR2_UART2_TX_EDGE 24
 `uc 1 LA7 1 0 :1:7 
 ]
 "44013
-[u S1815 . 1 `S1797 1 . 1 0 `S1806 1 . 1 0 ]
+[u S1811 . 1 `S1793 1 . 1 0 `S1802 1 . 1 0 ]
 "44013
 "44013
-[v _LATAbits LATAbits `VES1815  1 e 1 @16314 ]
+[v _LATAbits LATAbits `VES1811  1 e 1 @16314 ]
 "44098
 [v _LATB LATB `VEuc  1 e 1 @16315 ]
-[s S2166 . 1 `uc 1 LATB0 1 0 :1:0 
+[s S2162 . 1 `uc 1 LATB0 1 0 :1:0 
 `uc 1 LATB1 1 0 :1:1 
 `uc 1 LATB2 1 0 :1:2 
 `uc 1 LATB3 1 0 :1:3 
@@ -1016,7 +1014,7 @@ TMR2_UART2_TX_EDGE 24
 `uc 1 LATB7 1 0 :1:7 
 ]
 "44125
-[s S2175 . 1 `uc 1 LB0 1 0 :1:0 
+[s S2171 . 1 `uc 1 LB0 1 0 :1:0 
 `uc 1 LB1 1 0 :1:1 
 `uc 1 LB2 1 0 :1:2 
 `uc 1 LB3 1 0 :1:3 
@@ -1026,13 +1024,13 @@ TMR2_UART2_TX_EDGE 24
 `uc 1 LB7 1 0 :1:7 
 ]
 "44125
-[u S2184 . 1 `S2166 1 . 1 0 `S2175 1 . 1 0 ]
+[u S2180 . 1 `S2162 1 . 1 0 `S2171 1 . 1 0 ]
 "44125
 "44125
-[v _LATBbits LATBbits `VES2184  1 e 1 @16315 ]
+[v _LATBbits LATBbits `VES2180  1 e 1 @16315 ]
 "44210
 [v _LATC LATC `VEuc  1 e 1 @16316 ]
-[s S1837 . 1 `uc 1 LATC0 1 0 :1:0 
+[s S1833 . 1 `uc 1 LATC0 1 0 :1:0 
 `uc 1 LATC1 1 0 :1:1 
 `uc 1 LATC2 1 0 :1:2 
 `uc 1 LATC3 1 0 :1:3 
@@ -1042,7 +1040,7 @@ TMR2_UART2_TX_EDGE 24
 `uc 1 LATC7 1 0 :1:7 
 ]
 "44237
-[s S1846 . 1 `uc 1 LC0 1 0 :1:0 
+[s S1842 . 1 `uc 1 LC0 1 0 :1:0 
 `uc 1 LC1 1 0 :1:1 
 `uc 1 LC2 1 0 :1:2 
 `uc 1 LC3 1 0 :1:3 
@@ -1052,17 +1050,17 @@ TMR2_UART2_TX_EDGE 24
 `uc 1 LC7 1 0 :1:7 
 ]
 "44237
-[u S1855 . 1 `S1837 1 . 1 0 `S1846 1 . 1 0 ]
+[u S1851 . 1 `S1833 1 . 1 0 `S1842 1 . 1 0 ]
 "44237
 "44237
-[v _LATCbits LATCbits `VES1855  1 e 1 @16316 ]
+[v _LATCbits LATCbits `VES1851  1 e 1 @16316 ]
 "44322
 [v _TRISA TRISA `VEuc  1 e 1 @16322 ]
 "44384
 [v _TRISB TRISB `VEuc  1 e 1 @16323 ]
 "44446
 [v _TRISC TRISC `VEuc  1 e 1 @16324 ]
-[s S1885 . 1 `uc 1 RA0 1 0 :1:0 
+[s S1881 . 1 `uc 1 RA0 1 0 :1:0 
 `uc 1 RA1 1 0 :1:1 
 `uc 1 RA2 1 0 :1:2 
 `uc 1 RA3 1 0 :1:3 
@@ -1072,10 +1070,10 @@ TMR2_UART2_TX_EDGE 24
 `uc 1 RA7 1 0 :1:7 
 ]
 "44525
-[u S1894 . 1 `S1885 1 . 1 0 ]
+[u S1890 . 1 `S1881 1 . 1 0 ]
 "44525
 "44525
-[v _PORTAbits PORTAbits `VES1894  1 e 1 @16330 ]
+[v _PORTAbits PORTAbits `VES1890  1 e 1 @16330 ]
 [s S166 . 1 `uc 1 INT0EDG 1 0 :1:0 
 `uc 1 INT1EDG 1 0 :1:1 
 `uc 1 INT2EDG 1 0 :1:2 
@@ -1095,22 +1093,22 @@ TMR2_UART2_TX_EDGE 24
 [v _INTCON0bits INTCON0bits `VES177  1 e 1 @16338 ]
 "45623
 [v _PCON0 PCON0 `VEuc  1 e 1 @16368 ]
-[s S1723 . 1 `uc 1 . 1 0 :1:0 
+[s S1719 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 NOT_MEMV 1 0 :1:1 
 ]
 "45795
-[s S1726 . 1 `uc 1 . 1 0 :1:0 
+[s S1722 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 nMEMV 1 0 :1:1 
 ]
 "45795
-[s S1729 . 1 `uc 1 . 1 0 :1:0 
+[s S1725 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 MEMV 1 0 :1:1 
 ]
 "45795
-[u S1732 . 1 `S1723 1 . 1 0 `S1726 1 . 1 0 `S1729 1 . 1 0 ]
+[u S1728 . 1 `S1719 1 . 1 0 `S1722 1 . 1 0 `S1725 1 . 1 0 ]
 "45795
 "45795
-[v _PCON1bits PCON1bits `VES1732  1 e 1 @16369 ]
+[v _PCON1bits PCON1bits `VES1728  1 e 1 @16369 ]
 "45862
 [v _TABLAT TABLAT `VEuc  1 e 1 @16373 ]
 "45891
@@ -1152,14 +1150,14 @@ TMR2_UART2_TX_EDGE 24
 "59 /home/davepl/MPLABXProjects/singcig_c.X/main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"159
+"163
 } 0
 "9 /home/davepl/MPLABXProjects/singcig_c.X/vend.c
 [v _vend_init vend_init `(v  1 e 1 0 ]
 {
-"14
+"13
 [v vend_init@timeval timeval `*.39uc  1 a 2 16 ]
-"31
+"30
 } 0
 "23 /home/davepl/MPLABXProjects/singcig_c.X/mdb.c
 [v _mdb_init mdb_init `(v  1 e 1 0 ]
@@ -1175,7 +1173,7 @@ TMR2_UART2_TX_EDGE 24
 [v _mdb_reset mdb_reset `(uc  1 e 1 0 ]
 {
 "51
-[v mdb_reset@i_2612 i `uc  1 a 1 19 ]
+[v mdb_reset@i_2593 i `uc  1 a 1 19 ]
 "59
 } 0
 "141
@@ -1246,26 +1244,26 @@ TMR2_UART2_TX_EDGE 24
 [v UART1_SetAddresstoTransmit@txAddress txAddress `uc  1 a 1 13 ]
 "182
 } 0
-"131 /home/davepl/MPLABXProjects/singcig_c.X/vend.c
+"130 /home/davepl/MPLABXProjects/singcig_c.X/vend.c
 [v _enter_service enter_service `(v  1 e 1 0 ]
 {
-"166
+"165
 } 0
-"116
+"115
 [v _button_flash button_flash `(v  1 e 1 0 ]
 {
-"129
+"128
 } 0
-"168
+"167
 [v _Set_Timeout Set_Timeout `(v  1 e 1 0 ]
 {
-"180
+"179
 [v Set_Timeout@timeval timeval `*.39uc  1 a 2 23 ]
-"182
-[v Set_Timeout@readValHigh readValHigh `uc  1 a 1 22 ]
 "181
+[v Set_Timeout@readValHigh readValHigh `uc  1 a 1 22 ]
+"180
 [v Set_Timeout@readValLow readValLow `uc  1 a 1 21 ]
-"188
+"187
 } 0
 "104 /home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr1.c
 [v _TMR1_ReadTimer TMR1_ReadTimer `(us  1 e 2 0 ]
@@ -1278,19 +1276,19 @@ TMR2_UART2_TX_EDGE 24
 [v TMR1_ReadTimer@readValHigh readValHigh `uc  1 a 1 19 ]
 "118
 } 0
-"81 /home/davepl/MPLABXProjects/singcig_c.X/vend.c
+"80 /home/davepl/MPLABXProjects/singcig_c.X/vend.c
 [v _dispense dispense `(v  1 e 1 0 ]
 {
-"105
+"104
 } 0
-"68
+"67
 [v _credit_subtract credit_subtract `(v  1 e 1 0 ]
 {
 [v credit_subtract@credit credit `uc  1 a 1 wreg ]
 [v credit_subtract@credit credit `uc  1 a 1 wreg ]
 "62 /home/davepl/MPLABXProjects/singcig_c.X/buffers.h
 [v credit_subtract@credit credit `uc  1 a 1 16 ]
-"77 /home/davepl/MPLABXProjects/singcig_c.X/vend.c
+"76 /home/davepl/MPLABXProjects/singcig_c.X/vend.c
 } 0
 "120 /home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr1.c
 [v _TMR1_WriteTimer TMR1_WriteTimer `(v  1 e 1 0 ]
@@ -1308,29 +1306,29 @@ TMR2_UART2_TX_EDGE 24
 {
 "96
 } 0
-"33 /home/davepl/MPLABXProjects/singcig_c.X/vend.c
+"32 /home/davepl/MPLABXProjects/singcig_c.X/vend.c
 [v _coin_in coin_in `(v  1 e 1 0 ]
 {
-"48
+"47
 } 0
-"190
+"189
 [v _switch_read switch_read `(a  1 e 1 0 ]
 {
-"213
+"212
 } 0
-"50
+"49
 [v _credit_check credit_check `(uc  1 e 1 0 ]
 {
-"54
+"53
 } 0
-"56
+"55
 [v _credit_add credit_add `(v  1 e 1 0 ]
 {
 [v credit_add@credit credit `uc  1 a 1 wreg ]
 [v credit_add@credit credit `uc  1 a 1 wreg ]
 "62 /home/davepl/MPLABXProjects/singcig_c.X/buffers.h
 [v credit_add@credit credit `uc  1 a 1 16 ]
-"66 /home/davepl/MPLABXProjects/singcig_c.X/vend.c
+"65 /home/davepl/MPLABXProjects/singcig_c.X/vend.c
 } 0
 "165 /home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/memory.c
 [v _DATAEE_WriteByte DATAEE_WriteByte `(v  1 e 1 0 ]
@@ -1481,23 +1479,7 @@ TMR2_UART2_TX_EDGE 24
 {
 "168
 } 0
-"182 /home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr2.c
-[v _TMR2_DefaultInterruptHandler TMR2_DefaultInterruptHandler `(v  1 e 1 0 ]
-{
-"185
-} 0
-"64
-[v i2_TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
-{
-"94
-} 0
-"178
-[v i2_TMR2_SetInterruptHandler TMR2_SetInterruptHandler `(v  1 e 1 0 ]
-{
-[v i2TMR2_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 0 ]
-"180
-} 0
-"170 /home/davepl/MPLABXProjects/singcig_c.X/mdb.c
+"170
 [v _poll_mdb poll_mdb `(v  1 e 1 0 ]
 {
 "213
@@ -1516,7 +1498,7 @@ TMR2_UART2_TX_EDGE 24
 [v i2_mdb_reset mdb_reset `(uc  1 e 1 0 ]
 {
 "51
-[v i2mdb_reset@i_2612 i `uc  1 a 1 6 ]
+[v i2mdb_reset@i_2593 i `uc  1 a 1 6 ]
 "59
 } 0
 "141
@@ -1524,14 +1506,25 @@ TMR2_UART2_TX_EDGE 24
 {
 "156
 } 0
-"56 /home/davepl/MPLABXProjects/singcig_c.X/vend.c
+"64 /home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr2.c
+[v i2_TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
+{
+"94
+} 0
+"178
+[v i2_TMR2_SetInterruptHandler TMR2_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v i2TMR2_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 0 ]
+"180
+} 0
+"55 /home/davepl/MPLABXProjects/singcig_c.X/vend.c
 [v i2_credit_add credit_add `(v  1 e 1 0 ]
 {
 [v i2credit_add@credit credit `uc  1 a 1 wreg ]
 [v i2credit_add@credit credit `uc  1 a 1 wreg ]
 "62 /home/davepl/MPLABXProjects/singcig_c.X/buffers.h
 [v i2credit_add@credit credit `uc  1 a 1 3 ]
-"66 /home/davepl/MPLABXProjects/singcig_c.X/vend.c
+"65 /home/davepl/MPLABXProjects/singcig_c.X/vend.c
 } 0
 "165 /home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/memory.c
 [v i2_DATAEE_WriteByte DATAEE_WriteByte `(v  1 e 1 0 ]

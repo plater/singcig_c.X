@@ -12,14 +12,14 @@
   0h - 3h		(dist/default/debug/singcig_c.X.debug.hex)
   8h - Bh		(dist/default/debug/singcig_c.X.debug.hex)
   18h - 1Dh		(dist/default/debug/singcig_c.X.debug.hex)
-  800h - 1A86h		(dist/default/debug/singcig_c.X.debug.hex)
+  800h - 1A94h		(dist/default/debug/singcig_c.X.debug.hex)
   200000h - 20000Fh		(dist/default/debug/singcig_c.X.debug.hex)
   300000h - 300009h		(dist/default/debug/singcig_c.X.debug.hex)
  Unused ranges:
   4h - 7h
   Ch - 17h
   1Eh - 7FFh
-  1A87h - 1FFFFFh
+  1A95h - 1FFFFFh
   200010h - 2FFFFFh
 
 ### Hex Memory Map ###
@@ -328,7 +328,8 @@
 00001A50 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00001A60 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00001A70 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
-00001A80 | H1 H1 H1 H1 H1 H1 H1 -- -- -- -- -- -- -- -- --
+00001A80 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00001A90 | H1 H1 H1 H1 H1 -- -- -- -- -- -- -- -- -- -- --
 ----------------------------------------------------------
 00200000 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 ----------------------------------------------------------

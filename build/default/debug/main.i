@@ -26477,12 +26477,13 @@ void main(void)
     {
         DATAEE_WriteByte(venderrors, 0x00);
         DATAEE_WriteByte(credmem, 0x00);
+        DATAEE_WriteByte(notebits, 0x1F);
     }
+    TMR2_SetInterruptHandler(InterruptTMR2);
     SYSTEM_Initialize();
 
     PIE4bits.TMR2IE = 0;
     T2CONbits.ON = 0;
-    TMR2_SetInterruptHandler(InterruptTMR2);
     do { LATAbits.LATA1 = 1; } while(0);
     do { LATCbits.LATC6 = 1; } while(0);
     vend_init();
@@ -26491,10 +26492,6 @@ void main(void)
     do { LATAbits.LATA1 = 0; } while(0);
     mdb_init();
     do { LATCbits.LATC5 = 0; } while(0);
-
-
-
-    PIE4bits.TMR2IE = 1;
 # 96 "main.c"
     while (1)
     {
@@ -26502,6 +26499,10 @@ void main(void)
         {
             enter_service();
         }
+
+
+
+
 
         while(!CM1CON0bits.C1OUT)
         {

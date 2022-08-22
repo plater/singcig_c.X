@@ -3,21 +3,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;./buffers.h: 73: {
 [s S2125 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S2125 . iscredit error initialrun service priceset setprice mottime settime swclosed bflash crednuff t5time spare4 spare5 spare6 spare7 ]
-"44216 /home/davepl/.mchp_packs/Microchip/PIC18F-K_DFP/1.6.125/xc8/pic/include/proc/pic18f25k42.h
-[; ;/home/davepl/.mchp_packs/Microchip/PIC18F-K_DFP/1.6.125/xc8/pic/include/proc/pic18f25k42.h: 44216:     struct {
-[s S1996 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S1996 . LATC0 LATC1 LATC2 LATC3 LATC4 LATC5 LATC6 LATC7 ]
-"44226
-[; ;/home/davepl/.mchp_packs/Microchip/PIC18F-K_DFP/1.6.125/xc8/pic/include/proc/pic18f25k42.h: 44226:     struct {
-[s S1997 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S1997 . LC0 LC1 LC2 LC3 LC4 LC5 LC6 LC7 ]
-"44215
-[; ;/home/davepl/.mchp_packs/Microchip/PIC18F-K_DFP/1.6.125/xc8/pic/include/proc/pic18f25k42.h: 44215: typedef union {
-[u S1995 `S1996 1 `S1997 1 ]
-[n S1995 . . . ]
-"44237
-[; ;/home/davepl/.mchp_packs/Microchip/PIC18F-K_DFP/1.6.125/xc8/pic/include/proc/pic18f25k42.h: 44237: extern volatile LATCbits_t LATCbits __attribute__((address(0x3FBC)));
-[v _LATCbits `VS1995 ~T0 @X0 0 e@16316 ]
 "275 ./mcc_generated_files/memory.h
 [; ;./mcc_generated_files/memory.h: 275: uint8_t DATAEE_ReadByte(uint8_t bAdd);
 [v _DATAEE_ReadByte `(uc ~T0 @X0 0 ef1`uc ]
@@ -55,6 +40,21 @@ Version 4.0 HI-TECH Software Intermediate Code
 "15 ./vend.h
 [; ;./vend.h: 15: uint8_t credit_check(void);
 [v _credit_check `(uc ~T0 @X0 0 ef ]
+"44216 /home/davepl/.mchp_packs/Microchip/PIC18F-K_DFP/1.6.125/xc8/pic/include/proc/pic18f25k42.h
+[; ;/home/davepl/.mchp_packs/Microchip/PIC18F-K_DFP/1.6.125/xc8/pic/include/proc/pic18f25k42.h: 44216:     struct {
+[s S1996 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1996 . LATC0 LATC1 LATC2 LATC3 LATC4 LATC5 LATC6 LATC7 ]
+"44226
+[; ;/home/davepl/.mchp_packs/Microchip/PIC18F-K_DFP/1.6.125/xc8/pic/include/proc/pic18f25k42.h: 44226:     struct {
+[s S1997 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1997 . LC0 LC1 LC2 LC3 LC4 LC5 LC6 LC7 ]
+"44215
+[; ;/home/davepl/.mchp_packs/Microchip/PIC18F-K_DFP/1.6.125/xc8/pic/include/proc/pic18f25k42.h: 44215: typedef union {
+[u S1995 `S1996 1 `S1997 1 ]
+[n S1995 . . . ]
+"44237
+[; ;/home/davepl/.mchp_packs/Microchip/PIC18F-K_DFP/1.6.125/xc8/pic/include/proc/pic18f25k42.h: 44237: extern volatile LATCbits_t LATCbits __attribute__((address(0x3FBC)));
+[v _LATCbits `VS1995 ~T0 @X0 0 e@16316 ]
 "249 ./mcc_generated_files/memory.h
 [; ;./mcc_generated_files/memory.h: 249: void DATAEE_WriteByte(uint8_t bAdd, uint8_t bData);
 [v _DATAEE_WriteByte `(v ~T0 @X0 0 ef2`uc`uc ]
@@ -2389,702 +2389,695 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;vend.c: 12:     venflags.priceset = 0;
 [e = . _venflags 4 -> -> 0 `i `uc ]
 "13
-[; ;vend.c: 13:     do { LATCbits.LATC6 = 1; } while(0);
-[e :U 2129 ]
-{
-[e = . . _LATCbits 0 6 -> -> 1 `i `uc ]
-}
-[e :U 2128 ]
-"14
-[; ;vend.c: 14:     uint8_t *timeval = &timeout;
+[; ;vend.c: 13:     uint8_t *timeval = &timeout;
 [v _timeval `*uc ~T0 @X0 1 a ]
 [e = _timeval -> &U _timeout `*uc ]
-"15
-[; ;vend.c: 15:     timeval[0] = DATAEE_ReadByte(mototime);
+"14
+[; ;vend.c: 14:     timeval[0] = DATAEE_ReadByte(mototime);
 [e = *U + _timeval * -> -> 0 `i `x -> -> # *U _timeval `i `x ( _DATAEE_ReadByte (1 -> _mototime `uc ]
-"16
-[; ;vend.c: 16:     timeval[1] = DATAEE_ReadByte(mototime + 1);
+"15
+[; ;vend.c: 15:     timeval[1] = DATAEE_ReadByte(mototime + 1);
 [e = *U + _timeval * -> -> 1 `i `x -> -> # *U _timeval `i `x ( _DATAEE_ReadByte (1 -> + -> _mototime `ui -> -> 1 `i `ui `uc ]
-"17
-[; ;vend.c: 17:     vendprice = DATAEE_ReadByte(pricestore);
+"16
+[; ;vend.c: 16:     vendprice = DATAEE_ReadByte(pricestore);
 [e = _vendprice ( _DATAEE_ReadByte (1 -> _pricestore `uc ]
-"18
-[; ;vend.c: 18:     credit = DATAEE_ReadByte(credmem);
+"17
+[; ;vend.c: 17:     credit = DATAEE_ReadByte(credmem);
 [e = _credit ( _DATAEE_ReadByte (1 -> _credmem `uc ]
-"19
-[; ;vend.c: 19:     DAC1CON1 = 0x0C;
+"18
+[; ;vend.c: 18:     DAC1CON1 = 0x0C;
 [e = _DAC1CON1 -> -> 12 `i `uc ]
-"20
-[; ;vend.c: 20:     _delay((unsigned long)((250)*(12000000/4000.0)));
+"19
+[; ;vend.c: 19:     _delay((unsigned long)((250)*(12000000/4000.0)));
 [e ( __delay (1 -> * -> -> 250 `i `d / -> -> 12000000 `l `d .4000.0 `ul ]
+"20
+[; ;vend.c: 20:     if(DATAEE_ReadByte(venderrors) != 0x00)
+[e $ ! != -> ( _DATAEE_ReadByte (1 -> _venderrors `uc `i -> 0 `i 2127  ]
 "21
-[; ;vend.c: 21:     if(DATAEE_ReadByte(venderrors) != 0x00)
-[e $ ! != -> ( _DATAEE_ReadByte (1 -> _venderrors `uc `i -> 0 `i 2130  ]
-"22
-[; ;vend.c: 22:     {
+[; ;vend.c: 21:     {
 {
-"23
-[; ;vend.c: 23:         do { LATAbits.LATA4 = 0; } while(0);
-[e :U 2133 ]
+"22
+[; ;vend.c: 22:         do { LATAbits.LATA4 = 0; } while(0);
+[e :U 2130 ]
 {
 [e = . . _LATAbits 0 4 -> -> 0 `i `uc ]
 }
-[e :U 2132 ]
-"24
-[; ;vend.c: 24:         venflags.error = 1;
+[e :U 2129 ]
+"23
+[; ;vend.c: 23:         venflags.error = 1;
 [e = . _venflags 1 -> -> 1 `i `uc ]
-"25
-[; ;vend.c: 25:     }
+"24
+[; ;vend.c: 24:     }
 }
-[e $U 2134  ]
+[e $U 2131  ]
+"25
+[; ;vend.c: 25:     else
+[e :U 2127 ]
 "26
-[; ;vend.c: 26:     else
-[e :U 2130 ]
-"27
-[; ;vend.c: 27:     {
+[; ;vend.c: 26:     {
 {
-"28
-[; ;vend.c: 28:         do { LATAbits.LATA4 = 1; } while(0);
-[e :U 2137 ]
+"27
+[; ;vend.c: 27:         do { LATAbits.LATA4 = 1; } while(0);
+[e :U 2134 ]
 {
 [e = . . _LATAbits 0 4 -> -> 1 `i `uc ]
 }
-[e :U 2136 ]
-"29
-[; ;vend.c: 29:         venflags.error = 0;
+[e :U 2133 ]
+"28
+[; ;vend.c: 28:         venflags.error = 0;
 [e = . _venflags 1 -> -> 0 `i `uc ]
-"30
-[; ;vend.c: 30:     }
+"29
+[; ;vend.c: 29:     }
 }
-[e :U 2134 ]
-"31
-[; ;vend.c: 31: }
+[e :U 2131 ]
+"30
+[; ;vend.c: 30: }
 [e :UE 2126 ]
 }
-"33
-[; ;vend.c: 33: void coin_in(void)
+"32
+[; ;vend.c: 32: void coin_in(void)
 [v _coin_in `(v ~T0 @X0 1 ef ]
-"34
-[; ;vend.c: 34: {
+"33
+[; ;vend.c: 33: {
 {
 [e :U _coin_in ]
 [f ]
-"35
-[; ;vend.c: 35:     TMR5_Initialize();
+"34
+[; ;vend.c: 34:     TMR5_Initialize();
 [e ( _TMR5_Initialize ..  ]
-"36
-[; ;vend.c: 36:     venflags.t5time = 0;
+"35
+[; ;vend.c: 35:     venflags.t5time = 0;
 [e = . _venflags 11 -> -> 0 `i `uc ]
+"36
+[; ;vend.c: 36:     if(switch_read())
+[e $ ! != -> ( _switch_read ..  `i -> 0 `i 2136  ]
 "37
-[; ;vend.c: 37:     if(switch_read())
-[e $ ! != -> ( _switch_read ..  `i -> 0 `i 2139  ]
+[; ;vend.c: 37:     {
+{
 "38
-[; ;vend.c: 38:     {
-{
-"39
-[; ;vend.c: 39:         while(switch_read()){}
-[e $U 2140  ]
-[e :U 2141 ]
+[; ;vend.c: 38:         while(switch_read()){}
+[e $U 2137  ]
+[e :U 2138 ]
 {
 }
-[e :U 2140 ]
-[e $ != -> ( _switch_read ..  `i -> 0 `i 2141  ]
-[e :U 2142 ]
-"40
-[; ;vend.c: 40:         credit_add(0x01);
-[e ( _credit_add (1 -> -> 1 `i `uc ]
-"41
-[; ;vend.c: 41:     }
-}
+[e :U 2137 ]
+[e $ != -> ( _switch_read ..  `i -> 0 `i 2138  ]
 [e :U 2139 ]
+"39
+[; ;vend.c: 39:         credit_add(0x01);
+[e ( _credit_add (1 -> -> 1 `i `uc ]
+"40
+[; ;vend.c: 40:     }
+}
+[e :U 2136 ]
+"41
+[; ;vend.c: 41:     if(credit_check() >= vendprice)
+[e $ ! >= -> ( _credit_check ..  `i -> _vendprice `i 2140  ]
 "42
-[; ;vend.c: 42:     if(credit_check() >= vendprice)
-[e $ ! >= -> ( _credit_check ..  `i -> _vendprice `i 2143  ]
-"43
-[; ;vend.c: 43:     {
+[; ;vend.c: 42:     {
 {
-"46
-[; ;vend.c: 46:         do { LATCbits.LATC6 = 1; } while(0);
-[e :U 2146 ]
+"45
+[; ;vend.c: 45:         do { LATCbits.LATC6 = 1; } while(0);
+[e :U 2143 ]
 {
 [e = . . _LATCbits 0 6 -> -> 1 `i `uc ]
 }
-[e :U 2145 ]
+[e :U 2142 ]
+"46
+[; ;vend.c: 46:     }
+}
+[e :U 2140 ]
 "47
-[; ;vend.c: 47:     }
+[; ;vend.c: 47: }
+[e :UE 2135 ]
 }
-[e :U 2143 ]
-"48
-[; ;vend.c: 48: }
-[e :UE 2138 ]
-}
-"50
-[; ;vend.c: 50: uint8_t credit_check(void)
+"49
+[; ;vend.c: 49: uint8_t credit_check(void)
 [v _credit_check `(uc ~T0 @X0 1 ef ]
-"51
-[; ;vend.c: 51: {
+"50
+[; ;vend.c: 50: {
 {
 [e :U _credit_check ]
 [f ]
-"52
-[; ;vend.c: 52:     cash = DATAEE_ReadByte(credmem);
+"51
+[; ;vend.c: 51:     cash = DATAEE_ReadByte(credmem);
 [e = _cash ( _DATAEE_ReadByte (1 -> _credmem `uc ]
-"53
-[; ;vend.c: 53:     return(cash);
+"52
+[; ;vend.c: 52:     return(cash);
 [e ) _cash ]
-[e $UE 2147  ]
-"54
-[; ;vend.c: 54: }
-[e :UE 2147 ]
+[e $UE 2144  ]
+"53
+[; ;vend.c: 53: }
+[e :UE 2144 ]
 }
-"56
-[; ;vend.c: 56: void credit_add(uint8_t credit)
+"55
+[; ;vend.c: 55: void credit_add(uint8_t credit)
 [v _credit_add `(v ~T0 @X0 1 ef1`uc ]
-"57
-[; ;vend.c: 57: {
+"56
+[; ;vend.c: 56: {
 {
 [e :U _credit_add ]
-"56
-[; ;vend.c: 56: void credit_add(uint8_t credit)
+"55
+[; ;vend.c: 55: void credit_add(uint8_t credit)
 [v _credit `uc ~T0 @X0 1 r1 ]
-"57
-[; ;vend.c: 57: {
+"56
+[; ;vend.c: 56: {
 [f ]
-"58
-[; ;vend.c: 58:     cash = DATAEE_ReadByte(credmem);
+"57
+[; ;vend.c: 57:     cash = DATAEE_ReadByte(credmem);
 [e = _cash ( _DATAEE_ReadByte (1 -> _credmem `uc ]
-"59
-[; ;vend.c: 59:     cash = cash + credit;
+"58
+[; ;vend.c: 58:     cash = cash + credit;
 [e = _cash -> + -> _cash `i -> _credit `i `uc ]
-"60
-[; ;vend.c: 60:     DATAEE_WriteByte(credmem, cash);
+"59
+[; ;vend.c: 59:     DATAEE_WriteByte(credmem, cash);
 [e ( _DATAEE_WriteByte (2 , -> _credmem `uc _cash ]
+"60
+[; ;vend.c: 60:     if(cash != 0)
+[e $ ! != -> _cash `i -> 0 `i 2146  ]
 "61
-[; ;vend.c: 61:     if(cash != 0)
-[e $ ! != -> _cash `i -> 0 `i 2149  ]
-"62
-[; ;vend.c: 62:     {
+[; ;vend.c: 61:     {
 {
-"63
-[; ;vend.c: 63:         venflags.iscredit = 1;
+"62
+[; ;vend.c: 62:         venflags.iscredit = 1;
 [e = . _venflags 0 -> -> 1 `i `uc ]
+"64
+[; ;vend.c: 64:     }
+}
+[e :U 2146 ]
 "65
-[; ;vend.c: 65:     }
+[; ;vend.c: 65: }
+[e :UE 2145 ]
 }
-[e :U 2149 ]
-"66
-[; ;vend.c: 66: }
-[e :UE 2148 ]
-}
-"68
-[; ;vend.c: 68: void credit_subtract(uint8_t credit)
+"67
+[; ;vend.c: 67: void credit_subtract(uint8_t credit)
 [v _credit_subtract `(v ~T0 @X0 1 ef1`uc ]
-"69
-[; ;vend.c: 69: {
+"68
+[; ;vend.c: 68: {
 {
 [e :U _credit_subtract ]
-"68
-[; ;vend.c: 68: void credit_subtract(uint8_t credit)
+"67
+[; ;vend.c: 67: void credit_subtract(uint8_t credit)
 [v _credit `uc ~T0 @X0 1 r1 ]
-"69
-[; ;vend.c: 69: {
+"68
+[; ;vend.c: 68: {
 [f ]
-"70
-[; ;vend.c: 70:     cash = DATAEE_ReadByte(credmem);
+"69
+[; ;vend.c: 69:     cash = DATAEE_ReadByte(credmem);
 [e = _cash ( _DATAEE_ReadByte (1 -> _credmem `uc ]
-"71
-[; ;vend.c: 71:     cash = (cash - credit) & 0xFF;
+"70
+[; ;vend.c: 70:     cash = (cash - credit) & 0xFF;
 [e = _cash -> & - -> _cash `i -> _credit `i -> 255 `i `uc ]
-"72
-[; ;vend.c: 72:     DATAEE_WriteByte(credmem, cash);
+"71
+[; ;vend.c: 71:     DATAEE_WriteByte(credmem, cash);
 [e ( _DATAEE_WriteByte (2 , -> _credmem `uc _cash ]
+"72
+[; ;vend.c: 72:     if(cash == 0)
+[e $ ! == -> _cash `i -> 0 `i 2148  ]
 "73
-[; ;vend.c: 73:     if(cash == 0)
-[e $ ! == -> _cash `i -> 0 `i 2151  ]
-"74
-[; ;vend.c: 74:     {
+[; ;vend.c: 73:     {
 {
-"75
-[; ;vend.c: 75:         venflags.iscredit = 0;
+"74
+[; ;vend.c: 74:         venflags.iscredit = 0;
 [e = . _venflags 0 -> -> 0 `i `uc ]
+"75
+[; ;vend.c: 75:     }
+}
+[e :U 2148 ]
 "76
-[; ;vend.c: 76:     }
+[; ;vend.c: 76: }
+[e :UE 2147 ]
 }
-[e :U 2151 ]
-"77
-[; ;vend.c: 77: }
-[e :UE 2150 ]
-}
-"81
-[; ;vend.c: 81: void dispense(void)
+"80
+[; ;vend.c: 80: void dispense(void)
 [v _dispense `(v ~T0 @X0 1 ef ]
-"82
-[; ;vend.c: 82: {
+"81
+[; ;vend.c: 81: {
 {
 [e :U _dispense ]
 [f ]
-"83
-[; ;vend.c: 83:     do { LATAbits.LATA4 = 0; } while(0);
-[e :U 2155 ]
+"82
+[; ;vend.c: 82:     do { LATAbits.LATA4 = 0; } while(0);
+[e :U 2152 ]
 {
 [e = . . _LATAbits 0 4 -> -> 0 `i `uc ]
 }
-[e :U 2154 ]
-"84
-[; ;vend.c: 84:     TMR1_Initialize();
+[e :U 2151 ]
+"83
+[; ;vend.c: 83:     TMR1_Initialize();
 [e ( _TMR1_Initialize ..  ]
-"85
-[; ;vend.c: 85:     TMR1_StopTimer();
+"84
+[; ;vend.c: 84:     TMR1_StopTimer();
 [e ( _TMR1_StopTimer ..  ]
-"86
-[; ;vend.c: 86:     TMR1_WriteTimer(timeout);
+"85
+[; ;vend.c: 85:     TMR1_WriteTimer(timeout);
 [e ( _TMR1_WriteTimer (1 _timeout ]
-"87
-[; ;vend.c: 87:     TMR1_StartTimer();
+"86
+[; ;vend.c: 86:     TMR1_StartTimer();
 [e ( _TMR1_StartTimer ..  ]
-"88
-[; ;vend.c: 88:     DAC1CON1 = 0x0C;
+"87
+[; ;vend.c: 87:     DAC1CON1 = 0x0C;
 [e = _DAC1CON1 -> -> 12 `i `uc ]
+"88
+[; ;vend.c: 88:     while(!PIR4bits.TMR1IF && CM1CON0bits.C1OUT)
+[e $U 2153  ]
+[e :U 2154 ]
 "89
-[; ;vend.c: 89:     while(!PIR4bits.TMR1IF && CM1CON0bits.C1OUT)
-[e $U 2156  ]
-[e :U 2157 ]
-"90
-[; ;vend.c: 90:     {
+[; ;vend.c: 89:     {
 {
-"91
-[; ;vend.c: 91:         do { LATBbits.LATB0 = 1; } while(0);
-[e :U 2161 ]
+"90
+[; ;vend.c: 90:         do { LATBbits.LATB0 = 1; } while(0);
+[e :U 2158 ]
 {
 [e = . . _LATBbits 0 0 -> -> 1 `i `uc ]
 }
-[e :U 2160 ]
-"92
-[; ;vend.c: 92:     }
+[e :U 2157 ]
+"91
+[; ;vend.c: 91:     }
 }
-[e :U 2156 ]
-"89
-[; ;vend.c: 89:     while(!PIR4bits.TMR1IF && CM1CON0bits.C1OUT)
-[e $ && ! != -> . . _PIR4bits 0 0 `i -> 0 `i != -> . . _CM1CON0bits 1 5 `i -> 0 `i 2157  ]
-[e :U 2158 ]
-"93
-[; ;vend.c: 93:     do { LATBbits.LATB0 = 0; } while(0);
-[e :U 2164 ]
+[e :U 2153 ]
+"88
+[; ;vend.c: 88:     while(!PIR4bits.TMR1IF && CM1CON0bits.C1OUT)
+[e $ && ! != -> . . _PIR4bits 0 0 `i -> 0 `i != -> . . _CM1CON0bits 1 5 `i -> 0 `i 2154  ]
+[e :U 2155 ]
+"92
+[; ;vend.c: 92:     do { LATBbits.LATB0 = 0; } while(0);
+[e :U 2161 ]
 {
 [e = . . _LATBbits 0 0 -> -> 0 `i `uc ]
 }
-[e :U 2163 ]
+[e :U 2160 ]
+"93
+[; ;vend.c: 93:     if(PIR4bits.TMR1IF)
+[e $ ! != -> . . _PIR4bits 0 0 `i -> 0 `i 2162  ]
 "94
-[; ;vend.c: 94:     if(PIR4bits.TMR1IF)
-[e $ ! != -> . . _PIR4bits 0 0 `i -> 0 `i 2165  ]
+[; ;vend.c: 94:     {
+{
 "95
-[; ;vend.c: 95:     {
-{
-"96
-[; ;vend.c: 96:         DATAEE_WriteByte(venderrors, 0xAA);
+[; ;vend.c: 95:         DATAEE_WriteByte(venderrors, 0xAA);
 [e ( _DATAEE_WriteByte (2 , -> _venderrors `uc -> -> 170 `i `uc ]
+"96
+[; ;vend.c: 96:         __asm("RESET");
+[; <" RESET ;# ">
 "97
-[; ;vend.c: 97:         __asm("RESET");
-[; <" RESET ;# ">
+[; ;vend.c: 97:     }
+}
+[e $U 2163  ]
 "98
-[; ;vend.c: 98:     }
-}
-[e $U 2166  ]
+[; ;vend.c: 98:     else
+[e :U 2162 ]
 "99
-[; ;vend.c: 99:     else
-[e :U 2165 ]
-"100
-[; ;vend.c: 100:     {
+[; ;vend.c: 99:     {
 {
-"101
-[; ;vend.c: 101:         credit_subtract(vendprice);
+"100
+[; ;vend.c: 100:         credit_subtract(vendprice);
 [e ( _credit_subtract (1 _vendprice ]
-"102
-[; ;vend.c: 102:         __asm("RESET");
+"101
+[; ;vend.c: 101:         __asm("RESET");
 [; <" RESET ;# ">
-"103
-[; ;vend.c: 103:     }
+"102
+[; ;vend.c: 102:     }
 }
-[e :U 2166 ]
-"105
-[; ;vend.c: 105: }
-[e :UE 2152 ]
+[e :U 2163 ]
+"104
+[; ;vend.c: 104: }
+[e :UE 2149 ]
 }
-"107
-[; ;vend.c: 107: _Bool Read_Sensor(void)
+"106
+[; ;vend.c: 106: _Bool Read_Sensor(void)
 [v _Read_Sensor `(a ~T0 @X0 1 ef ]
-"108
-[; ;vend.c: 108: {
+"107
+[; ;vend.c: 107: {
 {
 [e :U _Read_Sensor ]
 [f ]
-"111
-[; ;vend.c: 111:     DAC1CON1 = 0x0C;
+"110
+[; ;vend.c: 110:     DAC1CON1 = 0x0C;
 [e = _DAC1CON1 -> -> 12 `i `uc ]
-"112
-[; ;vend.c: 112:     uint8_t senval = CMOUT;
+"111
+[; ;vend.c: 111:     uint8_t senval = CMOUT;
 [v _senval `uc ~T0 @X0 1 a ]
 [e = _senval _CMOUT ]
-"113
-[; ;vend.c: 113:     return CM1CON0bits.C1OUT;
+"112
+[; ;vend.c: 112:     return CM1CON0bits.C1OUT;
 [e ) -> . . _CM1CON0bits 1 5 `a ]
-[e $UE 2167  ]
-"114
-[; ;vend.c: 114: }
-[e :UE 2167 ]
+[e $UE 2164  ]
+"113
+[; ;vend.c: 113: }
+[e :UE 2164 ]
 }
-"116
-[; ;vend.c: 116: void button_flash(void)
+"115
+[; ;vend.c: 115: void button_flash(void)
 [v _button_flash `(v ~T0 @X0 1 ef ]
-"117
-[; ;vend.c: 117: {
+"116
+[; ;vend.c: 116: {
 {
 [e :U _button_flash ]
 [f ]
+"117
+[; ;vend.c: 117:     if(!venflags.bflash)
+[e $ ! ! != -> . _venflags 9 `i -> 0 `i 2166  ]
 "118
-[; ;vend.c: 118:     if(!venflags.bflash)
-[e $ ! ! != -> . _venflags 9 `i -> 0 `i 2169  ]
-"119
-[; ;vend.c: 119:     {
+[; ;vend.c: 118:     {
 {
-"120
-[; ;vend.c: 120:         venflags.bflash = 1;
+"119
+[; ;vend.c: 119:         venflags.bflash = 1;
 [e = . _venflags 9 -> -> 1 `i `uc ]
-"121
-[; ;vend.c: 121:         TMR3_Initialize();
+"120
+[; ;vend.c: 120:         TMR3_Initialize();
 [e ( _TMR3_Initialize ..  ]
-"122
-[; ;vend.c: 122:         do { LATCbits.LATC6 = 1; } while(0);
-[e :U 2172 ]
+"121
+[; ;vend.c: 121:         do { LATCbits.LATC6 = 1; } while(0);
+[e :U 2169 ]
 {
 [e = . . _LATCbits 0 6 -> -> 1 `i `uc ]
 }
-[e :U 2171 ]
+[e :U 2168 ]
+"122
+[; ;vend.c: 122:     }
+}
+[e :U 2166 ]
 "123
-[; ;vend.c: 123:     }
-}
-[e :U 2169 ]
+[; ;vend.c: 123:     if(PIR6bits.TMR3IF)
+[e $ ! != -> . . _PIR6bits 0 6 `i -> 0 `i 2170  ]
 "124
-[; ;vend.c: 124:     if(PIR6bits.TMR3IF)
-[e $ ! != -> . . _PIR6bits 0 6 `i -> 0 `i 2173  ]
-"125
-[; ;vend.c: 125:     {
+[; ;vend.c: 124:     {
 {
-"126
-[; ;vend.c: 126:         LATCbits.LC2 = ~LATCbits.LC2;
+"125
+[; ;vend.c: 125:         LATCbits.LC2 = ~LATCbits.LC2;
 [e = . . _LATCbits 1 2 -> ~ -> . . _LATCbits 1 2 `i `uc ]
-"127
-[; ;vend.c: 127:         TMR3_Initialize();
+"126
+[; ;vend.c: 126:         TMR3_Initialize();
 [e ( _TMR3_Initialize ..  ]
+"127
+[; ;vend.c: 127:     }
+}
+[e :U 2170 ]
 "128
-[; ;vend.c: 128:     }
+[; ;vend.c: 128: }
+[e :UE 2165 ]
 }
-[e :U 2173 ]
-"129
-[; ;vend.c: 129: }
-[e :UE 2168 ]
-}
-"131
-[; ;vend.c: 131: void enter_service(void)
+"130
+[; ;vend.c: 130: void enter_service(void)
 [v _enter_service `(v ~T0 @X0 1 ef ]
-"132
-[; ;vend.c: 132: {
+"131
+[; ;vend.c: 131: {
 {
 [e :U _enter_service ]
 [f ]
-"133
-[; ;vend.c: 133:     DATAEE_WriteByte(venderrors, 0x00);
+"132
+[; ;vend.c: 132:     DATAEE_WriteByte(venderrors, 0x00);
 [e ( _DATAEE_WriteByte (2 , -> _venderrors `uc -> -> 0 `i `uc ]
-"134
-[; ;vend.c: 134:     DATAEE_WriteByte(credmem, 0x00);
+"133
+[; ;vend.c: 133:     DATAEE_WriteByte(credmem, 0x00);
 [e ( _DATAEE_WriteByte (2 , -> _credmem `uc -> -> 0 `i `uc ]
-"136
-[; ;vend.c: 136:     credit = 0x00;
+"135
+[; ;vend.c: 135:     credit = 0x00;
 [e = _credit -> -> 0 `i `uc ]
-"137
-[; ;vend.c: 137:     venflags.priceset = 0;
+"136
+[; ;vend.c: 136:     venflags.priceset = 0;
 [e = . _venflags 4 -> -> 0 `i `uc ]
-"138
-[; ;vend.c: 138:     do { LATAbits.LATA4 = 1; } while(0);
-[e :U 2177 ]
+"137
+[; ;vend.c: 137:     do { LATAbits.LATA4 = 1; } while(0);
+[e :U 2174 ]
 {
 [e = . . _LATAbits 0 4 -> -> 1 `i `uc ]
 }
+[e :U 2173 ]
+"138
+[; ;vend.c: 138:     while(!PORTAbits.RA3){}
+[e $U 2175  ]
 [e :U 2176 ]
-"139
-[; ;vend.c: 139:     while(!PORTAbits.RA3){}
-[e $U 2178  ]
-[e :U 2179 ]
 {
 }
-[e :U 2178 ]
-[e $ ! != -> . . _PORTAbits 0 3 `i -> 0 `i 2179  ]
-[e :U 2180 ]
-"140
-[; ;vend.c: 140:     _delay((unsigned long)((500)*(12000000/4000.0)));
+[e :U 2175 ]
+[e $ ! != -> . . _PORTAbits 0 3 `i -> 0 `i 2176  ]
+[e :U 2177 ]
+"139
+[; ;vend.c: 139:     _delay((unsigned long)((500)*(12000000/4000.0)));
 [e ( __delay (1 -> * -> -> 500 `i `d / -> -> 12000000 `l `d .4000.0 `ul ]
+"140
+[; ;vend.c: 140:     while(PORTAbits.RA3)
+[e $U 2178  ]
+[e :U 2179 ]
 "141
-[; ;vend.c: 141:     while(PORTAbits.RA3)
-[e $U 2181  ]
-[e :U 2182 ]
+[; ;vend.c: 141:     {
+{
 "142
-[; ;vend.c: 142:     {
-{
-"143
-[; ;vend.c: 143:         button_flash();
+[; ;vend.c: 142:         button_flash();
 [e ( _button_flash ..  ]
+"143
+[; ;vend.c: 143:         if(!PORTAbits.RA6 && !venflags.priceset)
+[e $ ! && ! != -> . . _PORTAbits 0 6 `i -> 0 `i ! != -> . _venflags 4 `i -> 0 `i 2181  ]
 "144
-[; ;vend.c: 144:         if(!PORTAbits.RA6 && !venflags.priceset)
-[e $ ! && ! != -> . . _PORTAbits 0 6 `i -> 0 `i ! != -> . _venflags 4 `i -> 0 `i 2184  ]
-"145
-[; ;vend.c: 145:         {
+[; ;vend.c: 144:         {
 {
-"146
-[; ;vend.c: 146:             do { LATAbits.LATA4 = 0; } while(0);
-[e :U 2187 ]
+"145
+[; ;vend.c: 145:             do { LATAbits.LATA4 = 0; } while(0);
+[e :U 2184 ]
 {
 [e = . . _LATAbits 0 4 -> -> 0 `i `uc ]
 }
-[e :U 2186 ]
-"147
-[; ;vend.c: 147:             Set_Timeout();
+[e :U 2183 ]
+"146
+[; ;vend.c: 146:             Set_Timeout();
 [e ( _Set_Timeout ..  ]
-"148
-[; ;vend.c: 148:             __asm("RESET");
+"147
+[; ;vend.c: 147:             __asm("RESET");
 [; <" RESET ;# ">
-"149
-[; ;vend.c: 149:         }
-}
-[e :U 2184 ]
-"150
-[; ;vend.c: 150:         if(switch_read())
-[e $ ! != -> ( _switch_read ..  `i -> 0 `i 2188  ]
-"151
-[; ;vend.c: 151:         {
-{
-"152
-[; ;vend.c: 152:             venflags.priceset = 1;
-[e = . _venflags 4 -> -> 1 `i `uc ]
-"153
-[; ;vend.c: 153:             while(switch_read()){}
-[e $U 2189  ]
-[e :U 2190 ]
-{
-}
-[e :U 2189 ]
-[e $ != -> ( _switch_read ..  `i -> 0 `i 2190  ]
-[e :U 2191 ]
-"154
-[; ;vend.c: 154:             credit++;
-[e ++ _credit -> -> 1 `i `Vuc ]
-"155
-[; ;vend.c: 155:             __asm("NOP");
-[; <" NOP ;# ">
-"156
-[; ;vend.c: 156:         }
-}
-[e :U 2188 ]
-"157
-[; ;vend.c: 157:     }
+"148
+[; ;vend.c: 148:         }
 }
 [e :U 2181 ]
-"141
-[; ;vend.c: 141:     while(PORTAbits.RA3)
-[e $ != -> . . _PORTAbits 0 3 `i -> 0 `i 2182  ]
-[e :U 2183 ]
-"158
-[; ;vend.c: 158:     if(venflags.priceset)
-[e $ ! != -> . _venflags 4 `i -> 0 `i 2192  ]
-"159
-[; ;vend.c: 159:     {
+"149
+[; ;vend.c: 149:         if(switch_read())
+[e $ ! != -> ( _switch_read ..  `i -> 0 `i 2185  ]
+"150
+[; ;vend.c: 150:         {
 {
-"160
-[; ;vend.c: 160:         DATAEE_WriteByte(pricestore, credit);
-[e ( _DATAEE_WriteByte (2 , -> _pricestore `uc _credit ]
-"162
-[; ;vend.c: 162:     }
+"151
+[; ;vend.c: 151:             venflags.priceset = 1;
+[e = . _venflags 4 -> -> 1 `i `uc ]
+"152
+[; ;vend.c: 152:             while(switch_read()){}
+[e $U 2186  ]
+[e :U 2187 ]
+{
 }
+[e :U 2186 ]
+[e $ != -> ( _switch_read ..  `i -> 0 `i 2187  ]
+[e :U 2188 ]
+"153
+[; ;vend.c: 153:             credit++;
+[e ++ _credit -> -> 1 `i `Vuc ]
+"154
+[; ;vend.c: 154:             __asm("NOP");
+[; <" NOP ;# ">
+"155
+[; ;vend.c: 155:         }
+}
+[e :U 2185 ]
+"156
+[; ;vend.c: 156:     }
+}
+[e :U 2178 ]
+"140
+[; ;vend.c: 140:     while(PORTAbits.RA3)
+[e $ != -> . . _PORTAbits 0 3 `i -> 0 `i 2179  ]
+[e :U 2180 ]
+"157
+[; ;vend.c: 157:     if(venflags.priceset)
+[e $ ! != -> . _venflags 4 `i -> 0 `i 2189  ]
+"158
+[; ;vend.c: 158:     {
+{
+"159
+[; ;vend.c: 159:         DATAEE_WriteByte(pricestore, credit);
+[e ( _DATAEE_WriteByte (2 , -> _pricestore `uc _credit ]
+"161
+[; ;vend.c: 161:     }
+}
+[e :U 2189 ]
+"162
+[; ;vend.c: 162:     do { LATCbits.LATC6 = 0; } while(0);
 [e :U 2192 ]
-"163
-[; ;vend.c: 163:     do { LATCbits.LATC6 = 0; } while(0);
-[e :U 2195 ]
 {
 [e = . . _LATCbits 0 6 -> -> 0 `i `uc ]
 }
-[e :U 2194 ]
-"164
-[; ;vend.c: 164:     _delay((unsigned long)((1000)*(12000000/4000.0)));
+[e :U 2191 ]
+"163
+[; ;vend.c: 163:     _delay((unsigned long)((1000)*(12000000/4000.0)));
 [e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 12000000 `l `d .4000.0 `ul ]
-"165
-[; ;vend.c: 165:     __asm("RESET");
+"164
+[; ;vend.c: 164:     __asm("RESET");
 [; <" RESET ;# ">
-"166
-[; ;vend.c: 166: }
-[e :UE 2174 ]
+"165
+[; ;vend.c: 165: }
+[e :UE 2171 ]
 }
-"168
-[; ;vend.c: 168: void Set_Timeout(void)
+"167
+[; ;vend.c: 167: void Set_Timeout(void)
 [v _Set_Timeout `(v ~T0 @X0 1 ef ]
-"169
-[; ;vend.c: 169: {
+"168
+[; ;vend.c: 168: {
 {
 [e :U _Set_Timeout ]
 [f ]
-"170
-[; ;vend.c: 170:     TMR1_Initialize();
+"169
+[; ;vend.c: 169:     TMR1_Initialize();
 [e ( _TMR1_Initialize ..  ]
+"170
+[; ;vend.c: 170:     while(!PIR4bits.TMR1IF)
+[e $U 2194  ]
+[e :U 2195 ]
 "171
-[; ;vend.c: 171:     while(!PIR4bits.TMR1IF)
-[e $U 2197  ]
-[e :U 2198 ]
-"172
-[; ;vend.c: 172:     {
+[; ;vend.c: 171:     {
 {
-"173
-[; ;vend.c: 173:         do { LATBbits.LATB0 = 1; } while(0);
-[e :U 2202 ]
+"172
+[; ;vend.c: 172:         do { LATBbits.LATB0 = 1; } while(0);
+[e :U 2199 ]
 {
 [e = . . _LATBbits 0 0 -> -> 1 `i `uc ]
 }
-[e :U 2201 ]
+[e :U 2198 ]
+"173
+[; ;vend.c: 173:         if(!CM1CON0bits.C1OUT)
+[e $ ! ! != -> . . _CM1CON0bits 1 5 `i -> 0 `i 2200  ]
 "174
-[; ;vend.c: 174:         if(!CM1CON0bits.C1OUT)
-[e $ ! ! != -> . . _CM1CON0bits 1 5 `i -> 0 `i 2203  ]
-"175
-[; ;vend.c: 175:         {
+[; ;vend.c: 174:         {
 {
-"176
-[; ;vend.c: 176:             do { LATBbits.LATB0 = 0; } while(0);
-[e :U 2206 ]
+"175
+[; ;vend.c: 175:             do { LATBbits.LATB0 = 0; } while(0);
+[e :U 2203 ]
 {
 [e = . . _LATBbits 0 0 -> -> 0 `i `uc ]
 }
-[e :U 2205 ]
-"177
-[; ;vend.c: 177:             TMR1_StopTimer();
+[e :U 2202 ]
+"176
+[; ;vend.c: 176:             TMR1_StopTimer();
 [e ( _TMR1_StopTimer ..  ]
-"178
-[; ;vend.c: 178:             timeout = TMR1_ReadTimer();
+"177
+[; ;vend.c: 177:             timeout = TMR1_ReadTimer();
 [e = _timeout ( _TMR1_ReadTimer ..  ]
-"179
-[; ;vend.c: 179:             timeout = 0x00 - timeout;
+"178
+[; ;vend.c: 178:             timeout = 0x00 - timeout;
 [e = _timeout -> - -> -> 0 `i `ui -> _timeout `ui `us ]
-"180
-[; ;vend.c: 180:             uint8_t *timeval = &timeout;
+"179
+[; ;vend.c: 179:             uint8_t *timeval = &timeout;
 [v _timeval `*uc ~T0 @X0 1 a ]
 [e = _timeval -> &U _timeout `*uc ]
-"181
-[; ;vend.c: 181:             uint8_t readValLow = timeval[0];
+"180
+[; ;vend.c: 180:             uint8_t readValLow = timeval[0];
 [v _readValLow `uc ~T0 @X0 1 a ]
 [e = _readValLow *U + _timeval * -> -> 0 `i `x -> -> # *U _timeval `i `x ]
-"182
-[; ;vend.c: 182:             uint8_t readValHigh = timeval[1];
+"181
+[; ;vend.c: 181:             uint8_t readValHigh = timeval[1];
 [v _readValHigh `uc ~T0 @X0 1 a ]
 [e = _readValHigh *U + _timeval * -> -> 1 `i `x -> -> # *U _timeval `i `x ]
-"183
-[; ;vend.c: 183:             DATAEE_WriteByte(mototime, readValLow);
+"182
+[; ;vend.c: 182:             DATAEE_WriteByte(mototime, readValLow);
 [e ( _DATAEE_WriteByte (2 , -> _mototime `uc _readValLow ]
-"184
-[; ;vend.c: 184:             DATAEE_WriteByte(mototime + 1, readValHigh);
+"183
+[; ;vend.c: 183:             DATAEE_WriteByte(mototime + 1, readValHigh);
 [e ( _DATAEE_WriteByte (2 , -> + -> _mototime `ui -> -> 1 `i `ui `uc _readValHigh ]
+"184
+[; ;vend.c: 184:             break;
+[e $U 2196  ]
 "185
-[; ;vend.c: 185:             break;
-[e $U 2199  ]
+[; ;vend.c: 185:         }
+}
+[e :U 2200 ]
 "186
-[; ;vend.c: 186:         }
+[; ;vend.c: 186:     }
 }
-[e :U 2203 ]
+[e :U 2194 ]
+"170
+[; ;vend.c: 170:     while(!PIR4bits.TMR1IF)
+[e $ ! != -> . . _PIR4bits 0 0 `i -> 0 `i 2195  ]
+[e :U 2196 ]
 "187
-[; ;vend.c: 187:     }
+[; ;vend.c: 187: }
+[e :UE 2193 ]
 }
-[e :U 2197 ]
-"171
-[; ;vend.c: 171:     while(!PIR4bits.TMR1IF)
-[e $ ! != -> . . _PIR4bits 0 0 `i -> 0 `i 2198  ]
-[e :U 2199 ]
-"188
-[; ;vend.c: 188: }
-[e :UE 2196 ]
-}
-"190
-[; ;vend.c: 190: _Bool switch_read(void)
+"189
+[; ;vend.c: 189: _Bool switch_read(void)
 [v _switch_read `(a ~T0 @X0 1 ef ]
-"191
-[; ;vend.c: 191: {
+"190
+[; ;vend.c: 190: {
 {
 [e :U _switch_read ]
 [f ]
+"191
+[; ;vend.c: 191:     if(PORTAbits.RA5 == venflags.swclosed)
+[e $ ! == -> . . _PORTAbits 0 5 `i -> . _venflags 8 `i 2205  ]
 "192
-[; ;vend.c: 192:     if(PORTAbits.RA5 == venflags.swclosed)
-[e $ ! == -> . . _PORTAbits 0 5 `i -> . _venflags 8 `i 2208  ]
+[; ;vend.c: 192:     {
+{
 "193
-[; ;vend.c: 193:     {
-{
+[; ;vend.c: 193:         if(venflags.swclosed)
+[e $ ! != -> . _venflags 8 `i -> 0 `i 2206  ]
 "194
-[; ;vend.c: 194:         if(venflags.swclosed)
-[e $ ! != -> . _venflags 8 `i -> 0 `i 2209  ]
+[; ;vend.c: 194:         {
+{
 "195
-[; ;vend.c: 195:         {
-{
-"196
-[; ;vend.c: 196:             _delay((unsigned long)((2500)*(12000000/4000000.0)));
+[; ;vend.c: 195:             _delay((unsigned long)((2500)*(12000000/4000000.0)));
 [e ( __delay (1 -> * -> -> 2500 `i `d / -> -> 12000000 `l `d .4000000.0 `ul ]
+"196
+[; ;vend.c: 196:         }
+}
+[e $U 2207  ]
 "197
-[; ;vend.c: 197:         }
-}
-[e $U 2210  ]
+[; ;vend.c: 197:         else
+[e :U 2206 ]
 "198
-[; ;vend.c: 198:         else
-[e :U 2209 ]
+[; ;vend.c: 198:         {
+{
 "199
-[; ;vend.c: 199:         {
-{
-"200
-[; ;vend.c: 200:             _delay((unsigned long)((15)*(12000000/4000.0)));
+[; ;vend.c: 199:             _delay((unsigned long)((15)*(12000000/4000.0)));
 [e ( __delay (1 -> * -> -> 15 `i `d / -> -> 12000000 `l `d .4000.0 `ul ]
+"200
+[; ;vend.c: 200:         }
+}
+[e :U 2207 ]
 "201
-[; ;vend.c: 201:         }
+[; ;vend.c: 201:     }
 }
-[e :U 2210 ]
+[e :U 2205 ]
 "202
-[; ;vend.c: 202:     }
-}
-[e :U 2208 ]
+[; ;vend.c: 202:     if(PORTAbits.RA5)
+[e $ ! != -> . . _PORTAbits 0 5 `i -> 0 `i 2208  ]
 "203
-[; ;vend.c: 203:     if(PORTAbits.RA5)
-[e $ ! != -> . . _PORTAbits 0 5 `i -> 0 `i 2211  ]
+[; ;vend.c: 203:     {
+{
 "204
-[; ;vend.c: 204:     {
-{
-"205
-[; ;vend.c: 205:         venflags.swclosed = 0;
+[; ;vend.c: 204:         venflags.swclosed = 0;
 [e = . _venflags 8 -> -> 0 `i `uc ]
-"206
-[; ;vend.c: 206:         return 0;
+"205
+[; ;vend.c: 205:         return 0;
 [e ) -> -> 0 `i `a ]
-[e $UE 2207  ]
+[e $UE 2204  ]
+"206
+[; ;vend.c: 206:     }
+}
+[e $U 2209  ]
 "207
-[; ;vend.c: 207:     }
-}
-[e $U 2212  ]
+[; ;vend.c: 207:     else
+[e :U 2208 ]
 "208
-[; ;vend.c: 208:     else
-[e :U 2211 ]
-"209
-[; ;vend.c: 209:     {
+[; ;vend.c: 208:     {
 {
-"210
-[; ;vend.c: 210:         venflags.swclosed = 1;
+"209
+[; ;vend.c: 209:         venflags.swclosed = 1;
 [e = . _venflags 8 -> -> 1 `i `uc ]
-"211
-[; ;vend.c: 211:         return 1;
+"210
+[; ;vend.c: 210:         return 1;
 [e ) -> -> 1 `i `a ]
-[e $UE 2207  ]
-"212
-[; ;vend.c: 212:     }
+[e $UE 2204  ]
+"211
+[; ;vend.c: 211:     }
 }
-[e :U 2212 ]
-"213
-[; ;vend.c: 213: }
-[e :UE 2207 ]
+[e :U 2209 ]
+"212
+[; ;vend.c: 212: }
+[e :UE 2204 ]
 }

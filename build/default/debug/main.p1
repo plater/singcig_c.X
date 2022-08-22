@@ -41,6 +41,13 @@ Version 4.0 HI-TECH Software Intermediate Code
 "249 ./mcc_generated_files/memory.h
 [; ;./mcc_generated_files/memory.h: 249: void DATAEE_WriteByte(uint8_t bAdd, uint8_t bData);
 [v _DATAEE_WriteByte `(v ~T0 @X0 0 ef2`uc`uc ]
+[v F15641 `(v ~T0 @X0 0 tf ]
+"846 ./mcc_generated_files/tmr2.h
+[; ;./mcc_generated_files/tmr2.h: 846:  void TMR2_SetInterruptHandler(void (* InterruptHandler)(void));
+[v _TMR2_SetInterruptHandler `(v ~T0 @X0 0 ef1`*F15641 ]
+"96 ./buffers.h
+[; ;./buffers.h: 96: void InterruptTMR2(void);
+[v _InterruptTMR2 `(v ~T0 @X0 0 ef ]
 "80 ./mcc_generated_files/mcc.h
 [; ;./mcc_generated_files/mcc.h: 80: void SYSTEM_Initialize(void);
 [v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
@@ -78,14 +85,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 "41990
 [; ;/home/davepl/.mchp_packs/Microchip/PIC18F-K_DFP/1.6.125/xc8/pic/include/proc/pic18f25k42.h: 41990: extern volatile T2CONbits_t T2CONbits __attribute__((address(0x3FAC)));
 [v _T2CONbits `VS1897 ~T0 @X0 0 e@16300 ]
-[v F15641 `(v ~T0 @X0 0 tf ]
-"846 ./mcc_generated_files/tmr2.h
-[; ;./mcc_generated_files/tmr2.h: 846:  void TMR2_SetInterruptHandler(void (* InterruptHandler)(void));
-[v _TMR2_SetInterruptHandler `(v ~T0 @X0 0 ef1`*F15641 ]
-"96 ./buffers.h
-[; ;./buffers.h: 96: void InterruptTMR2(void);
-[v _InterruptTMR2 `(v ~T0 @X0 0 ef ]
-"43992 /home/davepl/.mchp_packs/Microchip/PIC18F-K_DFP/1.6.125/xc8/pic/include/proc/pic18f25k42.h
+"43992
 [; ;/home/davepl/.mchp_packs/Microchip/PIC18F-K_DFP/1.6.125/xc8/pic/include/proc/pic18f25k42.h: 43992:     struct {
 [s S1990 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S1990 . LATA0 LATA1 LATA2 LATA3 LATA4 LATA5 LATA6 LATA7 ]
@@ -2593,72 +2593,72 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 66:         DATAEE_WriteByte(credmem, 0x00);
 [e ( _DATAEE_WriteByte (2 , -> _credmem `uc -> -> 0 `i `uc ]
 "67
-[; ;main.c: 67:     }
+[; ;main.c: 67:         DATAEE_WriteByte(notebits, 0x1F);
+[e ( _DATAEE_WriteByte (2 , -> _notebits `uc -> -> 31 `i `uc ]
+"68
+[; ;main.c: 68:     }
 }
 [e :U 2130 ]
-"68
-[; ;main.c: 68:     SYSTEM_Initialize();
-[e ( _SYSTEM_Initialize ..  ]
-"70
-[; ;main.c: 70:     PIE4bits.TMR2IE = 0;
-[e = . . _PIE4bits 0 2 -> -> 0 `i `uc ]
-"71
-[; ;main.c: 71:     T2CONbits.ON = 0;
-[e = . . _T2CONbits 0 2 -> -> 0 `i `uc ]
-"72
-[; ;main.c: 72:     TMR2_SetInterruptHandler(InterruptTMR2);
+"69
+[; ;main.c: 69:     TMR2_SetInterruptHandler(InterruptTMR2);
 [e ( _TMR2_SetInterruptHandler (1 &U _InterruptTMR2 ]
+"70
+[; ;main.c: 70:     SYSTEM_Initialize();
+[e ( _SYSTEM_Initialize ..  ]
+"72
+[; ;main.c: 72:     PIE4bits.TMR2IE = 0;
+[e = . . _PIE4bits 0 2 -> -> 0 `i `uc ]
 "73
-[; ;main.c: 73:     do { LATAbits.LATA1 = 1; } while(0);
+[; ;main.c: 73:     T2CONbits.ON = 0;
+[e = . . _T2CONbits 0 2 -> -> 0 `i `uc ]
+"74
+[; ;main.c: 74:     do { LATAbits.LATA1 = 1; } while(0);
 [e :U 2133 ]
 {
 [e = . . _LATAbits 0 1 -> -> 1 `i `uc ]
 }
 [e :U 2132 ]
-"74
-[; ;main.c: 74:     do { LATCbits.LATC6 = 1; } while(0);
+"75
+[; ;main.c: 75:     do { LATCbits.LATC6 = 1; } while(0);
 [e :U 2136 ]
 {
 [e = . . _LATCbits 0 6 -> -> 1 `i `uc ]
 }
 [e :U 2135 ]
-"75
-[; ;main.c: 75:     vend_init();
-[e ( _vend_init ..  ]
 "76
-[; ;main.c: 76:     do { LATCbits.LATC5 = 1; } while(0);
+[; ;main.c: 76:     vend_init();
+[e ( _vend_init ..  ]
+"77
+[; ;main.c: 77:     do { LATCbits.LATC5 = 1; } while(0);
 [e :U 2139 ]
 {
 [e = . . _LATCbits 0 5 -> -> 1 `i `uc ]
 }
 [e :U 2138 ]
-"77
-[; ;main.c: 77:     do { LATCbits.LATC6 = 0; } while(0);
+"78
+[; ;main.c: 78:     do { LATCbits.LATC6 = 0; } while(0);
 [e :U 2142 ]
 {
 [e = . . _LATCbits 0 6 -> -> 0 `i `uc ]
 }
 [e :U 2141 ]
-"78
-[; ;main.c: 78:     do { LATAbits.LATA1 = 0; } while(0);
+"79
+[; ;main.c: 79:     do { LATAbits.LATA1 = 0; } while(0);
 [e :U 2145 ]
 {
 [e = . . _LATAbits 0 1 -> -> 0 `i `uc ]
 }
 [e :U 2144 ]
-"79
-[; ;main.c: 79:     mdb_init();
-[e ( _mdb_init ..  ]
 "80
-[; ;main.c: 80:     do { LATCbits.LATC5 = 0; } while(0);
+[; ;main.c: 80:     mdb_init();
+[e ( _mdb_init ..  ]
+"81
+[; ;main.c: 81:     do { LATCbits.LATC5 = 0; } while(0);
 [e :U 2148 ]
 {
 [e = . . _LATCbits 0 5 -> -> 0 `i `uc ]
 }
 [e :U 2147 ]
-"84
-[; ;main.c: 84:     PIE4bits.TMR2IE = 1;
-[e = . . _PIE4bits 0 2 -> -> 1 `i `uc ]
 "96
 [; ;main.c: 96:     while (1)
 [e :U 2150 ]
@@ -2678,208 +2678,208 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 101:         }
 }
 [e :U 2152 ]
-"103
-[; ;main.c: 103:         while(!CM1CON0bits.C1OUT)
+"107
+[; ;main.c: 107:         while(!CM1CON0bits.C1OUT)
 [e $U 2153  ]
 [e :U 2154 ]
-"104
-[; ;main.c: 104:         {
+"108
+[; ;main.c: 108:         {
 {
-"105
-[; ;main.c: 105:             do { LATCbits.LATC5 = 0; } while(0);
+"109
+[; ;main.c: 109:             do { LATCbits.LATC5 = 0; } while(0);
 [e :U 2158 ]
 {
 [e = . . _LATCbits 0 5 -> -> 0 `i `uc ]
 }
 [e :U 2157 ]
-"106
-[; ;main.c: 106:             do { LATCbits.LATC6 = 1; } while(0);
+"110
+[; ;main.c: 110:             do { LATCbits.LATC6 = 1; } while(0);
 [e :U 2161 ]
 {
 [e = . . _LATCbits 0 6 -> -> 1 `i `uc ]
 }
 [e :U 2160 ]
-"107
-[; ;main.c: 107:             _delay((unsigned long)((100)*(12000000/4000.0)));
+"111
+[; ;main.c: 111:             _delay((unsigned long)((100)*(12000000/4000.0)));
 [e ( __delay (1 -> * -> -> 100 `i `d / -> -> 12000000 `l `d .4000.0 `ul ]
-"108
-[; ;main.c: 108:             do { LATCbits.LATC5 = 1; } while(0);
+"112
+[; ;main.c: 112:             do { LATCbits.LATC5 = 1; } while(0);
 [e :U 2164 ]
 {
 [e = . . _LATCbits 0 5 -> -> 1 `i `uc ]
 }
 [e :U 2163 ]
-"109
-[; ;main.c: 109:             do { LATCbits.LATC6 = 0; } while(0);
+"113
+[; ;main.c: 113:             do { LATCbits.LATC6 = 0; } while(0);
 [e :U 2167 ]
 {
 [e = . . _LATCbits 0 6 -> -> 0 `i `uc ]
 }
 [e :U 2166 ]
-"110
-[; ;main.c: 110:             _delay((unsigned long)((100)*(12000000/4000.0)));
+"114
+[; ;main.c: 114:             _delay((unsigned long)((100)*(12000000/4000.0)));
 [e ( __delay (1 -> * -> -> 100 `i `d / -> -> 12000000 `l `d .4000.0 `ul ]
-"112
-[; ;main.c: 112:         }
+"116
+[; ;main.c: 116:         }
 }
 [e :U 2153 ]
-"103
-[; ;main.c: 103:         while(!CM1CON0bits.C1OUT)
+"107
+[; ;main.c: 107:         while(!CM1CON0bits.C1OUT)
 [e $ ! != -> . . _CM1CON0bits 1 5 `i -> 0 `i 2154  ]
 [e :U 2155 ]
-"113
-[; ;main.c: 113:         if(venflags.error)
+"117
+[; ;main.c: 117:         if(venflags.error)
 [e $ ! != -> . _venflags 1 `i -> 0 `i 2168  ]
-"114
-[; ;main.c: 114:         {
+"118
+[; ;main.c: 118:         {
 {
-"115
-[; ;main.c: 115:             do { LATAbits.LATA4 = 0; } while(0);
+"119
+[; ;main.c: 119:             do { LATAbits.LATA4 = 0; } while(0);
 [e :U 2171 ]
 {
 [e = . . _LATAbits 0 4 -> -> 0 `i `uc ]
 }
 [e :U 2170 ]
-"116
-[; ;main.c: 116:         }
+"120
+[; ;main.c: 120:         }
 }
 [e $U 2172  ]
-"117
-[; ;main.c: 117:         else
+"121
+[; ;main.c: 121:         else
 [e :U 2168 ]
-"118
-[; ;main.c: 118:         {
+"122
+[; ;main.c: 122:         {
 {
-"119
-[; ;main.c: 119:             do { LATAbits.LATA4 = 1; } while(0);
+"123
+[; ;main.c: 123:             do { LATAbits.LATA4 = 1; } while(0);
 [e :U 2175 ]
 {
 [e = . . _LATAbits 0 4 -> -> 1 `i `uc ]
 }
 [e :U 2174 ]
-"120
-[; ;main.c: 120:         }
+"124
+[; ;main.c: 124:         }
 }
 [e :U 2172 ]
-"122
-[; ;main.c: 122:         if(!PORTAbits.RA5)
+"126
+[; ;main.c: 126:         if(!PORTAbits.RA5)
 [e $ ! ! != -> . . _PORTAbits 0 5 `i -> 0 `i 2176  ]
-"123
-[; ;main.c: 123:         {
+"127
+[; ;main.c: 127:         {
 {
-"124
-[; ;main.c: 124:             coin_in();
+"128
+[; ;main.c: 128:             coin_in();
 [e ( _coin_in ..  ]
-"125
-[; ;main.c: 125:         }
+"129
+[; ;main.c: 129:         }
 }
 [e :U 2176 ]
-"127
-[; ;main.c: 127:         if(venflags.error)
+"131
+[; ;main.c: 131:         if(venflags.error)
 [e $ ! != -> . _venflags 1 `i -> 0 `i 2177  ]
-"128
-[; ;main.c: 128:         {
+"132
+[; ;main.c: 132:         {
 {
-"129
-[; ;main.c: 129:             button_flash();
+"133
+[; ;main.c: 133:             button_flash();
 [e ( _button_flash ..  ]
-"130
-[; ;main.c: 130:         }
+"134
+[; ;main.c: 134:         }
 }
 [e :U 2177 ]
-"132
-[; ;main.c: 132:         if(credit_check() >= vendprice)
-[e $ ! >= -> ( _credit_check ..  `i -> _vendprice `i 2178  ]
-"133
-[; ;main.c: 133:         {
-{
-"134
-[; ;main.c: 134:             venflags.crednuff = 1;
-[e = . _venflags 10 -> -> 1 `i `uc ]
-"135
-[; ;main.c: 135:         }
-}
-[e $U 2179  ]
 "136
-[; ;main.c: 136:         else
-[e :U 2178 ]
+[; ;main.c: 136:         if(credit_check() >= vendprice)
+[e $ ! >= -> ( _credit_check ..  `i -> _vendprice `i 2178  ]
 "137
 [; ;main.c: 137:         {
 {
 "138
-[; ;main.c: 138:             venflags.crednuff = 0;
-[e = . _venflags 10 -> -> 0 `i `uc ]
+[; ;main.c: 138:             venflags.crednuff = 1;
+[e = . _venflags 10 -> -> 1 `i `uc ]
 "139
 [; ;main.c: 139:         }
 }
-[e :U 2179 ]
+[e $U 2179  ]
+"140
+[; ;main.c: 140:         else
+[e :U 2178 ]
 "141
-[; ;main.c: 141:         if(PIR8bits.TMR5IF)
-[e $ ! != -> . . _PIR8bits 0 1 `i -> 0 `i 2180  ]
-"142
-[; ;main.c: 142:         {
+[; ;main.c: 141:         {
 {
+"142
+[; ;main.c: 142:             venflags.crednuff = 0;
+[e = . _venflags 10 -> -> 0 `i `uc ]
 "143
-[; ;main.c: 143:             venflags.t5time = 1;
+[; ;main.c: 143:         }
+}
+[e :U 2179 ]
+"145
+[; ;main.c: 145:         if(PIR8bits.TMR5IF)
+[e $ ! != -> . . _PIR8bits 0 1 `i -> 0 `i 2180  ]
+"146
+[; ;main.c: 146:         {
+{
+"147
+[; ;main.c: 147:             venflags.t5time = 1;
 [e = . _venflags 11 -> -> 1 `i `uc ]
-"144
-[; ;main.c: 144:         }
+"148
+[; ;main.c: 148:         }
 }
 [e :U 2180 ]
-"146
-[; ;main.c: 146:         if(venflags.crednuff && venflags.t5time)
-[e $ ! && != -> . _venflags 10 `i -> 0 `i != -> . _venflags 11 `i -> 0 `i 2181  ]
-"147
-[; ;main.c: 147:         {
-{
-"148
-[; ;main.c: 148:             if(!venflags.error)
-[e $ ! ! != -> . _venflags 1 `i -> 0 `i 2182  ]
-"149
-[; ;main.c: 149:             {
-{
 "150
-[; ;main.c: 150:                 do { LATAbits.LATA4 = 0; } while(0);
+[; ;main.c: 150:         if(venflags.crednuff && venflags.t5time)
+[e $ ! && != -> . _venflags 10 `i -> 0 `i != -> . _venflags 11 `i -> 0 `i 2181  ]
+"151
+[; ;main.c: 151:         {
+{
+"152
+[; ;main.c: 152:             if(!venflags.error)
+[e $ ! ! != -> . _venflags 1 `i -> 0 `i 2182  ]
+"153
+[; ;main.c: 153:             {
+{
+"154
+[; ;main.c: 154:                 do { LATAbits.LATA4 = 0; } while(0);
 [e :U 2185 ]
 {
 [e = . . _LATAbits 0 4 -> -> 0 `i `uc ]
 }
 [e :U 2184 ]
-"151
-[; ;main.c: 151:                 do { LATCbits.LATC6 = 1; } while(0);
+"155
+[; ;main.c: 155:                 do { LATCbits.LATC6 = 1; } while(0);
 [e :U 2188 ]
 {
 [e = . . _LATCbits 0 6 -> -> 1 `i `uc ]
 }
 [e :U 2187 ]
-"152
-[; ;main.c: 152:             }
-}
-[e :U 2182 ]
-"153
-[; ;main.c: 153:             if(!PORTAbits.RA6 && !venflags.error)
-[e $ ! && ! != -> . . _PORTAbits 0 6 `i -> 0 `i ! != -> . _venflags 1 `i -> 0 `i 2189  ]
-"154
-[; ;main.c: 154:             {
-{
-"155
-[; ;main.c: 155:                 dispense();
-[e ( _dispense ..  ]
 "156
 [; ;main.c: 156:             }
 }
-[e :U 2189 ]
+[e :U 2182 ]
 "157
-[; ;main.c: 157:         }
+[; ;main.c: 157:             if(!PORTAbits.RA6 && !venflags.error)
+[e $ ! && ! != -> . . _PORTAbits 0 6 `i -> 0 `i ! != -> . _venflags 1 `i -> 0 `i 2189  ]
+"158
+[; ;main.c: 158:             {
+{
+"159
+[; ;main.c: 159:                 dispense();
+[e ( _dispense ..  ]
+"160
+[; ;main.c: 160:             }
+}
+[e :U 2189 ]
+"161
+[; ;main.c: 161:         }
 }
 [e :U 2181 ]
-"158
-[; ;main.c: 158:     }
+"162
+[; ;main.c: 162:     }
 }
 [e :U 2149 ]
 [e $U 2150  ]
 [e :U 2151 ]
-"159
-[; ;main.c: 159: }
+"163
+[; ;main.c: 163: }
 [e :UE 2129 ]
 }
