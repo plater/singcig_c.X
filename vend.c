@@ -118,7 +118,7 @@ void button_flash(void)
     {
         venflags.bflash = 1;
         TMR3_Initialize();
-        LIGHT1_SetHigh();
+        SPARE_SetHigh();
     }
     if(PIR6bits.TMR3IF)
     {
@@ -127,36 +127,92 @@ void button_flash(void)
     }
 }
 
+void buzzer(void)
+{
+    if(!venflags.bflash)
+    {
+        venflags.bflash = 1;
+        TMR4_Initialize();
+        SPARE_SetHigh();
+    }
+    if(PIR7bits.TMR4IF)
+    {
+        LATCbits.LC2 = ~LATCbits.LC2;
+        TMR4_Initialize();
+    }
+}
+
+void led_flash(void)
+{
+    if(!venflags.bflash)
+    {
+        venflags.bflash = 1;
+        TMR4_Initialize();
+        SPARE_SetHigh();
+    }
+    if(PIR7bits.TMR4IF)
+    {
+        LATCbits.LC2 = ~LATCbits.LC2;
+        TMR4_Initialize();
+    }
+}
+
 void enter_service(void)
-{//Clear vend errors.
+{
+    uint8_t credshad;
+    SPARE_SetHigh();
+    //Clear vend errors.
     DATAEE_WriteByte(venderrors, 0x00);
     DATAEE_WriteByte(credmem, 0x00);
     //Clear credit.
-    credit = 0x00;
+    cash = 0x00;
+    credit = 0;
+    credshad = 0;
     venflags.priceset = 0;
+    venflags.settime = 0;
+    venflags.chan1 = 0;
+    venflags.chan2 = 0;
     CNEN_SetHigh();
     while(!SERVICE_GetValue()){}
     __delay_ms(500);
+    SPARE_SetLow();
     while(SERVICE_GetValue())
     {
         button_flash();
         if(!BUTTON1_GetValue() && !venflags.priceset)
         {
+            venflags.chan1 = 1;
             CNEN_SetLow();
             Set_Timeout();
-            asm("RESET");
+            venflags.settime = 1;
+        }
+        else if(!BUTTON2_GetValue() && !venflags.priceset)
+        {
+            venflags.chan2 = 1;
         }
         if(switch_read())
         {
             venflags.priceset = 1;
             while(switch_read()){}
-            credit++;
+            credit_add(1);
+            credshad = cash;
             asm("NOP");
         }
+        if(PIR7bits.TMR4IF)
+        {
+            SPARE_SetLow();
+        }
+        if(cash != credshad)
+        {
+            led_flash();
+            venflags.priceset = 1;
+            credshad = cash;
+        }
     }
+ 
     if(venflags.priceset)
     {
-        DATAEE_WriteByte(pricestore, credit);
+        DATAEE_WriteByte(pricestore, cash);
         
     }
     LIGHT1_SetLow();

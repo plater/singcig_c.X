@@ -5,7 +5,7 @@
             <url>mdb.c</url>
             <bookmark id="1">
                 <name/>
-                <line>408</line>
+                <line>407</line>
                 <key/>
             </bookmark>
         </file>
@@ -15,7 +15,6 @@
             <file>file:/home/davepl/MPLABXProjects/singcig_c.X/main.c</file>
             <file>file:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/tmr2.c</file>
             <file>file:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/memory.c</file>
-            <file>file:/home/davepl/MPLABXProjects/singcig_c.X/mcc_generated_files/interrupt_manager.c</file>
             <file>file:/home/davepl/MPLABXProjects/singcig_c.X/mdb_main.c</file>
             <file>file:/home/davepl/MPLABXProjects/singcig_c.X/vend.c</file>
             <file>file:/home/davepl/MPLABXProjects/singcig_c.X/mdb.h</file>

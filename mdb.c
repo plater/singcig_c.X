@@ -170,41 +170,41 @@ void InterruptTMR2(void)
 void poll_mdb(void)
 {
     {
-        credit = mdb_poll();
-        if(credit != 0x00)
+        credmdb = mdb_poll();
+        if(credmdb != 0x00)
         {
             if(mdbflags.noteerr == 1)
             {
-                switch(credit)
+                switch(credmdb)
                 {
                     //Just reset
                     case 0x06 : mdb_init();
                     mdbflags.noteerr == 0;
-                    credit = 0;
+                    credmdb = 0;
                     break;
                     //Accept disabled
                     case 0x09:
                     if(mdbflags.vending)
                     {
-                        credit = 0;
+                        credmdb = 0;
                     }
                     else
                     {
                         mdb_init();
-                        credit = 0;
+                        credmdb = 0;
                     }
                     break;
                     case 0x10:mdbflags.noteerr == 0;
-                    credit = 0;
+                    credmdb = 0;
                     break;
                     case 0x0C : mdbflags.noteerr == 0;
-                    credit = 0;
+                    credmdb = 0;
                     break;
                     }
                 }
                 else
                 {
-                    credit_add(credit);
+                    credit_add(credmdb);
                     venflags.iscredit = 1;
                 }
             }
@@ -214,8 +214,7 @@ void poll_mdb(void)
 
 uint8_t mdb_poll(void)
 {
-    //Timer3 is the poll timer, poll every 50ms.
-    //This timer is also used by cctalk time out.
+    //Timer2 is the poll timer, poll every 50ms.
     
     uint8_t i = mdb_comm(note_poll, 0x00);
     notebyte = mdbdata[0];
@@ -301,6 +300,8 @@ uint8_t mdb_comm(uint8_t slvadd, uint8_t mcount)
  * This routine from PIC18F25K40 automatically transmits
  * the address before the data ie. if set address then
  * two bytes are transmitted
+ * Other 8 bit pics use a 9th bit register,
+ * 16 and 32 bit pics use 16 bit registers
 */
     //Write appropriate poll address
     //Only a bill acceptor at this time.

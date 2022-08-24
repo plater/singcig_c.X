@@ -37,6 +37,7 @@
 //This location is the value of cash to be added or
 //subtracted from credit memory
 volatile uint8_t credit;
+volatile uint8_t credmdb;
 volatile uint8_t cash;
 volatile uint8_t buttons;
 volatile uint8_t vendprice;
@@ -60,12 +61,15 @@ const uint16_t secondadd = 0x1E46 ;
 //NVRAM address location definitions
 //This location holds the value of cash in hand
 const uint16_t credmem = 0x00;
-//Prices per vend 1 x uint8_t
+//Prices per vend 2 x uint8_t
 const uint16_t pricestore = 0x01;
+const uint16_t pricestore2 = 0x02;
 //Vend error flags bits 0 to 7 uint8_t
-const uint16_t venderrors = 0x02;
-//Motor timeout value 2x8bits
-const uint16_t mototime = 0x03;
+const uint16_t venderrors = 0x03;
+const uint16_t venderror2 = 0x04;
+//Motor timeout values 2x8bits
+const uint16_t mototime = 0x05;
+const uint16_t mototime2 = 0x07;
 
 /*vend flags bit 0=still credit bit 1=error bit 2=display insert coin
   bit 3=no change bit4=credit display bit5=Buy another?*/
@@ -83,10 +87,10 @@ struct
    unsigned bflash : 1;
    unsigned crednuff : 1;
    unsigned t5time : 1;
-   unsigned spare4 : 1;
-   unsigned spare5 : 1;
-   unsigned spare6 : 1;
-   unsigned spare7 : 1;
+   unsigned chan1 : 1;
+   unsigned chan2 : 1;
+   unsigned settime2 : 1;
+   unsigned beep : 1;
 } venflags;
 
 void credit_add(uint8_t credit);
@@ -95,5 +99,6 @@ void poll_mdb(void);
 
 void InterruptTMR2(void);
 
+void buzzer(void);
 #endif	/* XC_HEADER_TEMPLATE_H */
 

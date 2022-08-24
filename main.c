@@ -52,7 +52,6 @@
 //#include "buffers.h"
 #include "vend.h"
 #include "mdb.h"
-
 /*
                          Main application
  */
@@ -99,11 +98,6 @@ void main(void)
         {
             enter_service();
         }
-/*        if(PIR4bits.TMR2IF)
-        {
-            PIR4bits.TMR2IF = 0;
-        }
-*/            
         while(!CM1CON0bits.C1OUT)
         {
             LIGHT2_SetLow();

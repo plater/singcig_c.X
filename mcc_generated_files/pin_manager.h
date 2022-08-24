@@ -381,6 +381,46 @@
 #define SPARE_SetAnalogMode()      do { ANSELCbits.ANSELC2 = 1; } while(0)
 #define SPARE_SetDigitalMode()     do { ANSELCbits.ANSELC2 = 0; } while(0)
 
+// get/set CNT2 aliases
+#define CNT2_TRIS                 TRISCbits.TRISC3
+#define CNT2_LAT                  LATCbits.LATC3
+#define CNT2_PORT                 PORTCbits.RC3
+#define CNT2_WPU                  WPUCbits.WPUC3
+#define CNT2_OD                   ODCONCbits.ODCC3
+#define CNT2_ANS                  ANSELCbits.ANSELC3
+#define CNT2_SetHigh()            do { LATCbits.LATC3 = 1; } while(0)
+#define CNT2_SetLow()             do { LATCbits.LATC3 = 0; } while(0)
+#define CNT2_Toggle()             do { LATCbits.LATC3 = ~LATCbits.LATC3; } while(0)
+#define CNT2_GetValue()           PORTCbits.RC3
+#define CNT2_SetDigitalInput()    do { TRISCbits.TRISC3 = 1; } while(0)
+#define CNT2_SetDigitalOutput()   do { TRISCbits.TRISC3 = 0; } while(0)
+#define CNT2_SetPullup()          do { WPUCbits.WPUC3 = 1; } while(0)
+#define CNT2_ResetPullup()        do { WPUCbits.WPUC3 = 0; } while(0)
+#define CNT2_SetPushPull()        do { ODCONCbits.ODCC3 = 0; } while(0)
+#define CNT2_SetOpenDrain()       do { ODCONCbits.ODCC3 = 1; } while(0)
+#define CNT2_SetAnalogMode()      do { ANSELCbits.ANSELC3 = 1; } while(0)
+#define CNT2_SetDigitalMode()     do { ANSELCbits.ANSELC3 = 0; } while(0)
+
+// get/set CNT1 aliases
+#define CNT1_TRIS                 TRISCbits.TRISC4
+#define CNT1_LAT                  LATCbits.LATC4
+#define CNT1_PORT                 PORTCbits.RC4
+#define CNT1_WPU                  WPUCbits.WPUC4
+#define CNT1_OD                   ODCONCbits.ODCC4
+#define CNT1_ANS                  ANSELCbits.ANSELC4
+#define CNT1_SetHigh()            do { LATCbits.LATC4 = 1; } while(0)
+#define CNT1_SetLow()             do { LATCbits.LATC4 = 0; } while(0)
+#define CNT1_Toggle()             do { LATCbits.LATC4 = ~LATCbits.LATC4; } while(0)
+#define CNT1_GetValue()           PORTCbits.RC4
+#define CNT1_SetDigitalInput()    do { TRISCbits.TRISC4 = 1; } while(0)
+#define CNT1_SetDigitalOutput()   do { TRISCbits.TRISC4 = 0; } while(0)
+#define CNT1_SetPullup()          do { WPUCbits.WPUC4 = 1; } while(0)
+#define CNT1_ResetPullup()        do { WPUCbits.WPUC4 = 0; } while(0)
+#define CNT1_SetPushPull()        do { ODCONCbits.ODCC4 = 0; } while(0)
+#define CNT1_SetOpenDrain()       do { ODCONCbits.ODCC4 = 1; } while(0)
+#define CNT1_SetAnalogMode()      do { ANSELCbits.ANSELC4 = 1; } while(0)
+#define CNT1_SetDigitalMode()     do { ANSELCbits.ANSELC4 = 0; } while(0)
+
 // get/set LIGHT2 aliases
 #define LIGHT2_TRIS                 TRISCbits.TRISC5
 #define LIGHT2_LAT                  LATCbits.LATC5

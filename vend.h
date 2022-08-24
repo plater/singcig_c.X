@@ -26,6 +26,8 @@ bool Read_Sensor(void);
 
 void button_flash(void);
 
+void led_flash(void);
+
 void Set_Timeout(void);
 
 bool switch_read(void);
