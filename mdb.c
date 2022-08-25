@@ -12,12 +12,10 @@
 
 void init_mdbdata(uint8_t initdata)
 {
-    mdbdata[0] = initdata;
-/*    for(uint8_t i = 0;i < 33; i++)
+    for(uint8_t i = 0;i < 33; i++)
     {
         mdbdata[i] = initdata;
     }
- */
 }
 //Undefined error mode flashes 4 slow 2 fast
 void mdb_init(void)
@@ -42,6 +40,7 @@ uint8_t mdb_reset(void)
     //Enable 9 bit for MDB
 //    RC1STA = 0xD0;
 //    TX1STA = 0xEC;
+    rsretry:
     mdbflags.timeout = 1;
     while(mdbflags.timeout)
     {
@@ -53,6 +52,10 @@ uint8_t mdb_reset(void)
     {
         //Get status
         i = mdb_comm(note_poll, 0x00);
+    }
+    else
+    {
+        goto rsretry;
     }
     
     return i;

@@ -112,17 +112,25 @@ bool Read_Sensor(void)
     return CM1CON0bits.C1OUT;
 }
 //PIR6bits.TMR3IF LATCbits.LC2
-void button_flash(void)
+void button_flash(bool chanflash)
 {
     if(!venflags.bflash)
     {
         venflags.bflash = 1;
         TMR3_Initialize();
-        SPARE_SetHigh();
+        if(chanflash)
+        {
+            LIGHT2_SetHigh();
+        }
+        else
+        {
+            LIGHT1_SetHigh();
+        }
     }
     if(PIR6bits.TMR3IF)
     {
-        LATCbits.LC2 = ~LATCbits.LC2;
+        LIGHT1_SetLow();
+        LIGHT2_SetLow();
         TMR3_Initialize();
     }
 }
@@ -163,6 +171,7 @@ void enter_service(void)
     SPARE_SetHigh();
     //Clear vend errors.
     DATAEE_WriteByte(venderrors, 0x00);
+    DATAEE_WriteByte(venderror2, 0x00);
     DATAEE_WriteByte(credmem, 0x00);
     //Clear credit.
     cash = 0x00;
@@ -173,22 +182,30 @@ void enter_service(void)
     venflags.chan1 = 0;
     venflags.chan2 = 0;
     CNEN_SetHigh();
+    mdb_noten();
     while(!SERVICE_GetValue()){}
     __delay_ms(500);
     SPARE_SetLow();
     while(SERVICE_GetValue())
     {
-        button_flash();
+        button_flash(0);
         if(!BUTTON1_GetValue() && !venflags.priceset)
         {
+            venflags.chan2 = 0;
             venflags.chan1 = 1;
             CNEN_SetLow();
+            note_disable();
             Set_Timeout();
             venflags.settime = 1;
         }
         else if(!BUTTON2_GetValue() && !venflags.priceset)
         {
+            venflags.chan1 = 0;
             venflags.chan2 = 1;
+            CNEN_SetLow();
+            note_disable();
+            Set_Timeout();
+            venflags.settime = 1;
         }
         if(switch_read())
         {
@@ -200,7 +217,9 @@ void enter_service(void)
         }
         if(PIR7bits.TMR4IF)
         {
-            SPARE_SetLow();
+            BUTTON1_SetLow();
+            BUTTON2_SetLow();
+            button_flash(1);
         }
         if(cash != credshad)
         {
@@ -225,18 +244,34 @@ void Set_Timeout(void)
     TMR1_Initialize();
     while(!PIR4bits.TMR1IF)
     {
-        MOTOR1_SetHigh();
+        if(venflags.chan1)
+        {
+            MOTOR1_SetHigh();
+        }
+        else
+        {
+            MOTOR2_SetHigh();
+        }
         if(!CM1CON0bits.C1OUT)
         {
             MOTOR1_SetLow();
+            MOTOR2_SetLow();
             TMR1_StopTimer();
             timeout = TMR1_ReadTimer();
             timeout = 0x00 - timeout;
             uint8_t *timeval = &timeout;
             uint8_t readValLow = timeval[0];
             uint8_t readValHigh = timeval[1];
-            DATAEE_WriteByte(mototime, readValLow);
-            DATAEE_WriteByte(mototime + 1, readValHigh);
+            if(venflags.chan1)
+            {
+                motimead = mototime;
+            }
+            else
+            {
+                motimead = mototime2;
+            }
+            DATAEE_WriteByte(motimead, readValLow);
+            DATAEE_WriteByte(motimead + 1, readValHigh);
             break;
         }
     }

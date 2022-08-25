@@ -96,11 +96,11 @@ void UART1_Initialize(void)
     // TXPOL not inverted; FLO off; C0EN disabled; RXPOL not inverted; RUNOVF RX input shifter continues; STP Transmit 1Stop bit, receiver verifies first Stop bit; 
     U1CON2 = 0x80;
 
-    // BRGL 56; 
-    U1BRGL = 0x38;
+    // BRGL 130; 
+    U1BRGL = 0x82;
 
-    // BRGH 1; 
-    U1BRGH = 0x01;
+    // BRGH 6; 
+    U1BRGH = 0x06;
 
     // STPMD in middle of first Stop bit; TXWRE No error; 
     U1FIFO = 0x00;

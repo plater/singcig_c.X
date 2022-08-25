@@ -112,10 +112,6 @@ void save_notes(void);
 
 void enable_notes(uint8_t notenum);
 
-void note_disable(void);
-
-void mdb_noten(void);
-
 void mdb_security(void);
 
 uint8_t mdb_poll(void);

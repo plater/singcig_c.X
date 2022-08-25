@@ -50,6 +50,7 @@ uint8_t notebyte;
 uint8_t chkbyte;
 uint16_t dbcount=0;
 uint8_t notenum = 0xFF;
+uint16_t * motimead;
 
 //Timer values for vend motor timing
 const uint16_t second1 = 0xF0DD ;
@@ -92,6 +93,10 @@ struct
    unsigned settime2 : 1;
    unsigned beep : 1;
 } venflags;
+
+void note_disable(void);
+
+void mdb_noten(void);
 
 void credit_add(uint8_t credit);
 

@@ -24,7 +24,7 @@ void coin_in(void);
 
 bool Read_Sensor(void);
 
-void button_flash(void);
+void button_flash(bool);
 
 void led_flash(void);
 

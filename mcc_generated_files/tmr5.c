@@ -70,14 +70,14 @@ void TMR5_Initialize(void)
     //GSS T5G_pin; 
     T5GATE = 0x00;
 
-    //CS MFINTOSC_31.25kHz; 
-    T5CLK = 0x06;
+    //CS LFINTOSC; 
+    T5CLK = 0x04;
 
     //TMR5H 240; 
     TMR5H = 0xF0;
 
-    //TMR5L 190; 
-    TMR5L = 0xBE;
+    //TMR5L 221; 
+    TMR5L = 0xDD;
 
     // Clearing IF flag.
     PIR8bits.TMR5IF = 0;

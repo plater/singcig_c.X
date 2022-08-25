@@ -76,8 +76,10 @@ void main(void)
     LIGHT2_SetHigh();
     LIGHT1_SetLow();
     BUZZER_SetLow();
+    SPARE_SetHigh();
     mdb_init();
     LIGHT2_SetLow();
+    SPARE_SetLow();
   /* Enable poll timer interrupt routine
    * 
    */
@@ -100,11 +102,13 @@ void main(void)
         }
         while(!CM1CON0bits.C1OUT)
         {
+            BUZZER_SetHigh();
             LIGHT2_SetLow();
             LIGHT1_SetHigh();
             __delay_ms(100);
             LIGHT2_SetHigh();
             LIGHT1_SetLow();
+            BUZZER_SetLow();
             __delay_ms(100);
             
         }
@@ -122,9 +126,13 @@ void main(void)
             coin_in();
         }
         
-        if(venflags.error)
+        if(venflags.error && venflags.chan1)
         {
-            button_flash();
+            button_flash(0);
+        }
+        if(venflags.error && venflags.chan2)
+        {
+            button_flash(1);
         }
         
         if(credit_check() >= vendprice)
@@ -143,12 +151,12 @@ void main(void)
         
         if(venflags.crednuff && venflags.t5time)
         {
-            if(!venflags.error)
+            if(!venflags.error && venflags.chan1)
             {
                 CNEN_SetLow();
                 LIGHT1_SetHigh();
             }
-            if(!BUTTON1_GetValue() &&  !venflags.error)
+            if(!BUTTON1_GetValue() &&  venflags.chan1 && !venflags.error)
             {
                 dispense();
             }
